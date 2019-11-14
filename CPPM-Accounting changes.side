@@ -1,0 +1,3508 @@
+{
+  "id": "8319de89-8fe2-4280-8a0c-e4dbca265f94",
+  "version": "2.0",
+  "name": "CPPM-Accounting changes",
+  "url": "https://www.aimdemo.ualberta.ca/fmax/",
+  "tests": [{
+    "id": "a4f03c37-eacb-4e12-b156-88c2f004f67f",
+    "name": "Sample",
+    "commands": [{
+      "id": "3ea63721-9533-4db7-89b7-1375170e351c",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.aimdemo.ualberta.ca/fmax/login?_t=https%3A%2F%2Fwww.aimdemo.ualberta.ca%2Ffmax%2Fscreen%2FWORKDESK",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "60a763b6-17d2-4cf6-bf62-f62aea682dc0",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1900x1020",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c92924b8-2609-40ee-9122-48a9e1604d06",
+      "comment": "",
+      "command": "click",
+      "target": "id=login",
+      "targets": [
+        ["id=login", "id"],
+        ["css=#login", "css:finder"],
+        ["xpath=//button[@id='login']", "xpath:attributes"],
+        ["xpath=//form[@id='logonForm']/div/div[3]/div[2]/table/tbody/tr[4]/td[2]/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1437e137-4513-4014-b4d3-6ef33918eeae",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:menuListMain:CP",
+      "targets": [
+        ["id=mainForm:menuListMain:CP", "id"],
+        ["linkText=Capital Projects", "linkText"],
+        ["css=#mainForm\\3AmenuListMain\\3A CP", "css:finder"],
+        ["xpath=//a[contains(text(),'Capital Projects')]", "xpath:link"],
+        ["xpath=//a[@id='mainForm:menuListMain:CP']", "xpath:attributes"],
+        ["xpath=//li[@id='menuListMain_5']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.aimdemo.ualberta.ca:443/fmax/screen/WORKDESK?module=CP')]", "xpath:href"],
+        ["xpath=//li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Capital Projects')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "400aacee-da8e-42fc-8e54-f257981abfa4",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:menuListMain:search_CAPITAL_PROJECT_VIEW",
+      "targets": [
+        ["id=mainForm:menuListMain:search_CAPITAL_PROJECT_VIEW", "id"],
+        ["css=#mainForm\\3AmenuListMain\\3Asearch_CAPITAL_PROJECT_VIEW", "css:finder"],
+        ["xpath=//a[@id='mainForm:menuListMain:search_CAPITAL_PROJECT_VIEW']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:menuListMain:table_CAPITAL_PROJECT_VIEW']/tbody/tr/td/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[5]", "xpath:href"],
+        ["xpath=//li/table/tbody/tr/td/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "549f6059-33cc-40a8-a4f8-9b464e1a8127",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:ae_cp_prj_e_capital_project:level0",
+      "targets": [
+        ["id=mainForm:ae_cp_prj_e_capital_project:level0", "id"],
+        ["name=mainForm:ae_cp_prj_e_capital_project:level0", "name"],
+        ["css=#mainForm\\3A ae_cp_prj_e_capital_project\\3Alevel0", "css:finder"],
+        ["xpath=//input[@id='mainForm:ae_cp_prj_e_capital_project:level0']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:_com_maximus_fmax_cp_dto_AeCpPrjEDTO']/tbody/tr/td[5]/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "da2888bc-0df4-4d94-b686-cd88e7180951",
+      "comment": "",
+      "command": "type",
+      "target": "id=mainForm:ae_cp_prj_e_capital_project:level0",
+      "targets": [
+        ["id=mainForm:ae_cp_prj_e_capital_project:level0", "id"],
+        ["name=mainForm:ae_cp_prj_e_capital_project:level0", "name"],
+        ["css=#mainForm\\3A ae_cp_prj_e_capital_project\\3Alevel0", "css:finder"],
+        ["xpath=//input[@id='mainForm:ae_cp_prj_e_capital_project:level0']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:_com_maximus_fmax_cp_dto_AeCpPrjEDTO']/tbody/tr/td[5]/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "cp00309"
+    }, {
+      "id": "caba9a14-3c9f-426e-9cf0-1badb9774f97",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:buttonPanel:executeSearch",
+      "targets": [
+        ["id=mainForm:buttonPanel:executeSearch", "id"],
+        ["css=#mainForm\\3A buttonPanel\\3A executeSearch", "css:finder"],
+        ["xpath=//button[@id='mainForm:buttonPanel:executeSearch']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:buttonPanel']/tbody/tr/td/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Execute')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fa3aa5e2-a00b-4e19-9722-4c1ec04831ed",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:browse:0:ae_cp_prj_e_capital_project",
+      "targets": [
+        ["id=mainForm:browse:0:ae_cp_prj_e_capital_project", "id"],
+        ["linkText=CP00309", "linkText"],
+        ["css=#mainForm\\3A browse\\3A 0\\3A ae_cp_prj_e_capital_project", "css:finder"],
+        ["xpath=//a[contains(text(),'CP00309')]", "xpath:link"],
+        ["xpath=//a[@id='mainForm:browse:0:ae_cp_prj_e_capital_project']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:browse']/tbody/tr/td[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[7]", "xpath:href"],
+        ["xpath=//td/div/table/tbody/tr/td[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'CP00309')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ea127ccf-6ace-48ea-ba4c-18d36e3c4e89",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:headerInclude:aimTitle1",
+      "targets": [
+        ["id=mainForm:headerInclude:aimTitle1", "id"],
+        ["css=#mainForm\\3AheaderInclude\\3A aimTitle1", "css:finder"],
+        ["xpath=//span[@id='mainForm:headerInclude:aimTitle1']", "xpath:attributes"],
+        ["xpath=//a[@id='mainForm:headerInclude:backToDesktopAction1']/span", "xpath:idRelative"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'AiM')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dabd2de9-4b4a-4541-80a5-f8635c4c1e4d",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:menuListMain:CP",
+      "targets": [
+        ["id=mainForm:menuListMain:CP", "id"],
+        ["linkText=Capital Projects", "linkText"],
+        ["css=#mainForm\\3AmenuListMain\\3A CP", "css:finder"],
+        ["xpath=//a[contains(text(),'Capital Projects')]", "xpath:link"],
+        ["xpath=//a[@id='mainForm:menuListMain:CP']", "xpath:attributes"],
+        ["xpath=//li[@id='menuListMain_5']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.aimdemo.ualberta.ca:443/fmax/screen/WORKDESK?module=CP')]", "xpath:href"],
+        ["xpath=//li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Capital Projects')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "73ad23e2-1f61-4d49-8624-cdfce9e1dbd6",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:menuListMain:search_CAPITAL_PROJECT_VIEW",
+      "targets": [
+        ["id=mainForm:menuListMain:search_CAPITAL_PROJECT_VIEW", "id"],
+        ["css=#mainForm\\3AmenuListMain\\3Asearch_CAPITAL_PROJECT_VIEW", "css:finder"],
+        ["xpath=//a[@id='mainForm:menuListMain:search_CAPITAL_PROJECT_VIEW']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:menuListMain:table_CAPITAL_PROJECT_VIEW']/tbody/tr/td/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[5]", "xpath:href"],
+        ["xpath=//li/table/tbody/tr/td/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f5cbe6f0-5564-410d-a5d6-075d660e8998",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:buttonPanel:executeSearch",
+      "targets": [
+        ["id=mainForm:buttonPanel:executeSearch", "id"],
+        ["css=#mainForm\\3A buttonPanel\\3A executeSearch", "css:finder"],
+        ["xpath=//button[@id='mainForm:buttonPanel:executeSearch']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:buttonPanel']/tbody/tr/td/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Execute')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c62a6b06-5520-4ae0-91d1-a241896d3448",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:browse:0:ae_cp_prj_e_capital_project",
+      "targets": [
+        ["id=mainForm:browse:0:ae_cp_prj_e_capital_project", "id"],
+        ["linkText=CP00309", "linkText"],
+        ["css=#mainForm\\3A browse\\3A 0\\3A ae_cp_prj_e_capital_project", "css:finder"],
+        ["xpath=//a[contains(text(),'CP00309')]", "xpath:link"],
+        ["xpath=//a[@id='mainForm:browse:0:ae_cp_prj_e_capital_project']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:browse']/tbody/tr/td[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[7]", "xpath:href"],
+        ["xpath=//td/div/table/tbody/tr/td[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'CP00309')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4f82884d-fece-4c8b-b177-7561b710117b",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:sideButtonPanel:moreMenu_2",
+      "targets": [
+        ["id=mainForm:sideButtonPanel:moreMenu_2", "id"],
+        ["linkText=Account Setup", "linkText"],
+        ["css=#mainForm\\3AsideButtonPanel\\3AmoreMenu_2", "css:finder"],
+        ["xpath=//a[contains(text(),'Account Setup')]", "xpath:link"],
+        ["xpath=//a[@id='mainForm:sideButtonPanel:moreMenu_2']", "xpath:attributes"],
+        ["xpath=(//ul[@id='mainForm:sideButtonPanel']/li[3]/a)[2]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[113]", "xpath:href"],
+        ["xpath=//ul[2]/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Account Setup')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c19576e7-05d6-423e-bf7c-d57da3661b79",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:CP_ACCOUNT_SETUP_VIEW_content:fundingViewId:0:fundViewSource:level0",
+      "targets": [
+        ["id=mainForm:CP_ACCOUNT_SETUP_VIEW_content:fundingViewId:0:fundViewSource:level0", "id"],
+        ["linkText=FO PPD", "linkText"],
+        ["css=#mainForm\\3A CP_ACCOUNT_SETUP_VIEW_content\\3A fundingViewId\\3A 0\\3A fundViewSource\\3Alevel0", "css:finder"],
+        ["xpath=//a[contains(text(),'FO PPD')]", "xpath:link"],
+        ["xpath=//a[@id='mainForm:CP_ACCOUNT_SETUP_VIEW_content:fundingViewId:0:fundViewSource:level0']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CP_ACCOUNT_SETUP_VIEW_content:fundingViewId']/tbody/tr/td[2]/div/div/table/tbody/tr/td/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[6]", "xpath:href"],
+        ["xpath=//table[3]/tbody/tr/td/div/table/tbody/tr/td[2]/div/div/table/tbody/tr/td/a", "xpath:position"],
+        ["xpath=//a[contains(.,'FO PPD')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "84044087-4194-48c2-84de-40de73367b65",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:buttonPanel:edit",
+      "targets": [
+        ["id=mainForm:buttonPanel:edit", "id"],
+        ["css=#mainForm\\3A buttonPanel\\3A edit", "css:finder"],
+        ["xpath=//button[@id='mainForm:buttonPanel:edit']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:buttonPanel']/tbody/tr/td[2]/button", "xpath:idRelative"],
+        ["xpath=//td[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Edit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c5024b6d-7354-441f-a05a-4b7a4fe1e481",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:buttonPanel:cancel",
+      "targets": [
+        ["id=mainForm:buttonPanel:cancel", "id"],
+        ["css=#mainForm\\3A buttonPanel\\3A cancel", "css:finder"],
+        ["xpath=//button[@id='mainForm:buttonPanel:cancel']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:buttonPanel']/tbody/tr/td[2]/button", "xpath:idRelative"],
+        ["xpath=//td[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Cancel')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c7f5599b-3923-4e15-9b7d-fc4fc5052215",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:buttonPanel:search",
+      "targets": [
+        ["id=mainForm:buttonPanel:search", "id"],
+        ["css=#mainForm\\3A buttonPanel\\3Asearch", "css:finder"],
+        ["xpath=//button[@id='mainForm:buttonPanel:search']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:buttonPanel']/tbody/tr/td[4]/button", "xpath:idRelative"],
+        ["xpath=//td[4]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Search')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "49444645-be3b-4e8c-91e8-6e1b95878f19",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:buttonPanel:executeSearch",
+      "targets": [
+        ["id=mainForm:buttonPanel:executeSearch", "id"],
+        ["css=#mainForm\\3A buttonPanel\\3A executeSearch", "css:finder"],
+        ["xpath=//button[@id='mainForm:buttonPanel:executeSearch']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:buttonPanel']/tbody/tr/td/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Execute')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "df31de67-0f10-4956-857b-577f24138c49",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:browse:18:ae_cp_funding_source_funding_source",
+      "targets": [
+        ["id=mainForm:browse:18:ae_cp_funding_source_funding_source", "id"],
+        ["linkText=FACULTY OF ENGINEERING", "linkText"],
+        ["css=#mainForm\\3A browse\\3A 18\\3A ae_cp_funding_source_funding_source", "css:finder"],
+        ["xpath=(//a[contains(text(),'FACULTY OF ENGINEERING')])[2]", "xpath:link"],
+        ["xpath=//a[@id='mainForm:browse:18:ae_cp_funding_source_funding_source']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:browse']/tbody/tr[19]/td[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[26]", "xpath:href"],
+        ["xpath=//tr[19]/td[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3306e8d8-52bb-4e5b-bb82-1e7b4d1aac30",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:sideButtonPanel:adjustment",
+      "targets": [
+        ["id=mainForm:sideButtonPanel:adjustment", "id"],
+        ["linkText=Adjustment", "linkText"],
+        ["css=#mainForm\\3AsideButtonPanel\\3A adjustment", "css:finder"],
+        ["xpath=//a[contains(text(),'Adjustment')]", "xpath:link"],
+        ["xpath=//a[@id='mainForm:sideButtonPanel:adjustment']", "xpath:attributes"],
+        ["xpath=//ul[@id='mainForm:sideButtonPanel']/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[38]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Adjustment')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cf4f6237-8e5e-4a1c-82a2-8480576ececc",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:ae_cp_funding_source_adj_description",
+      "targets": [
+        ["id=mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:ae_cp_funding_source_adj_description", "id"],
+        ["name=mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:ae_cp_funding_source_adj_description", "name"],
+        ["css=#mainForm\\3A FUNDING_SOURCE_ADJUSTMENT_EDIT_content\\3A ae_cp_funding_source_adj_description", "css:finder"],
+        ["xpath=//textarea[@id='mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:ae_cp_funding_source_adj_description']", "xpath:attributes"],
+        ["xpath=//table[@id='transaction']/tbody/tr[2]/td/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d8298884-017e-4ffb-b84e-576cc001d681",
+      "comment": "",
+      "command": "type",
+      "target": "id=mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:ae_cp_funding_source_adj_description",
+      "targets": [
+        ["id=mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:ae_cp_funding_source_adj_description", "id"],
+        ["name=mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:ae_cp_funding_source_adj_description", "name"],
+        ["css=#mainForm\\3A FUNDING_SOURCE_ADJUSTMENT_EDIT_content\\3A ae_cp_funding_source_adj_description", "css:finder"],
+        ["xpath=//textarea[@id='mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:ae_cp_funding_source_adj_description']", "xpath:attributes"],
+        ["xpath=//table[@id='transaction']/tbody/tr[2]/td/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "test"
+    }, {
+      "id": "73cf4d95-3dc1-4792-a042-21770e44bd0d",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:tranxDate",
+      "targets": [
+        ["id=mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:tranxDate", "id"],
+        ["name=mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:tranxDate", "name"],
+        ["css=#mainForm\\3A FUNDING_SOURCE_ADJUSTMENT_EDIT_content\\3AtranxDate", "css:finder"],
+        ["xpath=//input[@id='mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:tranxDate']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:secondBox']/tbody/tr[4]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "44d7e491-7891-4076-bb4e-5ed21a6cea3d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.calendarRow:nth-child(6) > .day:nth-child(4)",
+      "targets": [
+        ["css=.calendarRow:nth-child(6) > .day:nth-child(4)", "css:finder"],
+        ["xpath=//table[@id='mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:secondBox']/tbody/tr[4]/td[2]/div/table/tbody/tr[6]/td[4]", "xpath:idRelative"],
+        ["xpath=//tr[6]/td[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "edb948c1-377e-4290-9196-928e48e17fee",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:changeAppropriated",
+      "targets": [
+        ["id=mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:changeAppropriated", "id"],
+        ["name=mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:changeAppropriated", "name"],
+        ["css=#mainForm\\3A FUNDING_SOURCE_ADJUSTMENT_EDIT_content\\3A changeAppropriated", "css:finder"],
+        ["xpath=//input[@id='mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:changeAppropriated']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:changeAppropriation']/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//table[2]/tbody/tr/td[2]/div/table/tbody/tr/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "834d8868-ff75-40dd-9711-64b873b74cab",
+      "comment": "",
+      "command": "type",
+      "target": "id=mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:changeAppropriated",
+      "targets": [
+        ["id=mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:changeAppropriated", "id"],
+        ["name=mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:changeAppropriated", "name"],
+        ["css=#mainForm\\3A FUNDING_SOURCE_ADJUSTMENT_EDIT_content\\3A changeAppropriated", "css:finder"],
+        ["xpath=//input[@id='mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:changeAppropriated']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:changeAppropriation']/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//table[2]/tbody/tr/td[2]/div/table/tbody/tr/td[2]/input", "xpath:position"]
+      ],
+      "value": "200000"
+    }, {
+      "id": "a3e876ec-f6c9-45a4-b32c-7dd0e1d52790",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:refreshlink",
+      "targets": [
+        ["id=mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:refreshlink", "id"],
+        ["linkText=Totals", "linkText"],
+        ["css=#mainForm\\3A FUNDING_SOURCE_ADJUSTMENT_EDIT_content\\3Arefreshlink", "css:finder"],
+        ["xpath=//a[contains(text(),'Totals')]", "xpath:link"],
+        ["xpath=//a[@id='mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:refreshlink']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:changeAppropriation']/thead/tr/th/table/tbody/tr/td[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[3]", "xpath:href"],
+        ["xpath=//td[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Totals')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "11b32eaf-df57-432b-9c3b-016476e0f0e7",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:buttonPanel:save",
+      "targets": [
+        ["id=mainForm:buttonPanel:save", "id"],
+        ["css=#mainForm\\3A buttonPanel\\3Asave", "css:finder"],
+        ["xpath=//button[@id='mainForm:buttonPanel:save']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:buttonPanel']/tbody/tr/td/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Save')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6b251bbb-2c55-4d8d-a2eb-43b2029f5059",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:buttonPanel:done",
+      "targets": [
+        ["id=mainForm:buttonPanel:done", "id"],
+        ["css=#mainForm\\3A buttonPanel\\3A done", "css:finder"],
+        ["xpath=//button[@id='mainForm:buttonPanel:done']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:buttonPanel']/tbody/tr/td/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Back')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6f632843-42d9-40be-81d2-1f2b0e64e5c0",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:sideButtonPanel:adjustment",
+      "targets": [
+        ["id=mainForm:sideButtonPanel:adjustment", "id"],
+        ["linkText=Adjustment", "linkText"],
+        ["css=#mainForm\\3AsideButtonPanel\\3A adjustment", "css:finder"],
+        ["xpath=//a[contains(text(),'Adjustment')]", "xpath:link"],
+        ["xpath=//a[@id='mainForm:sideButtonPanel:adjustment']", "xpath:attributes"],
+        ["xpath=//ul[@id='mainForm:sideButtonPanel']/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[38]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Adjustment')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8510e6cd-184d-43e6-997b-76a99b185ec6",
+      "comment": "",
+      "command": "type",
+      "target": "id=mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:ae_cp_funding_source_adj_description",
+      "targets": [
+        ["id=mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:ae_cp_funding_source_adj_description", "id"],
+        ["name=mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:ae_cp_funding_source_adj_description", "name"],
+        ["css=#mainForm\\3A FUNDING_SOURCE_ADJUSTMENT_EDIT_content\\3A ae_cp_funding_source_adj_description", "css:finder"],
+        ["xpath=//textarea[@id='mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:ae_cp_funding_source_adj_description']", "xpath:attributes"],
+        ["xpath=//table[@id='transaction']/tbody/tr[2]/td/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "tesr allotment"
+    }, {
+      "id": "08985dde-548b-43e5-a8bf-c71788dce077",
+      "comment": "",
+      "command": "click",
+      "target": "css=tbody:nth-child(2) > tr:nth-child(1) > td > .required",
+      "targets": [
+        ["css=tbody:nth-child(2) > tr:nth-child(1) > td > .required", "css:finder"],
+        ["xpath=//table[@id='mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:secondBox']/tbody/tr/td[2]/span", "xpath:idRelative"],
+        ["xpath=//td[2]/div/table/tbody/tr/td[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cfb352b6-a3b5-4e14-90d6-e8917690ca80",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:type",
+      "targets": [
+        ["id=mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:type", "id"],
+        ["name=mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:type", "name"],
+        ["css=#mainForm\\3A FUNDING_SOURCE_ADJUSTMENT_EDIT_content\\3Atype", "css:finder"],
+        ["xpath=//select[@id='mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:type']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:secondBox']/tbody/tr/td[2]/span/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3c5ec301-9645-438c-ad44-f5e9cf335033",
+      "comment": "",
+      "command": "select",
+      "target": "id=mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:type",
+      "targets": [],
+      "value": "label=Allotment"
+    }, {
+      "id": "bce3b90f-4994-46ae-8727-74d4075d81de",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:type",
+      "targets": [
+        ["id=mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:type", "id"],
+        ["name=mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:type", "name"],
+        ["css=#mainForm\\3A FUNDING_SOURCE_ADJUSTMENT_EDIT_content\\3Atype", "css:finder"],
+        ["xpath=//select[@id='mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:type']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:secondBox']/tbody/tr/td[2]/span/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5983645d-b7a6-442c-bd74-b50c5ea558cf",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:tranxDate",
+      "targets": [
+        ["id=mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:tranxDate", "id"],
+        ["name=mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:tranxDate", "name"],
+        ["css=#mainForm\\3A FUNDING_SOURCE_ADJUSTMENT_EDIT_content\\3AtranxDate", "css:finder"],
+        ["xpath=//input[@id='mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:tranxDate']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:secondBox']/tbody/tr[4]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7f24bcca-aef3-49dc-81a3-9e7a5b773a48",
+      "comment": "",
+      "command": "click",
+      "target": "css=.calendarRow:nth-child(6) > .day:nth-child(4)",
+      "targets": [
+        ["css=.calendarRow:nth-child(6) > .day:nth-child(4)", "css:finder"],
+        ["xpath=//table[@id='mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:secondBox']/tbody/tr[4]/td[2]/div/table/tbody/tr[6]/td[4]", "xpath:idRelative"],
+        ["xpath=//tr[6]/td[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d275f1fb-a36b-41d4-8fdc-50270cd014b5",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:changeAlloted",
+      "targets": [
+        ["id=mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:changeAlloted", "id"],
+        ["name=mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:changeAlloted", "name"],
+        ["css=#mainForm\\3A FUNDING_SOURCE_ADJUSTMENT_EDIT_content\\3A changeAlloted", "css:finder"],
+        ["xpath=//input[@id='mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:changeAlloted']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:changeAllotmentBox']/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//table[2]/tbody/tr/td[2]/div/table/tbody/tr/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e4db1568-5dfb-47d7-88fe-f2cac7088f6c",
+      "comment": "",
+      "command": "type",
+      "target": "id=mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:changeAlloted",
+      "targets": [
+        ["id=mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:changeAlloted", "id"],
+        ["name=mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:changeAlloted", "name"],
+        ["css=#mainForm\\3A FUNDING_SOURCE_ADJUSTMENT_EDIT_content\\3A changeAlloted", "css:finder"],
+        ["xpath=//input[@id='mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:changeAlloted']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:changeAllotmentBox']/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//table[2]/tbody/tr/td[2]/div/table/tbody/tr/td[2]/input", "xpath:position"]
+      ],
+      "value": "200000"
+    }, {
+      "id": "a12682f5-f845-415f-83e5-b5983e10f71b",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:refreshlink2",
+      "targets": [
+        ["id=mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:refreshlink2", "id"],
+        ["linkText=Totals", "linkText"],
+        ["css=#mainForm\\3A FUNDING_SOURCE_ADJUSTMENT_EDIT_content\\3Arefreshlink2", "css:finder"],
+        ["xpath=//a[contains(text(),'Totals')]", "xpath:link"],
+        ["xpath=//a[@id='mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:refreshlink2']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:changeAllotmentBox']/thead/tr/th/table/tbody/tr/td[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[3]", "xpath:href"],
+        ["xpath=//td[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Totals')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cb204cbf-0b47-4741-bbe3-5c889d51d8e1",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:buttonPanel:save",
+      "targets": [
+        ["id=mainForm:buttonPanel:save", "id"],
+        ["css=#mainForm\\3A buttonPanel\\3Asave", "css:finder"],
+        ["xpath=//button[@id='mainForm:buttonPanel:save']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:buttonPanel']/tbody/tr/td/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Save')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0b44c4fe-bd2e-40a2-9b83-12805520601b",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:buttonPanel:done",
+      "targets": [
+        ["id=mainForm:buttonPanel:done", "id"],
+        ["css=#mainForm\\3A buttonPanel\\3A done", "css:finder"],
+        ["xpath=//button[@id='mainForm:buttonPanel:done']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:buttonPanel']/tbody/tr/td/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Back')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5d18249e-eb5d-4620-9a8e-6b4f91d881ea",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:buttonPanel:search",
+      "targets": [
+        ["id=mainForm:buttonPanel:search", "id"],
+        ["css=#mainForm\\3A buttonPanel\\3Asearch", "css:finder"],
+        ["xpath=//button[@id='mainForm:buttonPanel:search']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:buttonPanel']/tbody/tr/td[3]/button", "xpath:idRelative"],
+        ["xpath=//td[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Search')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4ddab411-9420-4542-9e37-17dafb30f870",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:buttonPanel:executeSearch",
+      "targets": [
+        ["id=mainForm:buttonPanel:executeSearch", "id"],
+        ["css=#mainForm\\3A buttonPanel\\3A executeSearch", "css:finder"],
+        ["xpath=//button[@id='mainForm:buttonPanel:executeSearch']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:buttonPanel']/tbody/tr/td/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Execute')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5feda4be-89f4-49ca-a360-387b8c324129",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:next",
+      "targets": [
+        ["id=mainForm:next", "id"],
+        ["css=#mainForm\\3Anext", "css:finder"],
+        ["xpath=//button[@id='mainForm:next']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:footerRow']/tbody/tr/td[2]/table/tbody/tr/td[3]/div/button", "xpath:idRelative"],
+        ["xpath=//td[3]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Next')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7e9e7a43-c577-458a-9f3b-8d3e331bc31f",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:next",
+      "targets": [
+        ["id=mainForm:next", "id"],
+        ["css=#mainForm\\3Anext", "css:finder"],
+        ["xpath=//button[@id='mainForm:next']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:footerRow']/tbody/tr/td[2]/table/tbody/tr/td[3]/div/button", "xpath:idRelative"],
+        ["xpath=//td[3]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Next')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d8354edb-ff0d-474b-bbf3-a7055450c133",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:browse:6:ae_cp_funding_source_funding_source",
+      "targets": [
+        ["id=mainForm:browse:6:ae_cp_funding_source_funding_source", "id"],
+        ["linkText=LOF", "linkText"],
+        ["css=#mainForm\\3A browse\\3A 6\\3A ae_cp_funding_source_funding_source", "css:finder"],
+        ["xpath=//a[contains(text(),'LOF')]", "xpath:link"],
+        ["xpath=//a[@id='mainForm:browse:6:ae_cp_funding_source_funding_source']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:browse']/tbody/tr[7]/td[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[14]", "xpath:href"],
+        ["xpath=//tr[7]/td[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'LOF')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f6a4cfec-0964-44f0-9bae-944c7c53789f",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:sideButtonPanel:adjustment",
+      "targets": [
+        ["id=mainForm:sideButtonPanel:adjustment", "id"],
+        ["linkText=Adjustment", "linkText"],
+        ["css=#mainForm\\3AsideButtonPanel\\3A adjustment", "css:finder"],
+        ["xpath=//a[contains(text(),'Adjustment')]", "xpath:link"],
+        ["xpath=//a[@id='mainForm:sideButtonPanel:adjustment']", "xpath:attributes"],
+        ["xpath=//ul[@id='mainForm:sideButtonPanel']/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[26]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Adjustment')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "91710294-c246-4439-8b9e-3e2ac72209fa",
+      "comment": "",
+      "command": "type",
+      "target": "id=mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:ae_cp_funding_source_adj_description",
+      "targets": [
+        ["id=mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:ae_cp_funding_source_adj_description", "id"],
+        ["name=mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:ae_cp_funding_source_adj_description", "name"],
+        ["css=#mainForm\\3A FUNDING_SOURCE_ADJUSTMENT_EDIT_content\\3A ae_cp_funding_source_adj_description", "css:finder"],
+        ["xpath=//textarea[@id='mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:ae_cp_funding_source_adj_description']", "xpath:attributes"],
+        ["xpath=//table[@id='transaction']/tbody/tr[2]/td/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "test lof"
+    }, {
+      "id": "a2d66973-fc46-4d5c-8ea5-d322a4aa92e7",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:tranxDate",
+      "targets": [
+        ["id=mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:tranxDate", "id"],
+        ["name=mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:tranxDate", "name"],
+        ["css=#mainForm\\3A FUNDING_SOURCE_ADJUSTMENT_EDIT_content\\3AtranxDate", "css:finder"],
+        ["xpath=//input[@id='mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:tranxDate']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:secondBox']/tbody/tr[4]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c336961d-1292-43b9-98b0-331cc91b2b4b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.calendarRow:nth-child(6) > .day:nth-child(4)",
+      "targets": [
+        ["css=.calendarRow:nth-child(6) > .day:nth-child(4)", "css:finder"],
+        ["xpath=//table[@id='mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:secondBox']/tbody/tr[4]/td[2]/div/table/tbody/tr[6]/td[4]", "xpath:idRelative"],
+        ["xpath=//tr[6]/td[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "26235472-6423-4566-90e3-dad33b2f8efc",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:changeAppropriated",
+      "targets": [
+        ["id=mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:changeAppropriated", "id"],
+        ["name=mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:changeAppropriated", "name"],
+        ["css=#mainForm\\3A FUNDING_SOURCE_ADJUSTMENT_EDIT_content\\3A changeAppropriated", "css:finder"],
+        ["xpath=//input[@id='mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:changeAppropriated']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:changeAppropriation']/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//table[2]/tbody/tr/td[2]/div/table/tbody/tr/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "24321b7d-5247-4af9-a38a-4a6480017214",
+      "comment": "",
+      "command": "type",
+      "target": "id=mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:changeAppropriated",
+      "targets": [
+        ["id=mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:changeAppropriated", "id"],
+        ["name=mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:changeAppropriated", "name"],
+        ["css=#mainForm\\3A FUNDING_SOURCE_ADJUSTMENT_EDIT_content\\3A changeAppropriated", "css:finder"],
+        ["xpath=//input[@id='mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:changeAppropriated']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:changeAppropriation']/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//table[2]/tbody/tr/td[2]/div/table/tbody/tr/td[2]/input", "xpath:position"]
+      ],
+      "value": "300000"
+    }, {
+      "id": "9612bfae-f326-4afa-acef-31c9f34e80a3",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:refreshlink",
+      "targets": [
+        ["id=mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:refreshlink", "id"],
+        ["linkText=Totals", "linkText"],
+        ["css=#mainForm\\3A FUNDING_SOURCE_ADJUSTMENT_EDIT_content\\3Arefreshlink", "css:finder"],
+        ["xpath=//a[contains(text(),'Totals')]", "xpath:link"],
+        ["xpath=//a[@id='mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:refreshlink']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:changeAppropriation']/thead/tr/th/table/tbody/tr/td[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[3]", "xpath:href"],
+        ["xpath=//td[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Totals')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "504ab626-e2fe-4464-ab36-75f94b352bb6",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:buttonPanel:save",
+      "targets": [
+        ["id=mainForm:buttonPanel:save", "id"],
+        ["css=#mainForm\\3A buttonPanel\\3Asave", "css:finder"],
+        ["xpath=//button[@id='mainForm:buttonPanel:save']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:buttonPanel']/tbody/tr/td/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Save')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9e5775f8-d7ed-440b-b6b0-89b60e5774de",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:buttonPanel:done",
+      "targets": [
+        ["id=mainForm:buttonPanel:done", "id"],
+        ["css=#mainForm\\3A buttonPanel\\3A done", "css:finder"],
+        ["xpath=//button[@id='mainForm:buttonPanel:done']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:buttonPanel']/tbody/tr/td/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Back')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7754825a-38f8-40ad-93bc-9a9bb4f083fd",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:sideButtonPanel:adjustment",
+      "targets": [
+        ["id=mainForm:sideButtonPanel:adjustment", "id"],
+        ["linkText=Adjustment", "linkText"],
+        ["css=#mainForm\\3AsideButtonPanel\\3A adjustment", "css:finder"],
+        ["xpath=//a[contains(text(),'Adjustment')]", "xpath:link"],
+        ["xpath=//a[@id='mainForm:sideButtonPanel:adjustment']", "xpath:attributes"],
+        ["xpath=//ul[@id='mainForm:sideButtonPanel']/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[26]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Adjustment')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e28ea6b5-15c9-4ca5-96cb-c7c3bbfea98c",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:type",
+      "targets": [
+        ["id=mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:type", "id"],
+        ["name=mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:type", "name"],
+        ["css=#mainForm\\3A FUNDING_SOURCE_ADJUSTMENT_EDIT_content\\3Atype", "css:finder"],
+        ["xpath=//select[@id='mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:type']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:secondBox']/tbody/tr/td[2]/span/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "303b9fb0-6e6c-4cf3-90dd-e3f74861cd18",
+      "comment": "",
+      "command": "select",
+      "target": "id=mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:type",
+      "targets": [],
+      "value": "label=Allotment"
+    }, {
+      "id": "57896c44-88ee-4c5b-b3eb-c888a05055d0",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:type",
+      "targets": [
+        ["id=mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:type", "id"],
+        ["name=mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:type", "name"],
+        ["css=#mainForm\\3A FUNDING_SOURCE_ADJUSTMENT_EDIT_content\\3Atype", "css:finder"],
+        ["xpath=//select[@id='mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:type']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:secondBox']/tbody/tr/td[2]/span/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f989ae21-c99e-4b39-a2c5-9dc084c9ecef",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:tranxDate",
+      "targets": [
+        ["id=mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:tranxDate", "id"],
+        ["name=mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:tranxDate", "name"],
+        ["css=#mainForm\\3A FUNDING_SOURCE_ADJUSTMENT_EDIT_content\\3AtranxDate", "css:finder"],
+        ["xpath=//input[@id='mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:tranxDate']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:secondBox']/tbody/tr[4]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1b1aeebb-c732-4710-a93f-d648ccc33865",
+      "comment": "",
+      "command": "click",
+      "target": "css=.calendarRow:nth-child(6) > .day:nth-child(4)",
+      "targets": [
+        ["css=.calendarRow:nth-child(6) > .day:nth-child(4)", "css:finder"],
+        ["xpath=//table[@id='mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:secondBox']/tbody/tr[4]/td[2]/div/table/tbody/tr[6]/td[4]", "xpath:idRelative"],
+        ["xpath=//tr[6]/td[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d1776eed-7e5f-4713-a3b1-f1fecc67458a",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:changeAlloted",
+      "targets": [
+        ["id=mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:changeAlloted", "id"],
+        ["name=mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:changeAlloted", "name"],
+        ["css=#mainForm\\3A FUNDING_SOURCE_ADJUSTMENT_EDIT_content\\3A changeAlloted", "css:finder"],
+        ["xpath=//input[@id='mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:changeAlloted']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:changeAllotmentBox']/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//table[2]/tbody/tr/td[2]/div/table/tbody/tr/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fc6b2ab1-3112-4759-ae3a-1ebfd4a17055",
+      "comment": "",
+      "command": "type",
+      "target": "id=mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:changeAlloted",
+      "targets": [
+        ["id=mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:changeAlloted", "id"],
+        ["name=mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:changeAlloted", "name"],
+        ["css=#mainForm\\3A FUNDING_SOURCE_ADJUSTMENT_EDIT_content\\3A changeAlloted", "css:finder"],
+        ["xpath=//input[@id='mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:changeAlloted']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:changeAllotmentBox']/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//table[2]/tbody/tr/td[2]/div/table/tbody/tr/td[2]/input", "xpath:position"]
+      ],
+      "value": "300000"
+    }, {
+      "id": "ee55ff98-d908-40cb-9b91-2a499c5f4168",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:refreshlink2",
+      "targets": [
+        ["id=mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:refreshlink2", "id"],
+        ["linkText=Totals", "linkText"],
+        ["css=#mainForm\\3A FUNDING_SOURCE_ADJUSTMENT_EDIT_content\\3Arefreshlink2", "css:finder"],
+        ["xpath=//a[contains(text(),'Totals')]", "xpath:link"],
+        ["xpath=//a[@id='mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:refreshlink2']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:changeAllotmentBox']/thead/tr/th/table/tbody/tr/td[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[3]", "xpath:href"],
+        ["xpath=//td[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Totals')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5af3aa7d-5974-43c7-b59e-8d27c13be0f6",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:buttonPanel:save",
+      "targets": [
+        ["id=mainForm:buttonPanel:save", "id"],
+        ["css=#mainForm\\3A buttonPanel\\3Asave", "css:finder"],
+        ["xpath=//button[@id='mainForm:buttonPanel:save']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:buttonPanel']/tbody/tr/td/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Save')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "783cc46e-75f3-4237-8aab-6c14380e0085",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:ae_cp_funding_source_adj_description",
+      "targets": [
+        ["id=mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:ae_cp_funding_source_adj_description", "id"],
+        ["name=mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:ae_cp_funding_source_adj_description", "name"],
+        ["css=#mainForm\\3A FUNDING_SOURCE_ADJUSTMENT_EDIT_content\\3A ae_cp_funding_source_adj_description", "css:finder"],
+        ["xpath=//textarea[@id='mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:ae_cp_funding_source_adj_description']", "xpath:attributes"],
+        ["xpath=//table[@id='transaction']/tbody/tr[2]/td/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f33e49a2-d10f-417c-ae72-4016ee5abb46",
+      "comment": "",
+      "command": "type",
+      "target": "id=mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:ae_cp_funding_source_adj_description",
+      "targets": [
+        ["id=mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:ae_cp_funding_source_adj_description", "id"],
+        ["name=mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:ae_cp_funding_source_adj_description", "name"],
+        ["css=#mainForm\\3A FUNDING_SOURCE_ADJUSTMENT_EDIT_content\\3A ae_cp_funding_source_adj_description", "css:finder"],
+        ["xpath=//textarea[@id='mainForm:FUNDING_SOURCE_ADJUSTMENT_EDIT_content:ae_cp_funding_source_adj_description']", "xpath:attributes"],
+        ["xpath=//table[@id='transaction']/tbody/tr[2]/td/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "test lof alottment"
+    }, {
+      "id": "32c7bde5-36e4-4e67-82ec-03a5ad7a079d",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:buttonPanel:save",
+      "targets": [
+        ["id=mainForm:buttonPanel:save", "id"],
+        ["css=#mainForm\\3A buttonPanel\\3Asave", "css:finder"],
+        ["xpath=//button[@id='mainForm:buttonPanel:save']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:buttonPanel']/tbody/tr/td/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Save')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a5bcf3c3-3e68-43be-9f8b-f664c5d5ad6d",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:buttonPanel:done",
+      "targets": [
+        ["id=mainForm:buttonPanel:done", "id"],
+        ["css=#mainForm\\3A buttonPanel\\3A done", "css:finder"],
+        ["xpath=//button[@id='mainForm:buttonPanel:done']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:buttonPanel']/tbody/tr/td/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Back')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1a4c7da9-cce2-447d-96bd-50c3ab00e99b",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:headerInclude:aimTitle1",
+      "targets": [
+        ["id=mainForm:headerInclude:aimTitle1", "id"],
+        ["css=#mainForm\\3AheaderInclude\\3A aimTitle1", "css:finder"],
+        ["xpath=//span[@id='mainForm:headerInclude:aimTitle1']", "xpath:attributes"],
+        ["xpath=//a[@id='mainForm:headerInclude:backToDesktopAction1']/span", "xpath:idRelative"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'AiM')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a3e6e99f-c5d5-4931-8873-03370ea7f63b",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:menuListMain:CP",
+      "targets": [
+        ["id=mainForm:menuListMain:CP", "id"],
+        ["linkText=Capital Projects", "linkText"],
+        ["css=#mainForm\\3AmenuListMain\\3A CP", "css:finder"],
+        ["xpath=//a[contains(text(),'Capital Projects')]", "xpath:link"],
+        ["xpath=//a[@id='mainForm:menuListMain:CP']", "xpath:attributes"],
+        ["xpath=//li[@id='menuListMain_5']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.aimdemo.ualberta.ca:443/fmax/screen/WORKDESK?module=CP')]", "xpath:href"],
+        ["xpath=//li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Capital Projects')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ff4566dc-a861-4448-9a96-4fa2a38720e1",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:menuListMain:CAPITAL_PROJECT_VIEW",
+      "targets": [
+        ["id=mainForm:menuListMain:CAPITAL_PROJECT_VIEW", "id"],
+        ["linkText=Capital Project", "linkText"],
+        ["css=#mainForm\\3AmenuListMain\\3A CAPITAL_PROJECT_VIEW", "css:finder"],
+        ["xpath=//a[contains(text(),'Capital Project')]", "xpath:link"],
+        ["xpath=//a[@id='mainForm:menuListMain:CAPITAL_PROJECT_VIEW']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:menuListMain:table_CAPITAL_PROJECT_VIEW']/tbody/tr/td[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.aimdemo.ualberta.ca:443/fmax/screen/CAPITAL_PROJECT_VIEW')]", "xpath:href"],
+        ["xpath=//li/table/tbody/tr/td[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Capital Project')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2d5abd48-cb58-4afc-a5cd-99d251fbb3c7",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:quickSearchCriteria",
+      "targets": [
+        ["id=mainForm:quickSearchCriteria", "id"],
+        ["name=mainForm:quickSearchCriteria", "name"],
+        ["css=#mainForm\\3AquickSearchCriteria", "css:finder"],
+        ["xpath=//input[@id='mainForm:quickSearchCriteria']", "xpath:attributes"],
+        ["xpath=//div[@id='footerPanel']/table/tbody/tr/td[3]/div/table/tbody/tr/td/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "870269e9-d51c-4d36-b22a-0504c3c12a1c",
+      "comment": "",
+      "command": "type",
+      "target": "id=mainForm:quickSearchCriteria",
+      "targets": [
+        ["id=mainForm:quickSearchCriteria", "id"],
+        ["name=mainForm:quickSearchCriteria", "name"],
+        ["css=#mainForm\\3AquickSearchCriteria", "css:finder"],
+        ["xpath=//input[@id='mainForm:quickSearchCriteria']", "xpath:attributes"],
+        ["xpath=//div[@id='footerPanel']/table/tbody/tr/td[3]/div/table/tbody/tr/td/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "309"
+    }, {
+      "id": "d475df4b-6a51-43e2-ab36-1de3ad177d5c",
+      "comment": "",
+      "command": "click",
+      "target": "id=quickSearchButton",
+      "targets": [
+        ["id=quickSearchButton", "id"],
+        ["css=#quickSearchButton", "css:finder"],
+        ["xpath=//button[@id='quickSearchButton']", "xpath:attributes"],
+        ["xpath=//div[@id='footerPanel']/table/tbody/tr/td[3]/div/table/tbody/tr/td[2]/div/button", "xpath:idRelative"],
+        ["xpath=//div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a1195cef-6fd9-4469-9e27-d0109bb82c9c",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:buttonPanel:edit",
+      "targets": [
+        ["id=mainForm:buttonPanel:edit", "id"],
+        ["css=#mainForm\\3A buttonPanel\\3A edit", "css:finder"],
+        ["xpath=//button[@id='mainForm:buttonPanel:edit']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:buttonPanel']/tbody/tr/td/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Edit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "66925e6c-cb2c-40ca-8eb3-e7f9b3e43b33",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:sideButtonPanel:moreMenu_2",
+      "targets": [
+        ["id=mainForm:sideButtonPanel:moreMenu_2", "id"],
+        ["linkText=Account Setup", "linkText"],
+        ["css=#mainForm\\3AsideButtonPanel\\3AmoreMenu_2", "css:finder"],
+        ["xpath=//a[contains(text(),'Account Setup')]", "xpath:link"],
+        ["xpath=//a[@id='mainForm:sideButtonPanel:moreMenu_2']", "xpath:attributes"],
+        ["xpath=//ul[@id='mainForm:sideButtonPanel']/li[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[103]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Account Setup')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b7b19706-c501-4265-9397-9ba331f1a5eb",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:buttonPanel:cancel",
+      "targets": [
+        ["id=mainForm:buttonPanel:cancel", "id"],
+        ["css=#mainForm\\3A buttonPanel\\3A cancel", "css:finder"],
+        ["xpath=//button[@id='mainForm:buttonPanel:cancel']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:buttonPanel']/tbody/tr/td[2]/button", "xpath:idRelative"],
+        ["xpath=//td[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Cancel')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4a73b044-44fc-4591-974d-41e7735d48dd",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:buttonPanel:cancel",
+      "targets": [
+        ["id=mainForm:buttonPanel:cancel", "id"],
+        ["css=#mainForm\\3A buttonPanel\\3A cancel", "css:finder"],
+        ["xpath=//button[@id='mainForm:buttonPanel:cancel']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:buttonPanel']/tbody/tr/td[2]/button", "xpath:idRelative"],
+        ["xpath=//td[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Cancel')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7226f86e-db42-4cb5-bf7f-e15ceb5cf81c",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:sideButtonPanel:moreMenu_2",
+      "targets": [
+        ["id=mainForm:sideButtonPanel:moreMenu_2", "id"],
+        ["linkText=Account Setup", "linkText"],
+        ["css=#mainForm\\3AsideButtonPanel\\3AmoreMenu_2", "css:finder"],
+        ["xpath=//a[contains(text(),'Account Setup')]", "xpath:link"],
+        ["xpath=//a[@id='mainForm:sideButtonPanel:moreMenu_2']", "xpath:attributes"],
+        ["xpath=(//ul[@id='mainForm:sideButtonPanel']/li[3]/a)[2]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[113]", "xpath:href"],
+        ["xpath=//ul[2]/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Account Setup')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "85beb449-2f09-434e-a4ee-752620b5fd8d",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:sideButtonPanel:adjustment",
+      "targets": [
+        ["id=mainForm:sideButtonPanel:adjustment", "id"],
+        ["linkText=Adjustment", "linkText"],
+        ["css=#mainForm\\3AsideButtonPanel\\3A adjustment", "css:finder"],
+        ["xpath=//a[contains(text(),'Adjustment')]", "xpath:link"],
+        ["xpath=//a[@id='mainForm:sideButtonPanel:adjustment']", "xpath:attributes"],
+        ["xpath=//ul[@id='mainForm:sideButtonPanel']/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[9]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Adjustment')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f508396c-68c1-45d6-8771-d053a1d1ace9",
+      "comment": "",
+      "command": "type",
+      "target": "id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:ae_cp_cap_prj_adj_description",
+      "targets": [
+        ["id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:ae_cp_cap_prj_adj_description", "id"],
+        ["name=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:ae_cp_cap_prj_adj_description", "name"],
+        ["css=#mainForm\\3A CAPITAL_PROJECT_FUNDING_EDIT_content\\3A ae_cp_cap_prj_adj_description", "css:finder"],
+        ["xpath=//textarea[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:ae_cp_cap_prj_adj_description']", "xpath:attributes"],
+        ["xpath=//table[@id='transaction']/tbody/tr[2]/td/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "test"
+    }, {
+      "id": "bbee2c88-38e6-4918-befb-ba5101f2b563",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:type",
+      "targets": [
+        ["id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:type", "id"],
+        ["name=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:type", "name"],
+        ["css=#mainForm\\3A CAPITAL_PROJECT_FUNDING_EDIT_content\\3Atype", "css:finder"],
+        ["xpath=//select[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:type']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:secondBox']/tbody/tr[3]/td[2]/span/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "38195c75-9c8a-4d24-a2ec-19e6a7e039fa",
+      "comment": "",
+      "command": "select",
+      "target": "id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:type",
+      "targets": [],
+      "value": "label=Budget"
+    }, {
+      "id": "d4f4b37f-4cbe-483c-a940-d98b3866d774",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:type",
+      "targets": [
+        ["id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:type", "id"],
+        ["name=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:type", "name"],
+        ["css=#mainForm\\3A CAPITAL_PROJECT_FUNDING_EDIT_content\\3Atype", "css:finder"],
+        ["xpath=//select[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:type']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:secondBox']/tbody/tr[3]/td[2]/span/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ebe0c9e3-d7fc-4b37-a965-6acea5dd4517",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:adjDate",
+      "targets": [
+        ["id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:adjDate", "id"],
+        ["name=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:adjDate", "name"],
+        ["css=#mainForm\\3A CAPITAL_PROJECT_FUNDING_EDIT_content\\3A adjDate", "css:finder"],
+        ["xpath=//input[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:adjDate']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:secondBox']/tbody/tr[4]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "febb0c18-53f9-40b7-95c2-f55d75784831",
+      "comment": "",
+      "command": "click",
+      "target": "css=.calendarRow:nth-child(6) > .day:nth-child(4)",
+      "targets": [
+        ["css=.calendarRow:nth-child(6) > .day:nth-child(4)", "css:finder"],
+        ["xpath=//table[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:secondBox']/tbody/tr[4]/td[2]/div/table/tbody/tr[6]/td[4]", "xpath:idRelative"],
+        ["xpath=//tr[6]/td[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ef1d499e-6f97-40af-a3fb-1a5ba7b000d2",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:adjDate",
+      "targets": [
+        ["id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:adjDate", "id"],
+        ["name=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:adjDate", "name"],
+        ["css=#mainForm\\3A CAPITAL_PROJECT_FUNDING_EDIT_content\\3A adjDate", "css:finder"],
+        ["xpath=//input[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:adjDate']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:secondBox']/tbody/tr[4]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6d1dff3b-563c-4951-b835-c889b4a436ae",
+      "comment": "",
+      "command": "click",
+      "target": "css=.calendarRow:nth-child(6) > .day:nth-child(4)",
+      "targets": [
+        ["css=.calendarRow:nth-child(6) > .day:nth-child(4)", "css:finder"],
+        ["xpath=//table[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:secondBox']/tbody/tr[4]/td[2]/div/table/tbody/tr[6]/td[4]", "xpath:idRelative"],
+        ["xpath=//tr[6]/td[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b6abded1-403c-42a9-b703-3d4df79881c0",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId:addDetail",
+      "targets": [
+        ["id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId:addDetail", "id"],
+        ["css=#mainForm\\3A CAPITAL_PROJECT_FUNDING_EDIT_content\\3A accountListId\\3A addDetail", "css:finder"],
+        ["xpath=//button[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId:addDetail']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId']/thead/tr/th/table/tbody/tr/td[5]/button", "xpath:idRelative"],
+        ["xpath=//td[5]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b83fdc7a-d301-4b6f-9093-99d3339a6087",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId:0:ae_cp_cap_prj_adj_acct_seq_no",
+      "targets": [
+        ["id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId:0:ae_cp_cap_prj_adj_acct_seq_no", "id"],
+        ["name=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId:0:ae_cp_cap_prj_adj_acct_seq_no", "name"],
+        ["css=#mainForm\\3A CAPITAL_PROJECT_FUNDING_EDIT_content\\3A accountListId\\3A 0\\3A ae_cp_cap_prj_adj_acct_seq_no", "css:finder"],
+        ["xpath=//input[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId:0:ae_cp_cap_prj_adj_acct_seq_no']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId']/tbody/tr/td[3]/input", "xpath:idRelative"],
+        ["xpath=//td[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a800c922-2b36-4013-b788-1d66d1b02650",
+      "comment": "",
+      "command": "type",
+      "target": "id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId:0:ae_cp_cap_prj_adj_acct_seq_no",
+      "targets": [
+        ["id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId:0:ae_cp_cap_prj_adj_acct_seq_no", "id"],
+        ["name=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId:0:ae_cp_cap_prj_adj_acct_seq_no", "name"],
+        ["css=#mainForm\\3A CAPITAL_PROJECT_FUNDING_EDIT_content\\3A accountListId\\3A 0\\3A ae_cp_cap_prj_adj_acct_seq_no", "css:finder"],
+        ["xpath=//input[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId:0:ae_cp_cap_prj_adj_acct_seq_no']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId']/tbody/tr/td[3]/input", "xpath:idRelative"],
+        ["xpath=//td[3]/input", "xpath:position"]
+      ],
+      "value": "20"
+    }, {
+      "id": "115a960b-fe4d-4a4a-a249-2e98bcfb53dc",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId:0:z1:acct0",
+      "targets": [
+        ["id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId:0:z1:acct0", "id"],
+        ["name=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId:0:z1:acct0", "name"],
+        ["css=#mainForm\\3A CAPITAL_PROJECT_FUNDING_EDIT_content\\3A accountListId\\3A 0\\3Az1\\3A acct0", "css:finder"],
+        ["xpath=//input[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId:0:z1:acct0']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId']/tbody/tr/td[4]/div/div/table/tbody/tr/td/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2cd8a7f4-e6ce-480e-9f7b-1d82e2be4f92",
+      "comment": "",
+      "command": "type",
+      "target": "id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId:0:z1:acct0",
+      "targets": [
+        ["id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId:0:z1:acct0", "id"],
+        ["name=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId:0:z1:acct0", "name"],
+        ["css=#mainForm\\3A CAPITAL_PROJECT_FUNDING_EDIT_content\\3A accountListId\\3A 0\\3Az1\\3A acct0", "css:finder"],
+        ["xpath=//input[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId:0:z1:acct0']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId']/tbody/tr/td[4]/div/div/table/tbody/tr/td/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "7r525"
+    }, {
+      "id": "e22c9950-d3bc-4eaf-83ff-5c4d7d884dc3",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId:0:generic:level1",
+      "targets": [
+        ["id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId:0:generic:level1", "id"],
+        ["name=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId:0:generic:level1", "name"],
+        ["css=#mainForm\\3A CAPITAL_PROJECT_FUNDING_EDIT_content\\3A accountListId\\3A 0\\3Ageneric\\3Alevel1", "css:finder"],
+        ["xpath=//input[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId:0:generic:level1']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId']/tbody/tr/td[5]/div/div/table/tbody/tr/td/div/input", "xpath:idRelative"],
+        ["xpath=//td[5]/div/div/table/tbody/tr/td/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "14857969-aaab-4713-9107-44f14924a35c",
+      "comment": "",
+      "command": "type",
+      "target": "id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId:0:generic:level1",
+      "targets": [
+        ["id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId:0:generic:level1", "id"],
+        ["name=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId:0:generic:level1", "name"],
+        ["css=#mainForm\\3A CAPITAL_PROJECT_FUNDING_EDIT_content\\3A accountListId\\3A 0\\3Ageneric\\3Alevel1", "css:finder"],
+        ["xpath=//input[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId:0:generic:level1']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId']/tbody/tr/td[5]/div/div/table/tbody/tr/td/div/input", "xpath:idRelative"],
+        ["xpath=//td[5]/div/div/table/tbody/tr/td/div/input", "xpath:position"]
+      ],
+      "value": "503460"
+    }, {
+      "id": "62aa78c7-508b-45aa-85ec-ef7a35722661",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId:0:startDateV",
+      "targets": [
+        ["id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId:0:startDateV", "id"],
+        ["name=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId:0:startDateV", "name"],
+        ["css=#mainForm\\3A CAPITAL_PROJECT_FUNDING_EDIT_content\\3A accountListId\\3A 0\\3AstartDateV", "css:finder"],
+        ["xpath=//input[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId:0:startDateV']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId']/tbody/tr/td[6]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "96aa4f1c-118e-4b8a-86fa-0dfb1a3692af",
+      "comment": "",
+      "command": "click",
+      "target": "css=.today",
+      "targets": [
+        ["css=.today", "css:finder"],
+        ["xpath=//table[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId']/tbody/tr/td[6]/div/div/div/table/tbody/tr[6]/td[5]", "xpath:idRelative"],
+        ["xpath=//tr[6]/td[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "27678b25-9d12-4681-be7f-30b8b8b9f71e",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId:0:ae_cp_cap_prj_adj_acct_change_amount",
+      "targets": [
+        ["id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId:0:ae_cp_cap_prj_adj_acct_change_amount", "id"],
+        ["name=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId:0:ae_cp_cap_prj_adj_acct_change_amount", "name"],
+        ["css=#mainForm\\3A CAPITAL_PROJECT_FUNDING_EDIT_content\\3A accountListId\\3A 0\\3A ae_cp_cap_prj_adj_acct_change_amount", "css:finder"],
+        ["xpath=//input[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId:0:ae_cp_cap_prj_adj_acct_change_amount']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId']/tbody/tr/td[8]/input", "xpath:idRelative"],
+        ["xpath=//td[8]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b2ecdec9-d92b-4f7a-91b1-c45912e7cdb5",
+      "comment": "",
+      "command": "type",
+      "target": "id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId:0:ae_cp_cap_prj_adj_acct_change_amount",
+      "targets": [
+        ["id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId:0:ae_cp_cap_prj_adj_acct_change_amount", "id"],
+        ["name=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId:0:ae_cp_cap_prj_adj_acct_change_amount", "name"],
+        ["css=#mainForm\\3A CAPITAL_PROJECT_FUNDING_EDIT_content\\3A accountListId\\3A 0\\3A ae_cp_cap_prj_adj_acct_change_amount", "css:finder"],
+        ["xpath=//input[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId:0:ae_cp_cap_prj_adj_acct_change_amount']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId']/tbody/tr/td[8]/input", "xpath:idRelative"],
+        ["xpath=//td[8]/input", "xpath:position"]
+      ],
+      "value": "200000"
+    }, {
+      "id": "d85af1ef-3bef-47ab-a527-5310fa37bfa1",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId:addDetail",
+      "targets": [
+        ["id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId:addDetail", "id"],
+        ["css=#mainForm\\3A CAPITAL_PROJECT_FUNDING_EDIT_content\\3A accountListId\\3A addDetail", "css:finder"],
+        ["xpath=//button[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId:addDetail']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId']/thead/tr/th/table/tbody/tr/td[5]/button", "xpath:idRelative"],
+        ["xpath=//td[5]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cd3eb4e4-b39d-4342-bbaf-574fcca2ba20",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId:0:ae_cp_cap_prj_adj_acct_seq_no",
+      "targets": [
+        ["id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId:0:ae_cp_cap_prj_adj_acct_seq_no", "id"],
+        ["name=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId:0:ae_cp_cap_prj_adj_acct_seq_no", "name"],
+        ["css=#mainForm\\3A CAPITAL_PROJECT_FUNDING_EDIT_content\\3A accountListId\\3A 0\\3A ae_cp_cap_prj_adj_acct_seq_no", "css:finder"],
+        ["xpath=//input[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId:0:ae_cp_cap_prj_adj_acct_seq_no']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId']/tbody/tr/td[3]/input", "xpath:idRelative"],
+        ["xpath=//td[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7c45f968-a4ea-4fb7-9561-88d75102f19d",
+      "comment": "",
+      "command": "type",
+      "target": "id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId:0:ae_cp_cap_prj_adj_acct_seq_no",
+      "targets": [
+        ["id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId:0:ae_cp_cap_prj_adj_acct_seq_no", "id"],
+        ["name=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId:0:ae_cp_cap_prj_adj_acct_seq_no", "name"],
+        ["css=#mainForm\\3A CAPITAL_PROJECT_FUNDING_EDIT_content\\3A accountListId\\3A 0\\3A ae_cp_cap_prj_adj_acct_seq_no", "css:finder"],
+        ["xpath=//input[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId:0:ae_cp_cap_prj_adj_acct_seq_no']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId']/tbody/tr/td[3]/input", "xpath:idRelative"],
+        ["xpath=//td[3]/input", "xpath:position"]
+      ],
+      "value": "30"
+    }, {
+      "id": "183a069e-7f57-424f-b15b-40f0625727ef",
+      "comment": "",
+      "command": "type",
+      "target": "id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId:0:z1:acct0",
+      "targets": [
+        ["id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId:0:z1:acct0", "id"],
+        ["name=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId:0:z1:acct0", "name"],
+        ["css=#mainForm\\3A CAPITAL_PROJECT_FUNDING_EDIT_content\\3A accountListId\\3A 0\\3Az1\\3A acct0", "css:finder"],
+        ["xpath=//input[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId:0:z1:acct0']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId']/tbody/tr/td[4]/div/div/table/tbody/tr/td/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "7r515"
+    }, {
+      "id": "b7f1b8fe-0b81-40e9-88c7-82cabd5c6daf",
+      "comment": "",
+      "command": "click",
+      "target": "css=.browseRow:nth-child(1) > td:nth-child(5) .zoom",
+      "targets": [
+        ["css=.browseRow:nth-child(1) > td:nth-child(5) .zoom", "css:finder"],
+        ["xpath=//table[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId']/tbody/tr/td[5]/div/div/table/tbody/tr/td/div", "xpath:idRelative"],
+        ["xpath=//td[5]/div/div/table/tbody/tr/td/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e0ddd937-9472-4616-8084-06a347815d0c",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId:0:generic:level1",
+      "targets": [
+        ["id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId:0:generic:level1", "id"],
+        ["name=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId:0:generic:level1", "name"],
+        ["css=#mainForm\\3A CAPITAL_PROJECT_FUNDING_EDIT_content\\3A accountListId\\3A 0\\3Ageneric\\3Alevel1", "css:finder"],
+        ["xpath=//input[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId:0:generic:level1']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId']/tbody/tr/td[5]/div/div/table/tbody/tr/td/div/input", "xpath:idRelative"],
+        ["xpath=//td[5]/div/div/table/tbody/tr/td/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "daf5837b-73db-4fc2-8fc1-e36846f62a3a",
+      "comment": "",
+      "command": "type",
+      "target": "id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId:0:generic:level1",
+      "targets": [
+        ["id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId:0:generic:level1", "id"],
+        ["name=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId:0:generic:level1", "name"],
+        ["css=#mainForm\\3A CAPITAL_PROJECT_FUNDING_EDIT_content\\3A accountListId\\3A 0\\3Ageneric\\3Alevel1", "css:finder"],
+        ["xpath=//input[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId:0:generic:level1']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId']/tbody/tr/td[5]/div/div/table/tbody/tr/td/div/input", "xpath:idRelative"],
+        ["xpath=//td[5]/div/div/table/tbody/tr/td/div/input", "xpath:position"]
+      ],
+      "value": "507501"
+    }, {
+      "id": "f3724a78-f3f1-4aa8-aad9-2ee672f096b9",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId:0:startDateV",
+      "targets": [
+        ["id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId:0:startDateV", "id"],
+        ["name=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId:0:startDateV", "name"],
+        ["css=#mainForm\\3A CAPITAL_PROJECT_FUNDING_EDIT_content\\3A accountListId\\3A 0\\3AstartDateV", "css:finder"],
+        ["xpath=//input[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId:0:startDateV']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId']/tbody/tr/td[6]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bcb7cf64-caaa-44f2-8e15-07a265b667c3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.today",
+      "targets": [
+        ["css=.today", "css:finder"],
+        ["xpath=//table[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId']/tbody/tr/td[6]/div/div/div/table/tbody/tr[6]/td[5]", "xpath:idRelative"],
+        ["xpath=//tr[6]/td[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dfe25ebc-a657-4719-994a-acad8b1286f2",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId:0:ae_cp_cap_prj_adj_acct_change_amount",
+      "targets": [
+        ["id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId:0:ae_cp_cap_prj_adj_acct_change_amount", "id"],
+        ["name=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId:0:ae_cp_cap_prj_adj_acct_change_amount", "name"],
+        ["css=#mainForm\\3A CAPITAL_PROJECT_FUNDING_EDIT_content\\3A accountListId\\3A 0\\3A ae_cp_cap_prj_adj_acct_change_amount", "css:finder"],
+        ["xpath=//input[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId:0:ae_cp_cap_prj_adj_acct_change_amount']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId']/tbody/tr/td[8]/input", "xpath:idRelative"],
+        ["xpath=//td[8]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e7d0161e-c9c5-4f4d-b759-343f234e1867",
+      "comment": "",
+      "command": "type",
+      "target": "id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId:0:ae_cp_cap_prj_adj_acct_change_amount",
+      "targets": [
+        ["id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId:0:ae_cp_cap_prj_adj_acct_change_amount", "id"],
+        ["name=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId:0:ae_cp_cap_prj_adj_acct_change_amount", "name"],
+        ["css=#mainForm\\3A CAPITAL_PROJECT_FUNDING_EDIT_content\\3A accountListId\\3A 0\\3A ae_cp_cap_prj_adj_acct_change_amount", "css:finder"],
+        ["xpath=//input[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId:0:ae_cp_cap_prj_adj_acct_change_amount']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId']/tbody/tr/td[8]/input", "xpath:idRelative"],
+        ["xpath=//td[8]/input", "xpath:position"]
+      ],
+      "value": "300000"
+    }, {
+      "id": "cfd1b3d3-d41e-4621-87cc-8d429dfee8bb",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingId:addDetail",
+      "targets": [
+        ["id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingId:addDetail", "id"],
+        ["css=#mainForm\\3A CAPITAL_PROJECT_FUNDING_EDIT_content\\3A fundingId\\3A addDetail", "css:finder"],
+        ["xpath=//button[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingId:addDetail']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingId']/thead/tr/th/table/tbody/tr/td[5]/button", "xpath:idRelative"],
+        ["xpath=//table[3]/tbody/tr/td/div/table/thead/tr/th/table/tbody/tr/td[5]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "43767d55-2a5b-4c00-964f-8b04f6606dbc",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingId:0:ae_cp_cap_prj_adj_fund_seq_no",
+      "targets": [
+        ["id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingId:0:ae_cp_cap_prj_adj_fund_seq_no", "id"],
+        ["name=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingId:0:ae_cp_cap_prj_adj_fund_seq_no", "name"],
+        ["css=#mainForm\\3A CAPITAL_PROJECT_FUNDING_EDIT_content\\3A fundingId\\3A 0\\3A ae_cp_cap_prj_adj_fund_seq_no", "css:finder"],
+        ["xpath=//input[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingId:0:ae_cp_cap_prj_adj_fund_seq_no']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingId']/tbody/tr/td[3]/input", "xpath:idRelative"],
+        ["xpath=//table[3]/tbody/tr/td/div/table/tbody/tr/td[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c9004ccf-7914-4cf7-b90f-3779576b29f1",
+      "comment": "",
+      "command": "type",
+      "target": "id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingId:0:ae_cp_cap_prj_adj_fund_seq_no",
+      "targets": [
+        ["id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingId:0:ae_cp_cap_prj_adj_fund_seq_no", "id"],
+        ["name=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingId:0:ae_cp_cap_prj_adj_fund_seq_no", "name"],
+        ["css=#mainForm\\3A CAPITAL_PROJECT_FUNDING_EDIT_content\\3A fundingId\\3A 0\\3A ae_cp_cap_prj_adj_fund_seq_no", "css:finder"],
+        ["xpath=//input[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingId:0:ae_cp_cap_prj_adj_fund_seq_no']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingId']/tbody/tr/td[3]/input", "xpath:idRelative"],
+        ["xpath=//table[3]/tbody/tr/td/div/table/tbody/tr/td[3]/input", "xpath:position"]
+      ],
+      "value": "20"
+    }, {
+      "id": "15d822b8-d5f8-46f4-bd6a-8b2ead3ccbe7",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingId:0:fundSource:fsource0",
+      "targets": [
+        ["id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingId:0:fundSource:fsource0", "id"],
+        ["name=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingId:0:fundSource:fsource0", "name"],
+        ["css=#mainForm\\3A CAPITAL_PROJECT_FUNDING_EDIT_content\\3A fundingId\\3A 0\\3A fundSource\\3A fsource0", "css:finder"],
+        ["xpath=//input[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingId:0:fundSource:fsource0']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingId']/tbody/tr/td[4]/div/div/table/tbody/tr/td/div/input", "xpath:idRelative"],
+        ["xpath=//table[3]/tbody/tr/td/div/table/tbody/tr/td[4]/div/div/table/tbody/tr/td/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fdde6ea2-d56c-47d5-ad04-8740f37f078e",
+      "comment": "",
+      "command": "type",
+      "target": "id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingId:0:fundSource:fsource0",
+      "targets": [
+        ["id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingId:0:fundSource:fsource0", "id"],
+        ["name=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingId:0:fundSource:fsource0", "name"],
+        ["css=#mainForm\\3A CAPITAL_PROJECT_FUNDING_EDIT_content\\3A fundingId\\3A 0\\3A fundSource\\3A fsource0", "css:finder"],
+        ["xpath=//input[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingId:0:fundSource:fsource0']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingId']/tbody/tr/td[4]/div/div/table/tbody/tr/td/div/input", "xpath:idRelative"],
+        ["xpath=//table[3]/tbody/tr/td/div/table/tbody/tr/td[4]/div/div/table/tbody/tr/td/div/input", "xpath:position"]
+      ],
+      "value": "eng"
+    }, {
+      "id": "466fc144-6c3d-4daf-bc42-f15884702b8d",
+      "comment": "",
+      "command": "click",
+      "target": "css=#mainForm\\3A CAPITAL_PROJECT_FUNDING_EDIT_content\\3A fundingId\\3A 0\\3A fundSource\\3A fsource0_button > .halflings",
+      "targets": [
+        ["css=#mainForm\\3A CAPITAL_PROJECT_FUNDING_EDIT_content\\3A fundingId\\3A 0\\3A fundSource\\3A fsource0_button > .halflings", "css:finder"],
+        ["xpath=//button[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingId:0:fundSource:fsource0_button']/span", "xpath:idRelative"],
+        ["xpath=//table[3]/tbody/tr/td/div/table/tbody/tr/td[4]/div/div/table/tbody/tr/td/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7cef1dc2-b581-4d71-a651-5c1e31e4a5f1",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:zoomTable:18:ae_cp_funding_source_funding_source",
+      "targets": [
+        ["id=mainForm:zoomTable:18:ae_cp_funding_source_funding_source", "id"],
+        ["linkText=FACULTY OF ENGINEERING", "linkText"],
+        ["css=#mainForm\\3AzoomTable\\3A 18\\3A ae_cp_funding_source_funding_source", "css:finder"],
+        ["xpath=(//a[contains(text(),'FACULTY OF ENGINEERING')])[2]", "xpath:link"],
+        ["xpath=//a[@id='mainForm:zoomTable:18:ae_cp_funding_source_funding_source']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:zoomTable']/tbody/tr[19]/td/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[23]", "xpath:href"],
+        ["xpath=//tr[19]/td/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ec82103a-d818-4597-a02c-afb8da3d79f3",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingId:addDetail",
+      "targets": [
+        ["id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingId:addDetail", "id"],
+        ["css=#mainForm\\3A CAPITAL_PROJECT_FUNDING_EDIT_content\\3A fundingId\\3A addDetail", "css:finder"],
+        ["xpath=//button[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingId:addDetail']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingId']/thead/tr/th/table/tbody/tr/td[5]/button", "xpath:idRelative"],
+        ["xpath=//table[3]/tbody/tr/td/div/table/thead/tr/th/table/tbody/tr/td[5]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e3e045a1-22a4-4775-adec-6befaac28f74",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingId:0:ae_cp_cap_prj_adj_fund_seq_no",
+      "targets": [
+        ["id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingId:0:ae_cp_cap_prj_adj_fund_seq_no", "id"],
+        ["name=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingId:0:ae_cp_cap_prj_adj_fund_seq_no", "name"],
+        ["css=#mainForm\\3A CAPITAL_PROJECT_FUNDING_EDIT_content\\3A fundingId\\3A 0\\3A ae_cp_cap_prj_adj_fund_seq_no", "css:finder"],
+        ["xpath=//input[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingId:0:ae_cp_cap_prj_adj_fund_seq_no']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingId']/tbody/tr/td[3]/input", "xpath:idRelative"],
+        ["xpath=//table[3]/tbody/tr/td/div/table/tbody/tr/td[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "63904f11-4a40-431b-b5ee-c54a38e99156",
+      "comment": "",
+      "command": "type",
+      "target": "id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingId:0:ae_cp_cap_prj_adj_fund_seq_no",
+      "targets": [
+        ["id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingId:0:ae_cp_cap_prj_adj_fund_seq_no", "id"],
+        ["name=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingId:0:ae_cp_cap_prj_adj_fund_seq_no", "name"],
+        ["css=#mainForm\\3A CAPITAL_PROJECT_FUNDING_EDIT_content\\3A fundingId\\3A 0\\3A ae_cp_cap_prj_adj_fund_seq_no", "css:finder"],
+        ["xpath=//input[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingId:0:ae_cp_cap_prj_adj_fund_seq_no']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingId']/tbody/tr/td[3]/input", "xpath:idRelative"],
+        ["xpath=//table[3]/tbody/tr/td/div/table/tbody/tr/td[3]/input", "xpath:position"]
+      ],
+      "value": "30"
+    }, {
+      "id": "09eb49fb-7cc5-47df-8772-de1521a8bc6d",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingId:0:fundSource:fsource0",
+      "targets": [
+        ["id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingId:0:fundSource:fsource0", "id"],
+        ["name=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingId:0:fundSource:fsource0", "name"],
+        ["css=#mainForm\\3A CAPITAL_PROJECT_FUNDING_EDIT_content\\3A fundingId\\3A 0\\3A fundSource\\3A fsource0", "css:finder"],
+        ["xpath=//input[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingId:0:fundSource:fsource0']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingId']/tbody/tr/td[4]/div/div/table/tbody/tr/td/div/input", "xpath:idRelative"],
+        ["xpath=//table[3]/tbody/tr/td/div/table/tbody/tr/td[4]/div/div/table/tbody/tr/td/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9f6674a6-22b1-42ef-8721-c12aa157af59",
+      "comment": "",
+      "command": "type",
+      "target": "id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingId:0:fundSource:fsource0",
+      "targets": [
+        ["id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingId:0:fundSource:fsource0", "id"],
+        ["name=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingId:0:fundSource:fsource0", "name"],
+        ["css=#mainForm\\3A CAPITAL_PROJECT_FUNDING_EDIT_content\\3A fundingId\\3A 0\\3A fundSource\\3A fsource0", "css:finder"],
+        ["xpath=//input[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingId:0:fundSource:fsource0']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingId']/tbody/tr/td[4]/div/div/table/tbody/tr/td/div/input", "xpath:idRelative"],
+        ["xpath=//table[3]/tbody/tr/td/div/table/tbody/tr/td[4]/div/div/table/tbody/tr/td/div/input", "xpath:position"]
+      ],
+      "value": "lof"
+    }, {
+      "id": "05707f1a-f7ce-4e04-8211-112a272ff116",
+      "comment": "",
+      "command": "click",
+      "target": "css=#mainForm\\3A CAPITAL_PROJECT_FUNDING_EDIT_content\\3A fundingId\\3A 0\\3A fundSource\\3A fsource0_button > .halflings",
+      "targets": [
+        ["css=#mainForm\\3A CAPITAL_PROJECT_FUNDING_EDIT_content\\3A fundingId\\3A 0\\3A fundSource\\3A fsource0_button > .halflings", "css:finder"],
+        ["xpath=//button[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingId:0:fundSource:fsource0_button']/span", "xpath:idRelative"],
+        ["xpath=//table[3]/tbody/tr/td/div/table/tbody/tr/td[4]/div/div/table/tbody/tr/td/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2f3c37cd-c56e-41b2-88ea-be068e71b2f6",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingId:0:startDateW",
+      "targets": [
+        ["id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingId:0:startDateW", "id"],
+        ["name=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingId:0:startDateW", "name"],
+        ["css=#mainForm\\3A CAPITAL_PROJECT_FUNDING_EDIT_content\\3A fundingId\\3A 0\\3AstartDateW", "css:finder"],
+        ["xpath=//input[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingId:0:startDateW']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingId']/tbody/tr/td[6]/div/div/input", "xpath:idRelative"],
+        ["xpath=//table[3]/tbody/tr/td/div/table/tbody/tr/td[6]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6203a229-4037-41e6-a045-1d50f633432d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.today",
+      "targets": [
+        ["css=.today", "css:finder"],
+        ["xpath=//table[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingId']/tbody/tr/td[6]/div/div/div/table/tbody/tr[6]/td[5]", "xpath:idRelative"],
+        ["xpath=//tr[6]/td[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "545fa8db-19ce-4cb5-a683-45529b62e182",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingId:1:startDateW",
+      "targets": [
+        ["id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingId:1:startDateW", "id"],
+        ["name=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingId:1:startDateW", "name"],
+        ["css=#mainForm\\3A CAPITAL_PROJECT_FUNDING_EDIT_content\\3A fundingId\\3A 1\\3AstartDateW", "css:finder"],
+        ["xpath=//input[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingId:1:startDateW']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingId']/tbody/tr[2]/td[6]/div/div/input", "xpath:idRelative"],
+        ["xpath=//table[3]/tbody/tr/td/div/table/tbody/tr[2]/td[6]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "641d1e9e-c8fa-4b6b-a3c4-d0258090029a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.today",
+      "targets": [
+        ["css=.today", "css:finder"],
+        ["xpath=//table[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingId']/tbody/tr[2]/td[6]/div/div/div/table/tbody/tr[6]/td[5]", "xpath:idRelative"],
+        ["xpath=//tr[6]/td[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c8c0c4f1-cea7-4910-aa54-132bdec8b5b5",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingId:1:ae_cp_cap_prj_adj_fund_change_amount",
+      "targets": [
+        ["id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingId:1:ae_cp_cap_prj_adj_fund_change_amount", "id"],
+        ["name=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingId:1:ae_cp_cap_prj_adj_fund_change_amount", "name"],
+        ["css=#mainForm\\3A CAPITAL_PROJECT_FUNDING_EDIT_content\\3A fundingId\\3A 1\\3A ae_cp_cap_prj_adj_fund_change_amount", "css:finder"],
+        ["xpath=//input[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingId:1:ae_cp_cap_prj_adj_fund_change_amount']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingId']/tbody/tr[2]/td[8]/input", "xpath:idRelative"],
+        ["xpath=//table[3]/tbody/tr/td/div/table/tbody/tr[2]/td[8]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9815505d-7817-454f-b00b-7496da6c964d",
+      "comment": "",
+      "command": "type",
+      "target": "id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingId:1:ae_cp_cap_prj_adj_fund_change_amount",
+      "targets": [
+        ["id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingId:1:ae_cp_cap_prj_adj_fund_change_amount", "id"],
+        ["name=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingId:1:ae_cp_cap_prj_adj_fund_change_amount", "name"],
+        ["css=#mainForm\\3A CAPITAL_PROJECT_FUNDING_EDIT_content\\3A fundingId\\3A 1\\3A ae_cp_cap_prj_adj_fund_change_amount", "css:finder"],
+        ["xpath=//input[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingId:1:ae_cp_cap_prj_adj_fund_change_amount']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingId']/tbody/tr[2]/td[8]/input", "xpath:idRelative"],
+        ["xpath=//table[3]/tbody/tr/td/div/table/tbody/tr[2]/td[8]/input", "xpath:position"]
+      ],
+      "value": "200000"
+    }, {
+      "id": "d66d6355-e255-4cc5-a284-18adb8a8b844",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingId:0:ae_cp_cap_prj_adj_fund_change_amount",
+      "targets": [
+        ["id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingId:0:ae_cp_cap_prj_adj_fund_change_amount", "id"],
+        ["name=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingId:0:ae_cp_cap_prj_adj_fund_change_amount", "name"],
+        ["css=#mainForm\\3A CAPITAL_PROJECT_FUNDING_EDIT_content\\3A fundingId\\3A 0\\3A ae_cp_cap_prj_adj_fund_change_amount", "css:finder"],
+        ["xpath=//input[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingId:0:ae_cp_cap_prj_adj_fund_change_amount']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingId']/tbody/tr/td[8]/input", "xpath:idRelative"],
+        ["xpath=//table[3]/tbody/tr/td/div/table/tbody/tr/td[8]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4338780b-1df4-40cc-adf6-537dd9f2339a",
+      "comment": "",
+      "command": "type",
+      "target": "id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingId:0:ae_cp_cap_prj_adj_fund_change_amount",
+      "targets": [
+        ["id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingId:0:ae_cp_cap_prj_adj_fund_change_amount", "id"],
+        ["name=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingId:0:ae_cp_cap_prj_adj_fund_change_amount", "name"],
+        ["css=#mainForm\\3A CAPITAL_PROJECT_FUNDING_EDIT_content\\3A fundingId\\3A 0\\3A ae_cp_cap_prj_adj_fund_change_amount", "css:finder"],
+        ["xpath=//input[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingId:0:ae_cp_cap_prj_adj_fund_change_amount']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingId']/tbody/tr/td[8]/input", "xpath:idRelative"],
+        ["xpath=//table[3]/tbody/tr/td/div/table/tbody/tr/td[8]/input", "xpath:position"]
+      ],
+      "value": "300000"
+    }, {
+      "id": "a9a0059d-a3c0-48b3-b685-32bbcf244784",
+      "comment": "",
+      "command": "click",
+      "target": "css=#mainForm\\3A CAPITAL_PROJECT_FUNDING_EDIT_content\\3A fundingId\\3ArefreshLink > .refreshLink",
+      "targets": [
+        ["css=#mainForm\\3A CAPITAL_PROJECT_FUNDING_EDIT_content\\3A fundingId\\3ArefreshLink > .refreshLink", "css:finder"],
+        ["xpath=//a[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingId:refreshLink']/span", "xpath:idRelative"],
+        ["xpath=//table[3]/tbody/tr/td/div/table/thead/tr/th/table/tbody/tr/td[3]/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bffaf267-1e4b-4c2a-bb50-5269088e8949",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId:2:ae_cp_cap_prj_adj_acct_change_amount",
+      "targets": [
+        ["id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId:2:ae_cp_cap_prj_adj_acct_change_amount", "id"],
+        ["name=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId:2:ae_cp_cap_prj_adj_acct_change_amount", "name"],
+        ["css=#mainForm\\3A CAPITAL_PROJECT_FUNDING_EDIT_content\\3A accountListId\\3A 2\\3A ae_cp_cap_prj_adj_acct_change_amount", "css:finder"],
+        ["xpath=//input[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId:2:ae_cp_cap_prj_adj_acct_change_amount']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId']/tbody/tr[3]/td[8]/input", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[8]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3d0e850c-08a1-4be1-a0b0-acffd0350649",
+      "comment": "",
+      "command": "type",
+      "target": "id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId:2:ae_cp_cap_prj_adj_acct_change_amount",
+      "targets": [
+        ["id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId:2:ae_cp_cap_prj_adj_acct_change_amount", "id"],
+        ["name=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId:2:ae_cp_cap_prj_adj_acct_change_amount", "name"],
+        ["css=#mainForm\\3A CAPITAL_PROJECT_FUNDING_EDIT_content\\3A accountListId\\3A 2\\3A ae_cp_cap_prj_adj_acct_change_amount", "css:finder"],
+        ["xpath=//input[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId:2:ae_cp_cap_prj_adj_acct_change_amount']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:accountListId']/tbody/tr[3]/td[8]/input", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[8]/input", "xpath:position"]
+      ],
+      "value": "0"
+    }, {
+      "id": "0db14fd8-32c3-4b7e-a230-2b14dcda155f",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingId:2:ae_cp_cap_prj_adj_fund_change_amount",
+      "targets": [
+        ["id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingId:2:ae_cp_cap_prj_adj_fund_change_amount", "id"],
+        ["name=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingId:2:ae_cp_cap_prj_adj_fund_change_amount", "name"],
+        ["css=#mainForm\\3A CAPITAL_PROJECT_FUNDING_EDIT_content\\3A fundingId\\3A 2\\3A ae_cp_cap_prj_adj_fund_change_amount", "css:finder"],
+        ["xpath=//input[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingId:2:ae_cp_cap_prj_adj_fund_change_amount']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingId']/tbody/tr[3]/td[8]/input", "xpath:idRelative"],
+        ["xpath=//table[3]/tbody/tr/td/div/table/tbody/tr[3]/td[8]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "42833567-8d58-4000-9fc2-42ac93f0357e",
+      "comment": "",
+      "command": "type",
+      "target": "id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingId:2:ae_cp_cap_prj_adj_fund_change_amount",
+      "targets": [
+        ["id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingId:2:ae_cp_cap_prj_adj_fund_change_amount", "id"],
+        ["name=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingId:2:ae_cp_cap_prj_adj_fund_change_amount", "name"],
+        ["css=#mainForm\\3A CAPITAL_PROJECT_FUNDING_EDIT_content\\3A fundingId\\3A 2\\3A ae_cp_cap_prj_adj_fund_change_amount", "css:finder"],
+        ["xpath=//input[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingId:2:ae_cp_cap_prj_adj_fund_change_amount']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingId']/tbody/tr[3]/td[8]/input", "xpath:idRelative"],
+        ["xpath=//table[3]/tbody/tr/td/div/table/tbody/tr[3]/td[8]/input", "xpath:position"]
+      ],
+      "value": "0"
+    }, {
+      "id": "574b041e-4690-4352-99ec-af1690d38d03",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingId:refreshLink",
+      "targets": [
+        ["id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingId:refreshLink", "id"],
+        ["css=#mainForm\\3A CAPITAL_PROJECT_FUNDING_EDIT_content\\3A fundingId\\3ArefreshLink", "css:finder"],
+        ["xpath=(//a[contains(text(),'Totals')])[2]", "xpath:link"],
+        ["xpath=//a[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingId:refreshLink']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingId']/thead/tr/th/table/tbody/tr/td[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[6]", "xpath:href"],
+        ["xpath=//table[3]/tbody/tr/td/div/table/thead/tr/th/table/tbody/tr/td[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "190caa6c-7b7f-4ca4-929d-f93943de483e",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:buttonPanel:save",
+      "targets": [
+        ["id=mainForm:buttonPanel:save", "id"],
+        ["css=#mainForm\\3A buttonPanel\\3Asave", "css:finder"],
+        ["xpath=//button[@id='mainForm:buttonPanel:save']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:buttonPanel']/tbody/tr/td/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Save')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3bd576d8-4942-428a-8f0b-7465f0b15f70",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:buttonPanel:done",
+      "targets": [
+        ["id=mainForm:buttonPanel:done", "id"],
+        ["css=#mainForm\\3A buttonPanel\\3A done", "css:finder"],
+        ["xpath=//button[@id='mainForm:buttonPanel:done']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:buttonPanel']/tbody/tr/td/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Back')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "60676926-bd42-488a-afc1-f417b5c310da",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:sideButtonPanel:adjustment",
+      "targets": [
+        ["id=mainForm:sideButtonPanel:adjustment", "id"],
+        ["linkText=Adjustment", "linkText"],
+        ["css=#mainForm\\3AsideButtonPanel\\3A adjustment", "css:finder"],
+        ["xpath=//a[contains(text(),'Adjustment')]", "xpath:link"],
+        ["xpath=//a[@id='mainForm:sideButtonPanel:adjustment']", "xpath:attributes"],
+        ["xpath=//ul[@id='mainForm:sideButtonPanel']/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[9]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Adjustment')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "aea1db82-4f58-4a54-9975-a7a1a70843dc",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:ae_cp_cap_prj_adj_description",
+      "targets": [
+        ["id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:ae_cp_cap_prj_adj_description", "id"],
+        ["name=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:ae_cp_cap_prj_adj_description", "name"],
+        ["css=#mainForm\\3A CAPITAL_PROJECT_FUNDING_EDIT_content\\3A ae_cp_cap_prj_adj_description", "css:finder"],
+        ["xpath=//textarea[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:ae_cp_cap_prj_adj_description']", "xpath:attributes"],
+        ["xpath=//table[@id='transaction']/tbody/tr[2]/td/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ada41a64-8cf7-447b-aa1b-5784e1975d80",
+      "comment": "",
+      "command": "type",
+      "target": "id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:ae_cp_cap_prj_adj_description",
+      "targets": [
+        ["id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:ae_cp_cap_prj_adj_description", "id"],
+        ["name=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:ae_cp_cap_prj_adj_description", "name"],
+        ["css=#mainForm\\3A CAPITAL_PROJECT_FUNDING_EDIT_content\\3A ae_cp_cap_prj_adj_description", "css:finder"],
+        ["xpath=//textarea[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:ae_cp_cap_prj_adj_description']", "xpath:attributes"],
+        ["xpath=//table[@id='transaction']/tbody/tr[2]/td/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "test"
+    }, {
+      "id": "4fe5785b-2017-49d1-905d-4af1455e8a44",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:type",
+      "targets": [
+        ["id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:type", "id"],
+        ["name=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:type", "name"],
+        ["css=#mainForm\\3A CAPITAL_PROJECT_FUNDING_EDIT_content\\3Atype", "css:finder"],
+        ["xpath=//select[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:type']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:secondBox']/tbody/tr[3]/td[2]/span/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "889a692d-aa20-42ff-9dd9-bc87bc08e0af",
+      "comment": "",
+      "command": "select",
+      "target": "id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:type",
+      "targets": [],
+      "value": "label=Allotment"
+    }, {
+      "id": "af0e6a5e-1389-44b7-90f9-797dbec2239f",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:type",
+      "targets": [
+        ["id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:type", "id"],
+        ["name=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:type", "name"],
+        ["css=#mainForm\\3A CAPITAL_PROJECT_FUNDING_EDIT_content\\3Atype", "css:finder"],
+        ["xpath=//select[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:type']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:secondBox']/tbody/tr[3]/td[2]/span/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1ab0b9b1-7812-4b46-b470-8fc10ab7ff93",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:adjDate",
+      "targets": [
+        ["id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:adjDate", "id"],
+        ["name=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:adjDate", "name"],
+        ["css=#mainForm\\3A CAPITAL_PROJECT_FUNDING_EDIT_content\\3A adjDate", "css:finder"],
+        ["xpath=//input[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:adjDate']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:secondBox']/tbody/tr[4]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8d9b17c5-8fbc-49cb-af3d-516c9f9ab17e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.today",
+      "targets": [
+        ["css=.today", "css:finder"],
+        ["xpath=//table[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:secondBox']/tbody/tr[4]/td[2]/div/table/tbody/tr[6]/td[5]", "xpath:idRelative"],
+        ["xpath=//tr[6]/td[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "33d1f47c-340d-4277-ac4a-348403035d8d",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:adjDate",
+      "targets": [
+        ["id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:adjDate", "id"],
+        ["name=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:adjDate", "name"],
+        ["css=#mainForm\\3A CAPITAL_PROJECT_FUNDING_EDIT_content\\3A adjDate", "css:finder"],
+        ["xpath=//input[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:adjDate']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:secondBox']/tbody/tr[4]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "58f6a36a-e7eb-4e70-80ab-a375813a300f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.calendarRow:nth-child(6) > .day:nth-child(4)",
+      "targets": [
+        ["css=.calendarRow:nth-child(6) > .day:nth-child(4)", "css:finder"],
+        ["xpath=//table[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:secondBox']/tbody/tr[4]/td[2]/div/table/tbody/tr[6]/td[4]", "xpath:idRelative"],
+        ["xpath=//tr[6]/td[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cab6f77c-34d5-406e-a23f-0ef0d82c5aa6",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:adjDate",
+      "targets": [
+        ["id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:adjDate", "id"],
+        ["name=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:adjDate", "name"],
+        ["css=#mainForm\\3A CAPITAL_PROJECT_FUNDING_EDIT_content\\3A adjDate", "css:finder"],
+        ["xpath=//input[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:adjDate']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:secondBox']/tbody/tr[4]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9ae3761e-3ba1-40be-a8c4-330cf62459f6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.today",
+      "targets": [
+        ["css=.today", "css:finder"],
+        ["xpath=//table[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:secondBox']/tbody/tr[4]/td[2]/div/table/tbody/tr[6]/td[5]", "xpath:idRelative"],
+        ["xpath=//tr[6]/td[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f07e5f6e-9000-4c05-8014-8b5bf8ced7b0",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingAllottedId:0:ae_cp_cap_prj_adj_fund_change_amount",
+      "targets": [
+        ["id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingAllottedId:0:ae_cp_cap_prj_adj_fund_change_amount", "id"],
+        ["name=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingAllottedId:0:ae_cp_cap_prj_adj_fund_change_amount", "name"],
+        ["css=#mainForm\\3A CAPITAL_PROJECT_FUNDING_EDIT_content\\3A fundingAllottedId\\3A 0\\3A ae_cp_cap_prj_adj_fund_change_amount", "css:finder"],
+        ["xpath=//input[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingAllottedId:0:ae_cp_cap_prj_adj_fund_change_amount']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingAllottedId']/tbody/tr/td[7]/input", "xpath:idRelative"],
+        ["xpath=//td[7]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8ca16aee-692f-4c8d-9690-f556e62347c4",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingAllottedId:1:ae_cp_cap_prj_adj_fund_change_amount",
+      "targets": [
+        ["id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingAllottedId:1:ae_cp_cap_prj_adj_fund_change_amount", "id"],
+        ["name=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingAllottedId:1:ae_cp_cap_prj_adj_fund_change_amount", "name"],
+        ["css=#mainForm\\3A CAPITAL_PROJECT_FUNDING_EDIT_content\\3A fundingAllottedId\\3A 1\\3A ae_cp_cap_prj_adj_fund_change_amount", "css:finder"],
+        ["xpath=//input[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingAllottedId:1:ae_cp_cap_prj_adj_fund_change_amount']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingAllottedId']/tbody/tr[2]/td[7]/input", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[7]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e3ed84c8-febf-4e90-8f40-0ce1e49b691e",
+      "comment": "",
+      "command": "type",
+      "target": "id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingAllottedId:1:ae_cp_cap_prj_adj_fund_change_amount",
+      "targets": [
+        ["id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingAllottedId:1:ae_cp_cap_prj_adj_fund_change_amount", "id"],
+        ["name=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingAllottedId:1:ae_cp_cap_prj_adj_fund_change_amount", "name"],
+        ["css=#mainForm\\3A CAPITAL_PROJECT_FUNDING_EDIT_content\\3A fundingAllottedId\\3A 1\\3A ae_cp_cap_prj_adj_fund_change_amount", "css:finder"],
+        ["xpath=//input[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingAllottedId:1:ae_cp_cap_prj_adj_fund_change_amount']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingAllottedId']/tbody/tr[2]/td[7]/input", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[7]/input", "xpath:position"]
+      ],
+      "value": "200000"
+    }, {
+      "id": "3a87f769-f846-4390-b47c-4adc69dcffa1",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingAllottedId:2:ae_cp_cap_prj_adj_fund_change_amount",
+      "targets": [
+        ["id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingAllottedId:2:ae_cp_cap_prj_adj_fund_change_amount", "id"],
+        ["name=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingAllottedId:2:ae_cp_cap_prj_adj_fund_change_amount", "name"],
+        ["css=#mainForm\\3A CAPITAL_PROJECT_FUNDING_EDIT_content\\3A fundingAllottedId\\3A 2\\3A ae_cp_cap_prj_adj_fund_change_amount", "css:finder"],
+        ["xpath=//input[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingAllottedId:2:ae_cp_cap_prj_adj_fund_change_amount']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingAllottedId']/tbody/tr[3]/td[7]/input", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[7]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b617bdd2-f3f0-457e-b413-81a330b52fb5",
+      "comment": "",
+      "command": "type",
+      "target": "id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingAllottedId:2:ae_cp_cap_prj_adj_fund_change_amount",
+      "targets": [
+        ["id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingAllottedId:2:ae_cp_cap_prj_adj_fund_change_amount", "id"],
+        ["name=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingAllottedId:2:ae_cp_cap_prj_adj_fund_change_amount", "name"],
+        ["css=#mainForm\\3A CAPITAL_PROJECT_FUNDING_EDIT_content\\3A fundingAllottedId\\3A 2\\3A ae_cp_cap_prj_adj_fund_change_amount", "css:finder"],
+        ["xpath=//input[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingAllottedId:2:ae_cp_cap_prj_adj_fund_change_amount']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingAllottedId']/tbody/tr[3]/td[7]/input", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[7]/input", "xpath:position"]
+      ],
+      "value": "300000"
+    }, {
+      "id": "66400873-60b5-4f7e-975b-3a82420dc595",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingAllottedId:refreshfAllottedLink",
+      "targets": [
+        ["id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingAllottedId:refreshfAllottedLink", "id"],
+        ["linkText=Totals", "linkText"],
+        ["css=#mainForm\\3A CAPITAL_PROJECT_FUNDING_EDIT_content\\3A fundingAllottedId\\3ArefreshfAllottedLink", "css:finder"],
+        ["xpath=//a[contains(text(),'Totals')]", "xpath:link"],
+        ["xpath=//a[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingAllottedId:refreshfAllottedLink']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingAllottedId']/thead/tr/th/table/tbody/tr/td[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[4]", "xpath:href"],
+        ["xpath=//th/table/tbody/tr/td[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Totals')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0342b221-4b08-4ade-8d79-c4ea826910b6",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingAllottedId:0:ae_cp_cap_prj_adj_fund_change_amount",
+      "targets": [
+        ["id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingAllottedId:0:ae_cp_cap_prj_adj_fund_change_amount", "id"],
+        ["name=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingAllottedId:0:ae_cp_cap_prj_adj_fund_change_amount", "name"],
+        ["css=#mainForm\\3A CAPITAL_PROJECT_FUNDING_EDIT_content\\3A fundingAllottedId\\3A 0\\3A ae_cp_cap_prj_adj_fund_change_amount", "css:finder"],
+        ["xpath=//input[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingAllottedId:0:ae_cp_cap_prj_adj_fund_change_amount']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingAllottedId']/tbody/tr/td[7]/input", "xpath:idRelative"],
+        ["xpath=//td[7]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "28db1467-e570-452c-a8b9-320356cb7fa7",
+      "comment": "",
+      "command": "type",
+      "target": "id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingAllottedId:0:ae_cp_cap_prj_adj_fund_change_amount",
+      "targets": [
+        ["id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingAllottedId:0:ae_cp_cap_prj_adj_fund_change_amount", "id"],
+        ["name=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingAllottedId:0:ae_cp_cap_prj_adj_fund_change_amount", "name"],
+        ["css=#mainForm\\3A CAPITAL_PROJECT_FUNDING_EDIT_content\\3A fundingAllottedId\\3A 0\\3A ae_cp_cap_prj_adj_fund_change_amount", "css:finder"],
+        ["xpath=//input[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingAllottedId:0:ae_cp_cap_prj_adj_fund_change_amount']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingAllottedId']/tbody/tr/td[7]/input", "xpath:idRelative"],
+        ["xpath=//td[7]/input", "xpath:position"]
+      ],
+      "value": "0"
+    }, {
+      "id": "367745d5-740b-4cb0-94ab-c4f5a3918fd9",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingAllottedId:refreshfAllottedLink",
+      "targets": [
+        ["id=mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingAllottedId:refreshfAllottedLink", "id"],
+        ["linkText=Totals", "linkText"],
+        ["css=#mainForm\\3A CAPITAL_PROJECT_FUNDING_EDIT_content\\3A fundingAllottedId\\3ArefreshfAllottedLink", "css:finder"],
+        ["xpath=//a[contains(text(),'Totals')]", "xpath:link"],
+        ["xpath=//a[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingAllottedId:refreshfAllottedLink']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CAPITAL_PROJECT_FUNDING_EDIT_content:fundingAllottedId']/thead/tr/th/table/tbody/tr/td[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[4]", "xpath:href"],
+        ["xpath=//th/table/tbody/tr/td[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Totals')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "317d131b-1844-40cb-b632-6c262af23e31",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:buttonPanel:save",
+      "targets": [
+        ["id=mainForm:buttonPanel:save", "id"],
+        ["css=#mainForm\\3A buttonPanel\\3Asave", "css:finder"],
+        ["xpath=//button[@id='mainForm:buttonPanel:save']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:buttonPanel']/tbody/tr/td/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Save')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9fbcb994-8dbd-4c8b-a3f6-0ce9f4f5b5b2",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:buttonPanel:done",
+      "targets": [
+        ["id=mainForm:buttonPanel:done", "id"],
+        ["css=#mainForm\\3A buttonPanel\\3A done", "css:finder"],
+        ["xpath=//button[@id='mainForm:buttonPanel:done']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:buttonPanel']/tbody/tr/td/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Back')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7a45aaaf-908f-40ca-a4d5-af0c5d1597eb",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:buttonPanel:done",
+      "targets": [
+        ["id=mainForm:buttonPanel:done", "id"],
+        ["css=#mainForm\\3A buttonPanel\\3A done", "css:finder"],
+        ["xpath=//button[@id='mainForm:buttonPanel:done']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:buttonPanel']/tbody/tr/td/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Back')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5399aab4-3a93-4306-8ea4-04ef0b704a80",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:sideButtonPanel:moreMenu_2",
+      "targets": [
+        ["id=mainForm:sideButtonPanel:moreMenu_2", "id"],
+        ["linkText=Account Setup", "linkText"],
+        ["css=#mainForm\\3AsideButtonPanel\\3AmoreMenu_2", "css:finder"],
+        ["xpath=//a[contains(text(),'Account Setup')]", "xpath:link"],
+        ["xpath=//a[@id='mainForm:sideButtonPanel:moreMenu_2']", "xpath:attributes"],
+        ["xpath=(//ul[@id='mainForm:sideButtonPanel']/li[3]/a)[2]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[113]", "xpath:href"],
+        ["xpath=//ul[2]/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Account Setup')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ae682f0c-8ad0-4aa3-af52-19eb9eae474a",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:buttonPanel:done",
+      "targets": [
+        ["id=mainForm:buttonPanel:done", "id"],
+        ["css=#mainForm\\3A buttonPanel\\3A done", "css:finder"],
+        ["xpath=//button[@id='mainForm:buttonPanel:done']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:buttonPanel']/tbody/tr/td/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Back')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dafcffc0-6f79-4d1a-ac56-2dfaeee476c3",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:buttonPanel:edit",
+      "targets": [
+        ["id=mainForm:buttonPanel:edit", "id"],
+        ["css=#mainForm\\3A buttonPanel\\3A edit", "css:finder"],
+        ["xpath=//button[@id='mainForm:buttonPanel:edit']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:buttonPanel']/tbody/tr/td/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Edit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "25e2043c-9229-4ef3-bda5-27a24fbb3849",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:CAPITAL_PROJECT_EDIT_content:projCompGrpBrowse:0:link1",
+      "targets": [
+        ["id=mainForm:CAPITAL_PROJECT_EDIT_content:projCompGrpBrowse:0:link1", "id"],
+        ["linkText=GENERAL CONTRACTING", "linkText"],
+        ["css=#mainForm\\3A CAPITAL_PROJECT_EDIT_content\\3AprojCompGrpBrowse\\3A 0\\3Alink1", "css:finder"],
+        ["xpath=//a[contains(text(),'GENERAL CONTRACTING')]", "xpath:link"],
+        ["xpath=//a[@id='mainForm:CAPITAL_PROJECT_EDIT_content:projCompGrpBrowse:0:link1']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CAPITAL_PROJECT_EDIT_content:projCompGrpBrowse']/tbody/tr/td[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[8]", "xpath:href"],
+        ["xpath=//td/div/table/tbody/tr/td[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'GENERAL CONTRACTING')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "867aae18-a987-43e6-ba13-94c1bd763830",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:CP_COMPONENT_GROUP_EDIT_content:projCompBrowse:0:link1",
+      "targets": [
+        ["id=mainForm:CP_COMPONENT_GROUP_EDIT_content:projCompBrowse:0:link1", "id"],
+        ["linkText=CONTRACTING", "linkText"],
+        ["css=#mainForm\\3A CP_COMPONENT_GROUP_EDIT_content\\3AprojCompBrowse\\3A 0\\3Alink1", "css:finder"],
+        ["xpath=//a[contains(text(),'CONTRACTING')]", "xpath:link"],
+        ["xpath=//a[@id='mainForm:CP_COMPONENT_GROUP_EDIT_content:projCompBrowse:0:link1']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CP_COMPONENT_GROUP_EDIT_content:projCompBrowse']/tbody/tr/td[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[8]", "xpath:href"],
+        ["xpath=//td/div/table/tbody/tr/td[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'CONTRACTING')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d6be66a0-991c-489c-bbe2-62c3dc16cd05",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:sideButtonPanel:moreMenu_2",
+      "targets": [
+        ["id=mainForm:sideButtonPanel:moreMenu_2", "id"],
+        ["linkText=Account Setup", "linkText"],
+        ["css=#mainForm\\3AsideButtonPanel\\3AmoreMenu_2", "css:finder"],
+        ["xpath=//a[contains(text(),'Account Setup')]", "xpath:link"],
+        ["xpath=//a[@id='mainForm:sideButtonPanel:moreMenu_2']", "xpath:attributes"],
+        ["xpath=//ul[@id='mainForm:sideButtonPanel']/li[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[9]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Account Setup')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "afa6410c-9a36-4eaf-92f8-45f302fe3a2d",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:accountId:loadAccounts",
+      "targets": [
+        ["id=mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:accountId:loadAccounts", "id"],
+        ["linkText=Load", "linkText"],
+        ["css=#mainForm\\3A CP_COMPONENT_ACCOUNT_SETUP_EDIT_content\\3A accountId\\3AloadAccounts", "css:finder"],
+        ["xpath=//a[contains(text(),'Load')]", "xpath:link"],
+        ["xpath=//a[@id='mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:accountId:loadAccounts']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:accountId']/thead/tr/th/table/tbody/tr/td[4]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[3]", "xpath:href"],
+        ["xpath=//td[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Load')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3c122383-b031-4f31-892b-421ba8a2a043",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:CP_COMPONENT_ACCOUNT_LIST_content:accountList:1:check",
+      "targets": [
+        ["id=mainForm:CP_COMPONENT_ACCOUNT_LIST_content:accountList:1:check", "id"],
+        ["css=#mainForm\\3A CP_COMPONENT_ACCOUNT_LIST_content\\3A accountList\\3A 1\\3A check", "css:finder"],
+        ["xpath=//input[@id='mainForm:CP_COMPONENT_ACCOUNT_LIST_content:accountList:1:check']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CP_COMPONENT_ACCOUNT_LIST_content:accountList']/tbody/tr[2]/td/input", "xpath:idRelative"],
+        ["xpath=//tr[2]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e356adcf-d298-461b-aaed-99e8bd83e21b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.browseRow:nth-child(3) > td:nth-child(1)",
+      "targets": [
+        ["css=.browseRow:nth-child(3) > td:nth-child(1)", "css:finder"],
+        ["xpath=//table[@id='mainForm:CP_COMPONENT_ACCOUNT_LIST_content:accountList']/tbody/tr[3]/td", "xpath:idRelative"],
+        ["xpath=//tr[3]/td", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "19d32604-d393-41a3-80c9-087a47561d5e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.browseRow:nth-child(3) > td:nth-child(1)",
+      "targets": [
+        ["css=.browseRow:nth-child(3) > td:nth-child(1)", "css:finder"],
+        ["xpath=//table[@id='mainForm:CP_COMPONENT_ACCOUNT_LIST_content:accountList']/tbody/tr[3]/td", "xpath:idRelative"],
+        ["xpath=//tr[3]/td", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "47f9029a-f91c-4323-843e-203f477b8176",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:CP_COMPONENT_ACCOUNT_LIST_content:accountList:2:check",
+      "targets": [
+        ["id=mainForm:CP_COMPONENT_ACCOUNT_LIST_content:accountList:2:check", "id"],
+        ["css=#mainForm\\3A CP_COMPONENT_ACCOUNT_LIST_content\\3A accountList\\3A 2\\3A check", "css:finder"],
+        ["xpath=//input[@id='mainForm:CP_COMPONENT_ACCOUNT_LIST_content:accountList:2:check']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CP_COMPONENT_ACCOUNT_LIST_content:accountList']/tbody/tr[3]/td/input", "xpath:idRelative"],
+        ["xpath=//tr[3]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ef003397-e139-4d9b-9386-163e3b5bc1a7",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:buttonPanel:done",
+      "targets": [
+        ["id=mainForm:buttonPanel:done", "id"],
+        ["css=#mainForm\\3A buttonPanel\\3A done", "css:finder"],
+        ["xpath=//button[@id='mainForm:buttonPanel:done']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:buttonPanel']/tbody/tr/td/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Done')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a48afaac-5bdc-439a-9264-ebb71bc8466c",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:accountId:1:ae_cp_prj_comp_acct_budget_percent",
+      "targets": [
+        ["id=mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:accountId:1:ae_cp_prj_comp_acct_budget_percent", "id"],
+        ["name=mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:accountId:1:ae_cp_prj_comp_acct_budget_percent", "name"],
+        ["css=#mainForm\\3A CP_COMPONENT_ACCOUNT_SETUP_EDIT_content\\3A accountId\\3A 1\\3A ae_cp_prj_comp_acct_budget_percent", "css:finder"],
+        ["xpath=//input[@id='mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:accountId:1:ae_cp_prj_comp_acct_budget_percent']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:accountId']/tbody/tr[2]/td[8]/input", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[8]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c178723c-dd11-450f-a387-5b0120a97be4",
+      "comment": "",
+      "command": "type",
+      "target": "id=mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:accountId:1:ae_cp_prj_comp_acct_budget_percent",
+      "targets": [
+        ["id=mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:accountId:1:ae_cp_prj_comp_acct_budget_percent", "id"],
+        ["name=mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:accountId:1:ae_cp_prj_comp_acct_budget_percent", "name"],
+        ["css=#mainForm\\3A CP_COMPONENT_ACCOUNT_SETUP_EDIT_content\\3A accountId\\3A 1\\3A ae_cp_prj_comp_acct_budget_percent", "css:finder"],
+        ["xpath=//input[@id='mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:accountId:1:ae_cp_prj_comp_acct_budget_percent']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:accountId']/tbody/tr[2]/td[8]/input", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[8]/input", "xpath:position"]
+      ],
+      "value": "20"
+    }, {
+      "id": "6df933e8-1125-4870-9867-4b16de746b89",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:accountId:2:ae_cp_prj_comp_acct_budget_percent",
+      "targets": [
+        ["id=mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:accountId:2:ae_cp_prj_comp_acct_budget_percent", "id"],
+        ["name=mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:accountId:2:ae_cp_prj_comp_acct_budget_percent", "name"],
+        ["css=#mainForm\\3A CP_COMPONENT_ACCOUNT_SETUP_EDIT_content\\3A accountId\\3A 2\\3A ae_cp_prj_comp_acct_budget_percent", "css:finder"],
+        ["xpath=//input[@id='mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:accountId:2:ae_cp_prj_comp_acct_budget_percent']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:accountId']/tbody/tr[3]/td[8]/input", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[8]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e48d9c83-703c-4d39-8226-ee55d03ce955",
+      "comment": "",
+      "command": "type",
+      "target": "id=mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:accountId:2:ae_cp_prj_comp_acct_budget_percent",
+      "targets": [
+        ["id=mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:accountId:2:ae_cp_prj_comp_acct_budget_percent", "id"],
+        ["name=mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:accountId:2:ae_cp_prj_comp_acct_budget_percent", "name"],
+        ["css=#mainForm\\3A CP_COMPONENT_ACCOUNT_SETUP_EDIT_content\\3A accountId\\3A 2\\3A ae_cp_prj_comp_acct_budget_percent", "css:finder"],
+        ["xpath=//input[@id='mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:accountId:2:ae_cp_prj_comp_acct_budget_percent']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:accountId']/tbody/tr[3]/td[8]/input", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[8]/input", "xpath:position"]
+      ],
+      "value": "80"
+    }, {
+      "id": "6bffc77f-f417-4622-b154-529d5500f27d",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:accountId:0:ae_cp_prj_comp_acct_end_date",
+      "targets": [
+        ["id=mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:accountId:0:ae_cp_prj_comp_acct_end_date", "id"],
+        ["name=mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:accountId:0:ae_cp_prj_comp_acct_end_date", "name"],
+        ["css=#mainForm\\3A CP_COMPONENT_ACCOUNT_SETUP_EDIT_content\\3A accountId\\3A 0\\3A ae_cp_prj_comp_acct_end_date", "css:finder"],
+        ["xpath=//input[@id='mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:accountId:0:ae_cp_prj_comp_acct_end_date']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:accountId']/tbody/tr/td[7]/input", "xpath:idRelative"],
+        ["xpath=//td[7]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f6652e01-42db-43f3-bf72-6f132d7bbc4d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.calendarRow:nth-child(6) > .day:nth-child(3)",
+      "targets": [
+        ["css=.calendarRow:nth-child(6) > .day:nth-child(3)", "css:finder"],
+        ["xpath=//table[@id='mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:accountId']/tbody/tr/td[7]/div/table/tbody/tr[6]/td[3]", "xpath:idRelative"],
+        ["xpath=//tr[6]/td[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "207c43b1-2f8f-4922-b4ed-f9d9e708b4a1",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:fundingId:loadFundings",
+      "targets": [
+        ["id=mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:fundingId:loadFundings", "id"],
+        ["css=#mainForm\\3A CP_COMPONENT_ACCOUNT_SETUP_EDIT_content\\3A fundingId\\3AloadFundings", "css:finder"],
+        ["xpath=(//a[contains(text(),'Load')])[2]", "xpath:link"],
+        ["xpath=//a[@id='mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:fundingId:loadFundings']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:fundingId']/thead/tr/th/table/tbody/tr/td[4]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[7]", "xpath:href"],
+        ["xpath=//table[3]/tbody/tr/td/div/table/thead/tr/th/table/tbody/tr/td[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7d5b17a8-7728-497f-ab32-65c3b46d6919",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:CP_COMPONENT_FUNDING_SOURCE_LIST_content:fundingList:2:check",
+      "targets": [
+        ["id=mainForm:CP_COMPONENT_FUNDING_SOURCE_LIST_content:fundingList:2:check", "id"],
+        ["css=#mainForm\\3A CP_COMPONENT_FUNDING_SOURCE_LIST_content\\3A fundingList\\3A 2\\3A check", "css:finder"],
+        ["xpath=//input[@id='mainForm:CP_COMPONENT_FUNDING_SOURCE_LIST_content:fundingList:2:check']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CP_COMPONENT_FUNDING_SOURCE_LIST_content:fundingList']/tbody/tr[3]/td/input", "xpath:idRelative"],
+        ["xpath=//tr[3]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "87a7d0ea-548e-4fc5-a6c9-e1b25e580b38",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:CP_COMPONENT_FUNDING_SOURCE_LIST_content:fundingList:1:check",
+      "targets": [
+        ["id=mainForm:CP_COMPONENT_FUNDING_SOURCE_LIST_content:fundingList:1:check", "id"],
+        ["css=#mainForm\\3A CP_COMPONENT_FUNDING_SOURCE_LIST_content\\3A fundingList\\3A 1\\3A check", "css:finder"],
+        ["xpath=//input[@id='mainForm:CP_COMPONENT_FUNDING_SOURCE_LIST_content:fundingList:1:check']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CP_COMPONENT_FUNDING_SOURCE_LIST_content:fundingList']/tbody/tr[2]/td/input", "xpath:idRelative"],
+        ["xpath=//tr[2]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cac08012-30f2-459d-af44-beedc036edbe",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:CP_COMPONENT_FUNDING_SOURCE_LIST_content:fundingList:1:check",
+      "targets": [
+        ["id=mainForm:CP_COMPONENT_FUNDING_SOURCE_LIST_content:fundingList:1:check", "id"],
+        ["css=#mainForm\\3A CP_COMPONENT_FUNDING_SOURCE_LIST_content\\3A fundingList\\3A 1\\3A check", "css:finder"],
+        ["xpath=//input[@id='mainForm:CP_COMPONENT_FUNDING_SOURCE_LIST_content:fundingList:1:check']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CP_COMPONENT_FUNDING_SOURCE_LIST_content:fundingList']/tbody/tr[2]/td/input", "xpath:idRelative"],
+        ["xpath=//tr[2]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7df216c4-e89f-4ab5-aa16-7d6151c4282b",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:CP_COMPONENT_FUNDING_SOURCE_LIST_content:fundingList:1:check",
+      "targets": [
+        ["id=mainForm:CP_COMPONENT_FUNDING_SOURCE_LIST_content:fundingList:1:check", "id"],
+        ["css=#mainForm\\3A CP_COMPONENT_FUNDING_SOURCE_LIST_content\\3A fundingList\\3A 1\\3A check", "css:finder"],
+        ["xpath=//input[@id='mainForm:CP_COMPONENT_FUNDING_SOURCE_LIST_content:fundingList:1:check']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CP_COMPONENT_FUNDING_SOURCE_LIST_content:fundingList']/tbody/tr[2]/td/input", "xpath:idRelative"],
+        ["xpath=//tr[2]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e3e7aceb-2b13-4cb1-9c80-1c2404435361",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:buttonPanel:done",
+      "targets": [
+        ["id=mainForm:buttonPanel:done", "id"],
+        ["css=#mainForm\\3A buttonPanel\\3A done", "css:finder"],
+        ["xpath=//button[@id='mainForm:buttonPanel:done']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:buttonPanel']/tbody/tr/td/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Done')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4e61946d-0f2c-48f1-85ba-6d14c0e27436",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:fundingId:0:ae_cp_prj_comp_fund_budget_percent",
+      "targets": [
+        ["id=mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:fundingId:0:ae_cp_prj_comp_fund_budget_percent", "id"],
+        ["name=mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:fundingId:0:ae_cp_prj_comp_fund_budget_percent", "name"],
+        ["css=#mainForm\\3A CP_COMPONENT_ACCOUNT_SETUP_EDIT_content\\3A fundingId\\3A 0\\3A ae_cp_prj_comp_fund_budget_percent", "css:finder"],
+        ["xpath=//input[@id='mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:fundingId:0:ae_cp_prj_comp_fund_budget_percent']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:fundingId']/tbody/tr/td[8]/input", "xpath:idRelative"],
+        ["xpath=//table[3]/tbody/tr/td/div/table/tbody/tr/td[8]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "87e5b439-bd8b-4a0d-b355-c11d1d91f26e",
+      "comment": "",
+      "command": "type",
+      "target": "id=mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:fundingId:0:ae_cp_prj_comp_fund_budget_percent",
+      "targets": [
+        ["id=mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:fundingId:0:ae_cp_prj_comp_fund_budget_percent", "id"],
+        ["name=mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:fundingId:0:ae_cp_prj_comp_fund_budget_percent", "name"],
+        ["css=#mainForm\\3A CP_COMPONENT_ACCOUNT_SETUP_EDIT_content\\3A fundingId\\3A 0\\3A ae_cp_prj_comp_fund_budget_percent", "css:finder"],
+        ["xpath=//input[@id='mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:fundingId:0:ae_cp_prj_comp_fund_budget_percent']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:fundingId']/tbody/tr/td[8]/input", "xpath:idRelative"],
+        ["xpath=//table[3]/tbody/tr/td/div/table/tbody/tr/td[8]/input", "xpath:position"]
+      ],
+      "value": "25"
+    }, {
+      "id": "e141c9ef-ab5d-40e1-b05d-209475286c6f",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:fundingId:1:ae_cp_prj_comp_fund_budget_percent",
+      "targets": [
+        ["id=mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:fundingId:1:ae_cp_prj_comp_fund_budget_percent", "id"],
+        ["name=mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:fundingId:1:ae_cp_prj_comp_fund_budget_percent", "name"],
+        ["css=#mainForm\\3A CP_COMPONENT_ACCOUNT_SETUP_EDIT_content\\3A fundingId\\3A 1\\3A ae_cp_prj_comp_fund_budget_percent", "css:finder"],
+        ["xpath=//input[@id='mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:fundingId:1:ae_cp_prj_comp_fund_budget_percent']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:fundingId']/tbody/tr[2]/td[8]/input", "xpath:idRelative"],
+        ["xpath=//table[3]/tbody/tr/td/div/table/tbody/tr[2]/td[8]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8b279b2e-d9e1-4b39-91e5-bdcbd0fcb2ca",
+      "comment": "",
+      "command": "type",
+      "target": "id=mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:fundingId:1:ae_cp_prj_comp_fund_budget_percent",
+      "targets": [
+        ["id=mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:fundingId:1:ae_cp_prj_comp_fund_budget_percent", "id"],
+        ["name=mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:fundingId:1:ae_cp_prj_comp_fund_budget_percent", "name"],
+        ["css=#mainForm\\3A CP_COMPONENT_ACCOUNT_SETUP_EDIT_content\\3A fundingId\\3A 1\\3A ae_cp_prj_comp_fund_budget_percent", "css:finder"],
+        ["xpath=//input[@id='mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:fundingId:1:ae_cp_prj_comp_fund_budget_percent']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:fundingId']/tbody/tr[2]/td[8]/input", "xpath:idRelative"],
+        ["xpath=//table[3]/tbody/tr/td/div/table/tbody/tr[2]/td[8]/input", "xpath:position"]
+      ],
+      "value": "45"
+    }, {
+      "id": "da16c0b4-5dee-432d-952a-792eb14ed6ef",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:fundingId:2:ae_cp_prj_comp_fund_budget_percent",
+      "targets": [
+        ["id=mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:fundingId:2:ae_cp_prj_comp_fund_budget_percent", "id"],
+        ["name=mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:fundingId:2:ae_cp_prj_comp_fund_budget_percent", "name"],
+        ["css=#mainForm\\3A CP_COMPONENT_ACCOUNT_SETUP_EDIT_content\\3A fundingId\\3A 2\\3A ae_cp_prj_comp_fund_budget_percent", "css:finder"],
+        ["xpath=//input[@id='mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:fundingId:2:ae_cp_prj_comp_fund_budget_percent']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:fundingId']/tbody/tr[3]/td[8]/input", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[8]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cabc6c6c-3cbb-4f6d-9494-8b88e8fc5757",
+      "comment": "",
+      "command": "type",
+      "target": "id=mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:fundingId:2:ae_cp_prj_comp_fund_budget_percent",
+      "targets": [
+        ["id=mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:fundingId:2:ae_cp_prj_comp_fund_budget_percent", "id"],
+        ["name=mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:fundingId:2:ae_cp_prj_comp_fund_budget_percent", "name"],
+        ["css=#mainForm\\3A CP_COMPONENT_ACCOUNT_SETUP_EDIT_content\\3A fundingId\\3A 2\\3A ae_cp_prj_comp_fund_budget_percent", "css:finder"],
+        ["xpath=//input[@id='mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:fundingId:2:ae_cp_prj_comp_fund_budget_percent']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:fundingId']/tbody/tr[3]/td[8]/input", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[8]/input", "xpath:position"]
+      ],
+      "value": "30"
+    }, {
+      "id": "a6063718-d41c-4410-900f-d6540a4e2610",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:buttonPanel:done",
+      "targets": [
+        ["id=mainForm:buttonPanel:done", "id"],
+        ["css=#mainForm\\3A buttonPanel\\3A done", "css:finder"],
+        ["xpath=//button[@id='mainForm:buttonPanel:done']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:buttonPanel']/tbody/tr/td/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Done')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f34a97f1-86c8-4f45-950e-da515ac9eddc",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:buttonPanel:done",
+      "targets": [
+        ["id=mainForm:buttonPanel:done", "id"],
+        ["css=#mainForm\\3A buttonPanel\\3A done", "css:finder"],
+        ["xpath=//button[@id='mainForm:buttonPanel:done']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:buttonPanel']/tbody/tr/td/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Done')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ae78b597-1e05-462f-ba99-909e9b088844",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:buttonPanel:done",
+      "targets": [
+        ["id=mainForm:buttonPanel:done", "id"],
+        ["css=#mainForm\\3A buttonPanel\\3A done", "css:finder"],
+        ["xpath=//button[@id='mainForm:buttonPanel:done']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:buttonPanel']/tbody/tr/td/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Done')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e445f864-2b12-4ec4-9c1f-e6530039c6c7",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:buttonPanel:save",
+      "targets": [
+        ["id=mainForm:buttonPanel:save", "id"],
+        ["css=#mainForm\\3A buttonPanel\\3Asave", "css:finder"],
+        ["xpath=//button[@id='mainForm:buttonPanel:save']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:buttonPanel']/tbody/tr/td/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Save')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a3089c21-77dd-41fc-a278-747f8e8c985e",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:CAPITAL_PROJECT_VIEW_content:projCompGrpBrowse:0:link1",
+      "targets": [
+        ["id=mainForm:CAPITAL_PROJECT_VIEW_content:projCompGrpBrowse:0:link1", "id"],
+        ["linkText=GENERAL CONTRACTING", "linkText"],
+        ["css=#mainForm\\3A CAPITAL_PROJECT_VIEW_content\\3AprojCompGrpBrowse\\3A 0\\3Alink1", "css:finder"],
+        ["xpath=//a[contains(text(),'GENERAL CONTRACTING')]", "xpath:link"],
+        ["xpath=//a[@id='mainForm:CAPITAL_PROJECT_VIEW_content:projCompGrpBrowse:0:link1']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CAPITAL_PROJECT_VIEW_content:projCompGrpBrowse']/tbody/tr/td/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[11]", "xpath:href"],
+        ["xpath=//table[3]/tbody/tr/td/div/table/tbody/tr/td/a", "xpath:position"],
+        ["xpath=//a[contains(.,'GENERAL CONTRACTING')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "07385108-3e17-40d4-ae21-991dbcce7380",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:CP_COMPONENT_GROUP_VIEW_content:projCompBrowse:0:link1",
+      "targets": [
+        ["id=mainForm:CP_COMPONENT_GROUP_VIEW_content:projCompBrowse:0:link1", "id"],
+        ["linkText=CONTRACTING", "linkText"],
+        ["css=#mainForm\\3A CP_COMPONENT_GROUP_VIEW_content\\3AprojCompBrowse\\3A 0\\3Alink1", "css:finder"],
+        ["xpath=//a[contains(text(),'CONTRACTING')]", "xpath:link"],
+        ["xpath=//a[@id='mainForm:CP_COMPONENT_GROUP_VIEW_content:projCompBrowse:0:link1']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CP_COMPONENT_GROUP_VIEW_content:projCompBrowse']/tbody/tr/td/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[8]", "xpath:href"],
+        ["xpath=//table[3]/tbody/tr/td/div/table/tbody/tr/td/a", "xpath:position"],
+        ["xpath=//a[contains(.,'CONTRACTING')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "587ae1c0-a645-4192-84a0-6c39f3a664ae",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:sideButtonPanel:moreMenu_2",
+      "targets": [
+        ["id=mainForm:sideButtonPanel:moreMenu_2", "id"],
+        ["linkText=Account Setup", "linkText"],
+        ["css=#mainForm\\3AsideButtonPanel\\3AmoreMenu_2", "css:finder"],
+        ["xpath=//a[contains(text(),'Account Setup')]", "xpath:link"],
+        ["xpath=//a[@id='mainForm:sideButtonPanel:moreMenu_2']", "xpath:attributes"],
+        ["xpath=(//ul[@id='mainForm:sideButtonPanel']/li[3]/a)[2]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[15]", "xpath:href"],
+        ["xpath=//ul[2]/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Account Setup')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ce88ed7f-98b7-4ca1-b1e4-175da7b1008b",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:buttonPanel:done",
+      "targets": [
+        ["id=mainForm:buttonPanel:done", "id"],
+        ["css=#mainForm\\3A buttonPanel\\3A done", "css:finder"],
+        ["xpath=//button[@id='mainForm:buttonPanel:done']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:buttonPanel']/tbody/tr/td/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Back')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3e2a9e4a-ba34-4728-88f7-05021724a8e0",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:buttonPanel:done",
+      "targets": [
+        ["id=mainForm:buttonPanel:done", "id"],
+        ["css=#mainForm\\3A buttonPanel\\3A done", "css:finder"],
+        ["xpath=//button[@id='mainForm:buttonPanel:done']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:buttonPanel']/tbody/tr/td/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Back')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3a8fcc19-cecb-4f08-add0-5c9b710cbd81",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:buttonPanel:done",
+      "targets": [
+        ["id=mainForm:buttonPanel:done", "id"],
+        ["css=#mainForm\\3A buttonPanel\\3A done", "css:finder"],
+        ["xpath=//button[@id='mainForm:buttonPanel:done']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:buttonPanel']/tbody/tr/td/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Back')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "658b467f-495a-46e4-a78b-3ecda11251ad",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:sideButtonPanel:moreMenu_2",
+      "targets": [
+        ["id=mainForm:sideButtonPanel:moreMenu_2", "id"],
+        ["linkText=Account Setup", "linkText"],
+        ["css=#mainForm\\3AsideButtonPanel\\3AmoreMenu_2", "css:finder"],
+        ["xpath=//a[contains(text(),'Account Setup')]", "xpath:link"],
+        ["xpath=//a[@id='mainForm:sideButtonPanel:moreMenu_2']", "xpath:attributes"],
+        ["xpath=(//ul[@id='mainForm:sideButtonPanel']/li[3]/a)[2]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[113]", "xpath:href"],
+        ["xpath=//ul[2]/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Account Setup')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cf6cdb26-277b-4b51-a030-1fb10400bde6",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:buttonPanel:done",
+      "targets": [
+        ["id=mainForm:buttonPanel:done", "id"],
+        ["css=#mainForm\\3A buttonPanel\\3A done", "css:finder"],
+        ["xpath=//button[@id='mainForm:buttonPanel:done']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:buttonPanel']/tbody/tr/td/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Back')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "76067f9b-d7be-41af-947d-aaf68cb620d3",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:buttonPanel:edit",
+      "targets": [
+        ["id=mainForm:buttonPanel:edit", "id"],
+        ["css=#mainForm\\3A buttonPanel\\3A edit", "css:finder"],
+        ["xpath=//button[@id='mainForm:buttonPanel:edit']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:buttonPanel']/tbody/tr/td/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Edit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f71e58e1-fef7-42ee-851d-e4378ade4923",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:CAPITAL_PROJECT_EDIT_content:projCompGrpBrowse:0:link1",
+      "targets": [
+        ["id=mainForm:CAPITAL_PROJECT_EDIT_content:projCompGrpBrowse:0:link1", "id"],
+        ["linkText=GENERAL CONTRACTING", "linkText"],
+        ["css=#mainForm\\3A CAPITAL_PROJECT_EDIT_content\\3AprojCompGrpBrowse\\3A 0\\3Alink1", "css:finder"],
+        ["xpath=//a[contains(text(),'GENERAL CONTRACTING')]", "xpath:link"],
+        ["xpath=//a[@id='mainForm:CAPITAL_PROJECT_EDIT_content:projCompGrpBrowse:0:link1']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CAPITAL_PROJECT_EDIT_content:projCompGrpBrowse']/tbody/tr/td[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[8]", "xpath:href"],
+        ["xpath=//td/div/table/tbody/tr/td[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'GENERAL CONTRACTING')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b0abacc7-1a3e-4d04-b218-ddfb31ca2d4d",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:CP_COMPONENT_GROUP_EDIT_content:projCompBrowse:1:link1",
+      "targets": [
+        ["id=mainForm:CP_COMPONENT_GROUP_EDIT_content:projCompBrowse:1:link1", "id"],
+        ["linkText=ELECTRICAL CONTRACTOR", "linkText"],
+        ["css=#mainForm\\3A CP_COMPONENT_GROUP_EDIT_content\\3AprojCompBrowse\\3A 1\\3Alink1", "css:finder"],
+        ["xpath=//a[contains(text(),'ELECTRICAL CONTRACTOR')]", "xpath:link"],
+        ["xpath=//a[@id='mainForm:CP_COMPONENT_GROUP_EDIT_content:projCompBrowse:1:link1']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CP_COMPONENT_GROUP_EDIT_content:projCompBrowse']/tbody/tr[2]/td[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[12]", "xpath:href"],
+        ["xpath=//tr[2]/td[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'ELECTRICAL CONTRACTOR')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "413d6fe4-dffc-4d27-b3cb-641a6ad6a6f5",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:sideButtonPanel:moreMenu_2",
+      "targets": [
+        ["id=mainForm:sideButtonPanel:moreMenu_2", "id"],
+        ["linkText=Account Setup", "linkText"],
+        ["css=#mainForm\\3AsideButtonPanel\\3AmoreMenu_2", "css:finder"],
+        ["xpath=//a[contains(text(),'Account Setup')]", "xpath:link"],
+        ["xpath=//a[@id='mainForm:sideButtonPanel:moreMenu_2']", "xpath:attributes"],
+        ["xpath=//ul[@id='mainForm:sideButtonPanel']/li[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[9]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Account Setup')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0116db72-92cd-4c6d-9535-731bff5f273f",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:accountId:loadAccounts",
+      "targets": [
+        ["id=mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:accountId:loadAccounts", "id"],
+        ["linkText=Load", "linkText"],
+        ["css=#mainForm\\3A CP_COMPONENT_ACCOUNT_SETUP_EDIT_content\\3A accountId\\3AloadAccounts", "css:finder"],
+        ["xpath=//a[contains(text(),'Load')]", "xpath:link"],
+        ["xpath=//a[@id='mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:accountId:loadAccounts']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:accountId']/thead/tr/th/table/tbody/tr/td[4]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[3]", "xpath:href"],
+        ["xpath=//td[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Load')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d051dbf4-3aba-473f-b5d5-3888073483d7",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:CP_COMPONENT_ACCOUNT_LIST_content:accountList:1:check",
+      "targets": [
+        ["id=mainForm:CP_COMPONENT_ACCOUNT_LIST_content:accountList:1:check", "id"],
+        ["css=#mainForm\\3A CP_COMPONENT_ACCOUNT_LIST_content\\3A accountList\\3A 1\\3A check", "css:finder"],
+        ["xpath=//input[@id='mainForm:CP_COMPONENT_ACCOUNT_LIST_content:accountList:1:check']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CP_COMPONENT_ACCOUNT_LIST_content:accountList']/tbody/tr[2]/td/input", "xpath:idRelative"],
+        ["xpath=//tr[2]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d32a9365-d6ed-4219-9c7d-4333679a896e",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:CP_COMPONENT_ACCOUNT_LIST_content:accountList:2:check",
+      "targets": [
+        ["id=mainForm:CP_COMPONENT_ACCOUNT_LIST_content:accountList:2:check", "id"],
+        ["css=#mainForm\\3A CP_COMPONENT_ACCOUNT_LIST_content\\3A accountList\\3A 2\\3A check", "css:finder"],
+        ["xpath=//input[@id='mainForm:CP_COMPONENT_ACCOUNT_LIST_content:accountList:2:check']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CP_COMPONENT_ACCOUNT_LIST_content:accountList']/tbody/tr[3]/td/input", "xpath:idRelative"],
+        ["xpath=//tr[3]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "00e044f8-e03d-4434-86be-b306299264f1",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:buttonPanel:done",
+      "targets": [
+        ["id=mainForm:buttonPanel:done", "id"],
+        ["css=#mainForm\\3A buttonPanel\\3A done", "css:finder"],
+        ["xpath=//button[@id='mainForm:buttonPanel:done']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:buttonPanel']/tbody/tr/td/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Done')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "95f0adfc-bf6e-4322-814e-ab6b2b5c6600",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:fundingId:loadFundings",
+      "targets": [
+        ["id=mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:fundingId:loadFundings", "id"],
+        ["css=#mainForm\\3A CP_COMPONENT_ACCOUNT_SETUP_EDIT_content\\3A fundingId\\3AloadFundings", "css:finder"],
+        ["xpath=(//a[contains(text(),'Load')])[2]", "xpath:link"],
+        ["xpath=//a[@id='mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:fundingId:loadFundings']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:fundingId']/thead/tr/th/table/tbody/tr/td[4]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[7]", "xpath:href"],
+        ["xpath=//table[3]/tbody/tr/td/div/table/thead/tr/th/table/tbody/tr/td[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c2d05150-b34e-4adf-b201-28e9b4b1814d",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:CP_COMPONENT_FUNDING_SOURCE_LIST_content:fundingList:2:check",
+      "targets": [
+        ["id=mainForm:CP_COMPONENT_FUNDING_SOURCE_LIST_content:fundingList:2:check", "id"],
+        ["css=#mainForm\\3A CP_COMPONENT_FUNDING_SOURCE_LIST_content\\3A fundingList\\3A 2\\3A check", "css:finder"],
+        ["xpath=//input[@id='mainForm:CP_COMPONENT_FUNDING_SOURCE_LIST_content:fundingList:2:check']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CP_COMPONENT_FUNDING_SOURCE_LIST_content:fundingList']/tbody/tr[3]/td/input", "xpath:idRelative"],
+        ["xpath=//tr[3]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7d3aa3fa-edc7-44d4-af42-7ada24cc7223",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:CP_COMPONENT_FUNDING_SOURCE_LIST_content:fundingList:1:check",
+      "targets": [
+        ["id=mainForm:CP_COMPONENT_FUNDING_SOURCE_LIST_content:fundingList:1:check", "id"],
+        ["css=#mainForm\\3A CP_COMPONENT_FUNDING_SOURCE_LIST_content\\3A fundingList\\3A 1\\3A check", "css:finder"],
+        ["xpath=//input[@id='mainForm:CP_COMPONENT_FUNDING_SOURCE_LIST_content:fundingList:1:check']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CP_COMPONENT_FUNDING_SOURCE_LIST_content:fundingList']/tbody/tr[2]/td/input", "xpath:idRelative"],
+        ["xpath=//tr[2]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2cd38134-ab00-4a1f-806d-b6b156bd2df0",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:buttonPanel:done",
+      "targets": [
+        ["id=mainForm:buttonPanel:done", "id"],
+        ["css=#mainForm\\3A buttonPanel\\3A done", "css:finder"],
+        ["xpath=//button[@id='mainForm:buttonPanel:done']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:buttonPanel']/tbody/tr/td/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Done')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3504d4c1-9957-4eb9-987b-8821d85de4a0",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:accountId:1:ae_cp_prj_comp_acct_budget_percent",
+      "targets": [
+        ["id=mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:accountId:1:ae_cp_prj_comp_acct_budget_percent", "id"],
+        ["name=mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:accountId:1:ae_cp_prj_comp_acct_budget_percent", "name"],
+        ["css=#mainForm\\3A CP_COMPONENT_ACCOUNT_SETUP_EDIT_content\\3A accountId\\3A 1\\3A ae_cp_prj_comp_acct_budget_percent", "css:finder"],
+        ["xpath=//input[@id='mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:accountId:1:ae_cp_prj_comp_acct_budget_percent']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:accountId']/tbody/tr[2]/td[8]/input", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[8]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a3b39ce0-9cfc-47c5-90ac-e8981f420df1",
+      "comment": "",
+      "command": "type",
+      "target": "id=mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:accountId:1:ae_cp_prj_comp_acct_budget_percent",
+      "targets": [
+        ["id=mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:accountId:1:ae_cp_prj_comp_acct_budget_percent", "id"],
+        ["name=mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:accountId:1:ae_cp_prj_comp_acct_budget_percent", "name"],
+        ["css=#mainForm\\3A CP_COMPONENT_ACCOUNT_SETUP_EDIT_content\\3A accountId\\3A 1\\3A ae_cp_prj_comp_acct_budget_percent", "css:finder"],
+        ["xpath=//input[@id='mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:accountId:1:ae_cp_prj_comp_acct_budget_percent']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:accountId']/tbody/tr[2]/td[8]/input", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[8]/input", "xpath:position"]
+      ],
+      "value": "20"
+    }, {
+      "id": "ddcc24f0-bff3-4fde-baa8-de54c6f916d3",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:accountId:2:ae_cp_prj_comp_acct_budget_percent",
+      "targets": [
+        ["id=mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:accountId:2:ae_cp_prj_comp_acct_budget_percent", "id"],
+        ["name=mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:accountId:2:ae_cp_prj_comp_acct_budget_percent", "name"],
+        ["css=#mainForm\\3A CP_COMPONENT_ACCOUNT_SETUP_EDIT_content\\3A accountId\\3A 2\\3A ae_cp_prj_comp_acct_budget_percent", "css:finder"],
+        ["xpath=//input[@id='mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:accountId:2:ae_cp_prj_comp_acct_budget_percent']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:accountId']/tbody/tr[3]/td[8]/input", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[8]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bb876788-7597-46c3-98cf-022ccccc1c3f",
+      "comment": "",
+      "command": "type",
+      "target": "id=mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:accountId:2:ae_cp_prj_comp_acct_budget_percent",
+      "targets": [
+        ["id=mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:accountId:2:ae_cp_prj_comp_acct_budget_percent", "id"],
+        ["name=mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:accountId:2:ae_cp_prj_comp_acct_budget_percent", "name"],
+        ["css=#mainForm\\3A CP_COMPONENT_ACCOUNT_SETUP_EDIT_content\\3A accountId\\3A 2\\3A ae_cp_prj_comp_acct_budget_percent", "css:finder"],
+        ["xpath=//input[@id='mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:accountId:2:ae_cp_prj_comp_acct_budget_percent']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:accountId']/tbody/tr[3]/td[8]/input", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[8]/input", "xpath:position"]
+      ],
+      "value": "80"
+    }, {
+      "id": "84d12fa5-343c-4140-b139-77d485085410",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:fundingId:0:ae_cp_prj_comp_fund_budget_percent",
+      "targets": [
+        ["id=mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:fundingId:0:ae_cp_prj_comp_fund_budget_percent", "id"],
+        ["name=mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:fundingId:0:ae_cp_prj_comp_fund_budget_percent", "name"],
+        ["css=#mainForm\\3A CP_COMPONENT_ACCOUNT_SETUP_EDIT_content\\3A fundingId\\3A 0\\3A ae_cp_prj_comp_fund_budget_percent", "css:finder"],
+        ["xpath=//input[@id='mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:fundingId:0:ae_cp_prj_comp_fund_budget_percent']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:fundingId']/tbody/tr/td[8]/input", "xpath:idRelative"],
+        ["xpath=//table[3]/tbody/tr/td/div/table/tbody/tr/td[8]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5afdf9da-1897-49c5-acac-4b2c92afce59",
+      "comment": "",
+      "command": "type",
+      "target": "id=mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:fundingId:0:ae_cp_prj_comp_fund_budget_percent",
+      "targets": [
+        ["id=mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:fundingId:0:ae_cp_prj_comp_fund_budget_percent", "id"],
+        ["name=mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:fundingId:0:ae_cp_prj_comp_fund_budget_percent", "name"],
+        ["css=#mainForm\\3A CP_COMPONENT_ACCOUNT_SETUP_EDIT_content\\3A fundingId\\3A 0\\3A ae_cp_prj_comp_fund_budget_percent", "css:finder"],
+        ["xpath=//input[@id='mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:fundingId:0:ae_cp_prj_comp_fund_budget_percent']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:fundingId']/tbody/tr/td[8]/input", "xpath:idRelative"],
+        ["xpath=//table[3]/tbody/tr/td/div/table/tbody/tr/td[8]/input", "xpath:position"]
+      ],
+      "value": "25"
+    }, {
+      "id": "97cc6ce3-5d08-4e7f-a329-c52b64448b05",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:fundingId:1:ae_cp_prj_comp_fund_budget_percent",
+      "targets": [
+        ["id=mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:fundingId:1:ae_cp_prj_comp_fund_budget_percent", "id"],
+        ["name=mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:fundingId:1:ae_cp_prj_comp_fund_budget_percent", "name"],
+        ["css=#mainForm\\3A CP_COMPONENT_ACCOUNT_SETUP_EDIT_content\\3A fundingId\\3A 1\\3A ae_cp_prj_comp_fund_budget_percent", "css:finder"],
+        ["xpath=//input[@id='mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:fundingId:1:ae_cp_prj_comp_fund_budget_percent']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:fundingId']/tbody/tr[2]/td[8]/input", "xpath:idRelative"],
+        ["xpath=//table[3]/tbody/tr/td/div/table/tbody/tr[2]/td[8]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6491b5ae-adfa-4146-8f17-a76f7221b239",
+      "comment": "",
+      "command": "type",
+      "target": "id=mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:fundingId:1:ae_cp_prj_comp_fund_budget_percent",
+      "targets": [
+        ["id=mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:fundingId:1:ae_cp_prj_comp_fund_budget_percent", "id"],
+        ["name=mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:fundingId:1:ae_cp_prj_comp_fund_budget_percent", "name"],
+        ["css=#mainForm\\3A CP_COMPONENT_ACCOUNT_SETUP_EDIT_content\\3A fundingId\\3A 1\\3A ae_cp_prj_comp_fund_budget_percent", "css:finder"],
+        ["xpath=//input[@id='mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:fundingId:1:ae_cp_prj_comp_fund_budget_percent']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:fundingId']/tbody/tr[2]/td[8]/input", "xpath:idRelative"],
+        ["xpath=//table[3]/tbody/tr/td/div/table/tbody/tr[2]/td[8]/input", "xpath:position"]
+      ],
+      "value": "45"
+    }, {
+      "id": "f5831646-67e4-45d7-b6da-fcb362d81e63",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:fundingId:2:ae_cp_prj_comp_fund_budget_percent",
+      "targets": [
+        ["id=mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:fundingId:2:ae_cp_prj_comp_fund_budget_percent", "id"],
+        ["name=mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:fundingId:2:ae_cp_prj_comp_fund_budget_percent", "name"],
+        ["css=#mainForm\\3A CP_COMPONENT_ACCOUNT_SETUP_EDIT_content\\3A fundingId\\3A 2\\3A ae_cp_prj_comp_fund_budget_percent", "css:finder"],
+        ["xpath=//input[@id='mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:fundingId:2:ae_cp_prj_comp_fund_budget_percent']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:fundingId']/tbody/tr[3]/td[8]/input", "xpath:idRelative"],
+        ["xpath=//table[3]/tbody/tr/td/div/table/tbody/tr[3]/td[8]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "11fcc423-fd4e-4447-bf26-61f5ec7c12a2",
+      "comment": "",
+      "command": "type",
+      "target": "id=mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:fundingId:2:ae_cp_prj_comp_fund_budget_percent",
+      "targets": [
+        ["id=mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:fundingId:2:ae_cp_prj_comp_fund_budget_percent", "id"],
+        ["name=mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:fundingId:2:ae_cp_prj_comp_fund_budget_percent", "name"],
+        ["css=#mainForm\\3A CP_COMPONENT_ACCOUNT_SETUP_EDIT_content\\3A fundingId\\3A 2\\3A ae_cp_prj_comp_fund_budget_percent", "css:finder"],
+        ["xpath=//input[@id='mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:fundingId:2:ae_cp_prj_comp_fund_budget_percent']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:fundingId']/tbody/tr[3]/td[8]/input", "xpath:idRelative"],
+        ["xpath=//table[3]/tbody/tr/td/div/table/tbody/tr[3]/td[8]/input", "xpath:position"]
+      ],
+      "value": "30"
+    }, {
+      "id": "6f1c8803-de43-4c9f-b041-c9dba595540e",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:buttonPanel:done",
+      "targets": [
+        ["id=mainForm:buttonPanel:done", "id"],
+        ["css=#mainForm\\3A buttonPanel\\3A done", "css:finder"],
+        ["xpath=//button[@id='mainForm:buttonPanel:done']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:buttonPanel']/tbody/tr/td/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Done')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "71a9e39a-cdf2-41d4-bfc3-ed30eebb1f79",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:buttonPanel:done",
+      "targets": [
+        ["id=mainForm:buttonPanel:done", "id"],
+        ["css=#mainForm\\3A buttonPanel\\3A done", "css:finder"],
+        ["xpath=//button[@id='mainForm:buttonPanel:done']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:buttonPanel']/tbody/tr/td/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Done')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a7db9faf-ddde-4cc9-b9f7-a832ec9d066b",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:buttonPanel:done",
+      "targets": [
+        ["id=mainForm:buttonPanel:done", "id"],
+        ["css=#mainForm\\3A buttonPanel\\3A done", "css:finder"],
+        ["xpath=//button[@id='mainForm:buttonPanel:done']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:buttonPanel']/tbody/tr/td/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Done')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "81b4ffec-f393-4e89-bddb-cfe688cd20ce",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:buttonPanel:save",
+      "targets": [
+        ["id=mainForm:buttonPanel:save", "id"],
+        ["css=#mainForm\\3A buttonPanel\\3Asave", "css:finder"],
+        ["xpath=//button[@id='mainForm:buttonPanel:save']", "xpath:attributes"],
+        ["xpath=//table[@id='mainForm:buttonPanel']/tbody/tr/td/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Save')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f194650c-5ca1-4ce3-8bf3-f12e6c0b8114",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:headerInclude:aimTitle1",
+      "targets": [
+        ["id=mainForm:headerInclude:aimTitle1", "id"],
+        ["css=#mainForm\\3AheaderInclude\\3A aimTitle1", "css:finder"],
+        ["xpath=//span[@id='mainForm:headerInclude:aimTitle1']", "xpath:attributes"],
+        ["xpath=//a[@id='mainForm:headerInclude:backToDesktopAction1']/span", "xpath:idRelative"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'AiM')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a6848a3f-ff83-43e4-ac25-aa44b27bafa8",
+      "comment": "",
+      "command": "click",
+      "target": "id=menuListMain_5",
+      "targets": [
+        ["id=menuListMain_5", "id"],
+        ["css=#menuListMain_5", "css:finder"],
+        ["xpath=//li[@id='menuListMain_5']", "xpath:attributes"],
+        ["xpath=//ul[@id='menuListMain']/li[6]", "xpath:idRelative"],
+        ["xpath=//li[6]", "xpath:position"],
+        ["xpath=//li[contains(.,'Capital Projects')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d92b9a04-ba80-404c-9bab-13fbe1dcd4ee",
+      "comment": "",
+      "command": "click",
+      "target": "id=mainForm:menuListMain:CP",
+      "targets": [
+        ["id=mainForm:menuListMain:CP", "id"],
+        ["linkText=Capital Projects", "linkText"],
+        ["css=#mainForm\\3AmenuListMain\\3A CP", "css:finder"],
+        ["xpath=//a[contains(text(),'Capital Projects')]", "xpath:link"],
+        ["xpath=//a[@id='mainForm:menuListMain:CP']", "xpath:attributes"],
+        ["xpath=//li[@id='menuListMain_5']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.aimdemo.ualberta.ca:443/fmax/screen/WORKDESK?module=CP')]", "xpath:href"],
+        ["xpath=//li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Capital Projects')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b4dc21e4-9913-403c-ad88-430e6713b396",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=1201-CP_Fin_Audits",
+      "targets": [
+        ["linkText=1201-CP_Fin_Audits", "linkText"],
+        ["css=.focus > .channelItem", "css:finder"],
+        ["xpath=//a[contains(text(),'1201-CP_Fin_Audits')]", "xpath:link"],
+        ["xpath=//ul[@id='d_14088_contentul']/li[18]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.aimdemo.ualberta.ca:443/fmax/report?__fmaxDocId=1FAB12B4-0F28-456B-8A11-43FD4EAD00C6&__fmaxReportId=1201')]", "xpath:href"],
+        ["xpath=//li[18]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'1201-CP_Fin_Audits')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win4518",
+      "windowTimeout": 2000
+    }, {
+      "id": "09a33af7-b71c-44ab-9caa-c05d9c485b86",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win4518}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "725a6ee3-4104-4764-a71d-4d08204b7d68",
+      "comment": "",
+      "command": "click",
+      "target": "id=RP_CapitalProj_selection",
+      "targets": [
+        ["id=RP_CapitalProj_selection", "id"],
+        ["css=#RP_CapitalProj_selection", "css:finder"],
+        ["xpath=//select[@id='RP_CapitalProj_selection']", "xpath:attributes"],
+        ["xpath=//table[@id='parameter_table']/tbody/tr/td/table/tbody/tr[4]/td[2]/select", "xpath:idRelative"],
+        ["xpath=//td[2]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "493b643d-6b1d-462a-99fd-dac510dca9ab",
+      "comment": "",
+      "command": "select",
+      "target": "id=RP_CapitalProj_selection",
+      "targets": [],
+      "value": "label=CP00309 Building Infrastructure Assessment - Sector 2 (CEA"
+    }, {
+      "id": "568eac39-5193-4cdd-8eaa-caeb84cf3cb9",
+      "comment": "",
+      "command": "click",
+      "target": "id=RP_CapitalProj_selection",
+      "targets": [
+        ["id=RP_CapitalProj_selection", "id"],
+        ["css=#RP_CapitalProj_selection", "css:finder"],
+        ["xpath=//select[@id='RP_CapitalProj_selection']", "xpath:attributes"],
+        ["xpath=//table[@id='parameter_table']/tbody/tr/td/table/tbody/tr[4]/td[2]/select", "xpath:idRelative"],
+        ["xpath=//td[2]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3848dadf-ce0f-41bf-90ae-564aea6dd148",
+      "comment": "",
+      "command": "click",
+      "target": "css=#parameterDialogokButton > .dialogBtnBarButtonText",
+      "targets": [
+        ["css=#parameterDialogokButton > .dialogBtnBarButtonText", "css:finder"],
+        ["xpath=(//input[@value='OK'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='parameterDialogokButton']/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div/div[2]/div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "27daa6c8-fede-4495-9940-0ee970c51faf",
+      "comment": "",
+      "command": "click",
+      "target": "name=export",
+      "targets": [
+        ["name=export", "name"],
+        ["css=td:nth-child(6) > .birtviewer_clickable", "css:finder"],
+        ["xpath=//input[@name='export']", "xpath:attributes"],
+        ["xpath=//div[@id='toolbar']/table/tbody/tr[2]/td[6]/input", "xpath:idRelative"],
+        ["xpath=//td[6]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "aea041e7-7c69-4d7d-be56-459ab0fd670c",
+      "comment": "",
+      "command": "click",
+      "target": "css=#simpleExportDataDialogcancelButton > .dialogBtnBarButtonText",
+      "targets": [
+        ["css=#simpleExportDataDialogcancelButton > .dialogBtnBarButtonText", "css:finder"],
+        ["xpath=//input[@value='Cancel']", "xpath:attributes"],
+        ["xpath=//div[@id='simpleExportDataDialogcancelButton']/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "41379a1f-b296-4da7-9e8e-924e69e8fb3c",
+      "comment": "",
+      "command": "click",
+      "target": "name=exportReport",
+      "targets": [
+        ["name=exportReport", "name"],
+        ["css=td:nth-child(8) > .birtviewer_clickable", "css:finder"],
+        ["xpath=//input[@name='exportReport']", "xpath:attributes"],
+        ["xpath=//div[@id='toolbar']/table/tbody/tr[2]/td[8]/input", "xpath:idRelative"],
+        ["xpath=//td[8]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b75d9d82-69d6-4599-9ab2-87c4b822601f",
+      "comment": "",
+      "command": "click",
+      "target": "id=exportFormat",
+      "targets": [
+        ["id=exportFormat", "id"],
+        ["name=format", "name"],
+        ["css=#exportFormat", "css:finder"],
+        ["xpath=//select[@id='exportFormat']", "xpath:attributes"],
+        ["xpath=//div[@id='exportReportDialogdialogContentContainer']/table/tbody/tr[2]/td/select", "xpath:idRelative"],
+        ["xpath=//div/table/tbody/tr[2]/td/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "25ba51a2-435a-4c43-a17b-cd122419bd0c",
+      "comment": "",
+      "command": "select",
+      "target": "id=exportFormat",
+      "targets": [],
+      "value": "label=Excel"
+    }, {
+      "id": "96f6b968-84e3-4390-8e64-5b08af910077",
+      "comment": "",
+      "command": "click",
+      "target": "id=exportFormat",
+      "targets": [
+        ["id=exportFormat", "id"],
+        ["name=format", "name"],
+        ["css=#exportFormat", "css:finder"],
+        ["xpath=//select[@id='exportFormat']", "xpath:attributes"],
+        ["xpath=//div[@id='exportReportDialogdialogContentContainer']/table/tbody/tr[2]/td/select", "xpath:idRelative"],
+        ["xpath=//div/table/tbody/tr[2]/td/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4f0549cc-4883-4b51-a467-b841e8714d5d",
+      "comment": "",
+      "command": "click",
+      "target": "css=#exportReportDialogokButton > .dialogBtnBarButtonText",
+      "targets": [
+        ["css=#exportReportDialogokButton > .dialogBtnBarButtonText", "css:finder"],
+        ["xpath=(//input[@value='OK'])[4]", "xpath:attributes"],
+        ["xpath=//div[@id='exportReportDialogokButton']/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/div/div[2]/div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "be731970-58d6-4575-9bcc-05b47368f977",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["a4f03c37-eacb-4e12-b156-88c2f004f67f"]
+  }],
+  "urls": ["https://www.aimdemo.ualberta.ca/fmax/"],
+  "plugins": []
+}
