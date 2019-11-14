@@ -9,14 +9,14 @@ from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.common.keys import Keys
-
+import csv
 
 class TestSample():
-    def setup_method(self, method):
+    def setup_method(self):
         self.driver = webdriver.Chrome()
         self.vars = {}
 
-    def teardown_method(self, method):
+    def teardown_method(self):
         self.driver.quit()
 
     def wait_for_window(self, timeout=2):
@@ -27,6 +27,13 @@ class TestSample():
             return set(wh_now).difference(set(wh_then)).pop()
 
     def test_sample(self):
+        """Load credentials to log in"""
+        with open("credential.csv","rb") as credential:
+            credential = csv.DictReader(credential)
+            for row in credential:
+                username = row["username"]
+                password = row["password"]
+
         self.driver.get("https://www.aimdemo.ualberta.ca/fmax/login?_t=https%3A%2F%2Fwww.aimdemo.ualberta.ca%2Ffmax%2Fscreen%2FWORKDESK")
         self.driver.set_window_size(1900, 1020)
         self.driver.find_element(By.ID, "login").click()
@@ -289,3 +296,7 @@ class TestSample():
         self.driver.find_element(By.ID, "exportFormat").click()
         self.driver.find_element(By.CSS_SELECTOR, "#exportReportDialogokButton > .dialogBtnBarButtonText").click()
 
+if __name__ == '__main__':
+    bot = TestSample()
+    bot.setup_method()
+    bot.test_sample()
