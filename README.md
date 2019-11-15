@@ -10,3 +10,11 @@
 
 4. Run ```pip install -r requirements.txt``` under the activated virtual environment
 
+# To Run the program
+
+1. Fill in credential.csv with valid username and password, and save
+
+2. Fill in template.xlsx with validated data, double check, and save.
+
+    
+
