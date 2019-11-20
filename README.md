@@ -1,6 +1,6 @@
 # Install the program
 
-1. Install [Miniconda (Python3.7)](https://docs.conda.io/en/latest/miniconda.html) and install it on your local machine. You can access conda via the console, to make sure it's properly installed please run `conda -V` to display the version.
+1. Install [Miniconda (Python3.7)](https://docs.conda.io/en/latest/miniconda.html)  on your local machine. You can access conda via the console, to make sure it's properly installed please run `conda -V` to display the version.
 
 2. Create new virtual environment. Open Anaconda Prompt and run:
 
@@ -8,7 +8,7 @@
 
 3.  Once it's created you can activate it by running: ```conda activate ai_env```
 
-4. Run ```pip install -r requirements.txt``` under the activated virtual environment
+4. Go to the current directory, run ```pip install -r requirements.txt``` under the activated virtual environment
 
 # To Run the program
 
