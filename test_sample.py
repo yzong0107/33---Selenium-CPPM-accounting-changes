@@ -37,6 +37,16 @@ class TestSample():
             for row in credential:
                 username = row["username"]
                 password = row["password"]
+        """Read Excel Spreadsheet"""
+        template = 'template.xlsx'
+        component_table = pd.read_excel(template,sheet_name='component')
+        speedcode_table = pd.read_excel(template,sheet_name='speedcode')
+        fundingsource_table = pd.read_excel(template,sheet_name='fundingsource')
+
+        print (component_table)
+        print (speedcode_table)
+        print (fundingsource_table)
+
 
         self.driver.get("https://www.aimdemo.ualberta.ca/fmax/screen/WORKDESK")
         self.driver.set_window_size(1900, 1020)
@@ -56,8 +66,21 @@ class TestSample():
         self.driver.find_element(By.ID, "mainForm:sideButtonPanel:moreMenu_2").click()
         self.driver.find_element(By.ID, "mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:accountId:loadAccounts").click()
 
-        df = pd.read_html(self.driver.page_source)[0]
-        print (df.head())
+        df_list = pd.read_html(self.driver.page_source)
+        # print (df_list[2])
+        # print (df_list[2].columns.values)
+        print (df_list[3])
+        print (df_list[3].columns.values)
+        print (df_list[3]["Speedcode:"])
+        print (df_list[3]["Account:"])
+        print (df_list[3]["Budgeted"])
+        print (df_list[3]["Sequence"])
+        acct_check_table = df_list[3]
+        new_SCs = speedcode_table["Speedcode"].str.cat(sep='|')
+        print (new_SCs)
+        checkbox_id = acct_check_table.index[acct_check_table["Speedcode:"].str.contains(new_SCs)].tolist()
+        print (checkbox_id)
+
 
         # self.driver.find_element(By.ID, "mainForm:CP_COMPONENT_ACCOUNT_LIST_content:accountList:1:check").click()
         # self.driver.find_element(By.CSS_SELECTOR, ".browseRow:nth-child(3) > td:nth-child(1)").click()
