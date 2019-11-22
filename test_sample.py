@@ -67,26 +67,21 @@ class TestSample():
         self.driver.find_element(By.ID, "mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:accountId:loadAccounts").click()
 
         df_list = pd.read_html(self.driver.page_source)
-        # print (df_list[2])
-        # print (df_list[2].columns.values)
-        print (df_list[3])
-        print (df_list[3].columns.values)
-        print (df_list[3]["Speedcode:"])
-        print (df_list[3]["Account:"])
-        print (df_list[3]["Budgeted"])
-        print (df_list[3]["Sequence"])
-        acct_check_table = df_list[3]
+        acct_check_table = df_list[3] #This is the main form
         new_SCs = speedcode_table["Speedcode"].str.cat(sep='|')
         print (new_SCs)
         checkbox_id = acct_check_table.index[acct_check_table["Speedcode:"].str.contains(new_SCs)].tolist()
+        print (acct_check_table["Speedcode:"].str.contains(new_SCs))
+        for i in checkbox_id:
+            id_str = "mainForm:CP_COMPONENT_ACCOUNT_LIST_content:accountList:"+str(i)+":check"
+            self.driver.find_element(By.ID, id_str).click()
+
         print (checkbox_id)
 
+        self.driver.find_element(By.ID, "mainForm:buttonPanel:done").click()
 
-        # self.driver.find_element(By.ID, "mainForm:CP_COMPONENT_ACCOUNT_LIST_content:accountList:1:check").click()
-        # self.driver.find_element(By.CSS_SELECTOR, ".browseRow:nth-child(3) > td:nth-child(1)").click()
-        # self.driver.find_element(By.CSS_SELECTOR, ".browseRow:nth-child(3) > td:nth-child(1)").click()
-        # self.driver.find_element(By.ID, "mainForm:CP_COMPONENT_ACCOUNT_LIST_content:accountList:2:check").click()
-        # self.driver.find_element(By.ID, "mainForm:buttonPanel:done").click()
+
+
         # self.driver.find_element(By.ID, "mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:accountId:1:ae_cp_prj_comp_acct_budget_percent").click()
         # self.driver.find_element(By.ID, "mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:accountId:1:ae_cp_prj_comp_acct_budget_percent").send_keys("20")
         # self.driver.find_element(By.ID, "mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:accountId:2:ae_cp_prj_comp_acct_budget_percent").click()
