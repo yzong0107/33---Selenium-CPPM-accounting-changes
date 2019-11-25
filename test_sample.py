@@ -12,6 +12,7 @@ from selenium.webdriver.common.keys import Keys
 import csv
 import os
 import pandas as pd
+import numpy as np
 
 class TestSample():
     def setup_method(self):
@@ -37,57 +38,61 @@ class TestSample():
             for row in credential:
                 username = row["username"]
                 password = row["password"]
+
         """Read Excel Spreadsheet"""
         template = 'template.xlsx'
         component_table = pd.read_excel(template,sheet_name='component')
         speedcode_table = pd.read_excel(template,sheet_name='speedcode')
         fundingsource_table = pd.read_excel(template,sheet_name='fundingsource')
 
+
+        speedcode_table.replace(np.nan, '', regex=True,inplace=True)
+        fundingsource_table.replace(np.nan, '', regex=True,inplace=True)
+
         print (component_table)
         print (speedcode_table)
         print (fundingsource_table)
 
-
+        """Search for capital project"""
         self.driver.get("https://www.aimdemo.ualberta.ca/fmax/screen/WORKDESK")
         self.driver.set_window_size(1900, 1020)
         self.driver.find_element(By.ID, "username").send_keys(username)
         self.driver.find_element(By.ID, "password").send_keys(password)
         self.driver.find_element(By.ID, "login").click()
-
         self.driver.find_element(By.ID, "mainForm:menuListMain:CP").click()
         self.driver.find_element(By.ID, "mainForm:menuListMain:search_CAPITAL_PROJECT_VIEW").click()
         self.driver.find_element(By.ID, "mainForm:ae_cp_prj_e_capital_project:level0").click()
         self.driver.find_element(By.ID, "mainForm:ae_cp_prj_e_capital_project:level0").send_keys(capitalproject)
         self.driver.find_element(By.ID, "mainForm:buttonPanel:executeSearch").click()
         self.driver.find_element(By.ID, "mainForm:browse:0:ae_cp_prj_e_capital_project").click()
+
+        """Edit capital project"""
         self.driver.find_element(By.ID, "mainForm:buttonPanel:edit").click()
         self.driver.find_element(By.ID, "mainForm:CAPITAL_PROJECT_EDIT_content:projCompGrpBrowse:0:link1").click()
         self.driver.find_element(By.ID, "mainForm:CP_COMPONENT_GROUP_EDIT_content:projCompBrowse:0:link1").click()
         self.driver.find_element(By.ID, "mainForm:sideButtonPanel:moreMenu_2").click()
-        self.driver.find_element(By.ID, "mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:accountId:loadAccounts").click()
 
-        df_list = pd.read_html(self.driver.page_source)
-        acct_check_table = df_list[3] #This is the main form
-        new_SCs = speedcode_table["Speedcode"].str.cat(sep='|')
-        print (new_SCs)
-        checkbox_id = acct_check_table.index[acct_check_table["Speedcode:"].str.contains(new_SCs)].tolist()
-        print (acct_check_table["Speedcode:"].str.contains(new_SCs))
+        """Load new accounts"""
+        self.driver.find_element(By.ID, "mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:accountId:loadAccounts").click()
+        checkbox_id = speedcode_table.index[speedcode_table["New record (Y/N?)"]=="Y"]
         for i in checkbox_id:
             id_str = "mainForm:CP_COMPONENT_ACCOUNT_LIST_content:accountList:"+str(i)+":check"
             self.driver.find_element(By.ID, id_str).click()
-
-        print (checkbox_id)
-
         self.driver.find_element(By.ID, "mainForm:buttonPanel:done").click()
 
+        """Update account info"""
+        for i in speedcode_table.index.values:
+            start_date_id = "mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:accountId:"+str(i)+":ae_cp_prj_comp_acct_start_date"
+            self.driver.find_element(By.ID, start_date_id).clear()
+            self.driver.find_element(By.ID, start_date_id).send_keys(str(speedcode_table.iloc[i]["Start Date (yyyy-mm-dd)"]))
+            end_date_id = "mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:accountId:"+str(i)+":ae_cp_prj_comp_acct_end_date"
+            self.driver.find_element(By.ID, end_date_id).clear()
+            self.driver.find_element(By.ID, end_date_id).send_keys(str(speedcode_table.iloc[i]["End Date (yyyy-mm-dd)"]))
+            allocation_id = "mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:accountId:"+str(i)+":ae_cp_prj_comp_acct_budget_percent"
+            self.driver.find_element(By.ID, allocation_id).clear()
+            self.driver.find_element(By.ID, allocation_id).send_keys(str(speedcode_table.iloc[i]["Allocation Percent (%)"]))
 
 
-        # self.driver.find_element(By.ID, "mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:accountId:1:ae_cp_prj_comp_acct_budget_percent").click()
-        # self.driver.find_element(By.ID, "mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:accountId:1:ae_cp_prj_comp_acct_budget_percent").send_keys("20")
-        # self.driver.find_element(By.ID, "mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:accountId:2:ae_cp_prj_comp_acct_budget_percent").click()
-        # self.driver.find_element(By.ID, "mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:accountId:2:ae_cp_prj_comp_acct_budget_percent").send_keys("80")
-        # self.driver.find_element(By.ID, "mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:accountId:0:ae_cp_prj_comp_acct_end_date").click()
-        # self.driver.find_element(By.CSS_SELECTOR, ".calendarRow:nth-child(6) > .day:nth-child(3)").click()
         # self.driver.find_element(By.ID, "mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:fundingId:loadFundings").click()
         # self.driver.find_element(By.ID, "mainForm:CP_COMPONENT_FUNDING_SOURCE_LIST_content:fundingList:2:check").click()
         # self.driver.find_element(By.ID, "mainForm:CP_COMPONENT_FUNDING_SOURCE_LIST_content:fundingList:1:check").click()
