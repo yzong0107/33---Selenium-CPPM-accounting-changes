@@ -10,6 +10,8 @@
 
 4. Go to the current directory, run ```pip install -r requirements.txt``` under the activated virtual environment
 
+5. Setup environment variables for Windows 10 System.
+
 # To Run the program
 
 1. Fill in credential.csv with valid username and password, and save
