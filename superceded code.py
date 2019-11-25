@@ -8,3 +8,5 @@ __author__ = "Tim Zong"
 # checkbox_id = acct_check_table.index[acct_check_table["Speedcode:"].str.contains(new_SCs)].tolist()
 # print (acct_check_table["Speedcode:"].str.contains(new_SCs))
 
+a = "//a[contains(text(),{0})]".format("\'"+"GENERAL CONTRACTING"+"\'")
+print (a)

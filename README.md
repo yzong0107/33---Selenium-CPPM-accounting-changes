@@ -20,3 +20,8 @@
 
     
 
+# Important Notes to Users
+
+1. Please do not change the layout of excel templates, i.e. adding columns, deleting columns, changing column names, etc.
+2. Please make sure the input value is valid
+3. Always check the error logs.txt after the program finishes. The program should continue running while logs the error.
