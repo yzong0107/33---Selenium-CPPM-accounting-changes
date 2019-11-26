@@ -6,7 +6,7 @@
 
     ```conda create --name selenium_env python==3.7 –y```
 
-3.  Once it's created you can activate it by running: ```conda activate ai_env```
+3.  Once it's created you can activate it by running: ```conda activate selenium_env```
 
 4. Go to the current directory, run ```pip install -r requirements.txt``` under the activated virtual environment
 
@@ -20,8 +20,8 @@
 
     
 
-# Important Notes to Users
+# Important Notes for Users
 
 1. Please do not change the layout of excel templates, i.e. adding columns, deleting columns, changing column names, etc.
 2. Please make sure the input value is valid
-3. Always check the error logs.txt after the program finishes. The program should continue running while logs the error.
+3. Always check the error logs.txt after the program finishes. The program should continue running while logging the error.
