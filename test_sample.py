@@ -30,7 +30,7 @@ class TestSample():
         if len(wh_now) > len(wh_then):
             return set(wh_now).difference(set(wh_then)).pop()
 
-    def test_sample(self,capitalproject):
+    def test_sample(self):
         start_time = time.time()
         """Open error logs"""
         error_log = open("Error Logs.txt", "r+")
@@ -59,33 +59,44 @@ class TestSample():
         # print (speedcode_table)
         # print (fundingsource_table)
 
-        """Search for capital project"""
+        """Go to project component search page, under Capital Projects module"""
         self.driver.get("https://www.aimdemo.ualberta.ca/fmax/screen/WORKDESK")
         self.driver.set_window_size(1900, 1020)
         self.driver.find_element(By.ID, "username").send_keys(username)
         self.driver.find_element(By.ID, "password").send_keys(password)
         self.driver.find_element(By.ID, "login").click()
         self.driver.find_element(By.ID, "mainForm:menuListMain:CP").click()
-        self.driver.find_element(By.ID, "mainForm:menuListMain:search_CAPITAL_PROJECT_VIEW").click()
-        self.driver.find_element(By.ID, "mainForm:ae_cp_prj_e_capital_project:level0").click()
-        self.driver.find_element(By.ID, "mainForm:ae_cp_prj_e_capital_project:level0").send_keys(capitalproject)
-        self.driver.find_element(By.ID, "mainForm:buttonPanel:executeSearch").click()
-        self.driver.find_element(By.ID, "mainForm:browse:0:ae_cp_prj_e_capital_project").click()
+        self.driver.find_element(By.ID,"mainForm:menuListMain:search_CP_COMPONENT_VIEW").click()
 
-        """Edit capital project"""
-        # TODO: looping through oomponent
-        # for row_id in component_table.index.values:
-        for row_id in range(30,96):
+        """Search for CP's components"""
+        # TODO: looping through component
+        for row_id in component_table.index.values:
+        # for row_id in range(5):
+            try:
+                self.driver.find_element(By.ID,"mainForm:buttonPanel:advancedSearch").click()
+            except:
+                pass #means we've already on advanced search page
+            self.driver.find_element(By.ID, "mainForm:ae_cp_prj_e_capital_project:level0").clear()
+            self.driver.find_element(By.ID, "mainForm:ae_cp_prj_grp_e_component_group:level0").clear()
+            self.driver.find_element(By.ID, "mainForm:ae_cp_prj_comp_component:level0").clear()
+            self.driver.find_element(By.ID, "mainForm:ae_cp_prj_e_capital_project:level0").send_keys(component_table.iloc[row_id]["capital_project"])
+            self.driver.find_element(By.ID,"mainForm:ae_cp_prj_grp_e_component_group:level0").send_keys(component_table.iloc[row_id]["component_group"])
+            self.driver.find_element(By.ID,"mainForm:ae_cp_prj_comp_component:level0").send_keys(component_table.iloc[row_id]["component"])
+            self.driver.find_element(By.ID, "mainForm:buttonPanel:executeSearch").click()
+
+            """If the component can be found, go into the component settings, else logs the error and move to next row"""
+            try:
+                self.driver.find_element(By.ID, "mainForm:browse:0:ae_cp_prj_comp_component").click()
+            except NoSuchElementException:
+                errorCount += 1
+                error_log.write(str(errorCount)+". {"+component_table.iloc[row_id].str.cat(sep=', ') + "} is NOT saved!\n")
+                error_log.write("Error type: the corresponding component of CP cannot be found in our system.\n")
+                error_log.write("\n") #blank line
+                self.driver.find_element(By.ID,"mainForm:buttonPanel:search").click()
+                continue # jump rest of codes below, and move to next row
+
             self.driver.find_element(By.ID, "mainForm:buttonPanel:edit").click()
-
-            comp_grp_xpath = "//a[contains(text(),{0})]".format("\'" + component_table.iloc[row_id]["component_group"] + "\'")
-            self.driver.find_element(By.XPATH,comp_grp_xpath).click()
-
-            comp_xpath = "//a[contains(text(),{0})]".format("\'" + component_table.iloc[row_id]["component"] + "\'")
-            while not self.driver.find_element(By.XPATH,comp_xpath):
-                self.driver.find_element(By.ID,"mainForm:CP_COMPONENT_GROUP_VIEW_content:projCompBrowse:browseNext").click()
-            self.driver.find_element(By.XPATH,comp_xpath).click()
-            self.driver.find_element(By.ID, "mainForm:sideButtonPanel:moreMenu_2").click()
+            self.driver.find_element(By.ID,"mainForm:sideButtonPanel:moreMenu_2").click()
 
             """Load new accounts"""
             self.driver.find_element(By.ID, "mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:accountId:loadAccounts").click()
@@ -128,26 +139,37 @@ class TestSample():
                     self.driver.find_element(By.ID, allocation_id).clear()
                     self.driver.find_element(By.ID, allocation_id).send_keys(str(fundingsource_table.iloc[i]["Allocation Percent (%)"]))
 
-                """Save the changes"""
-                self.driver.find_element(By.ID, "mainForm:buttonPanel:done").click()
-                self.driver.find_element(By.ID, "mainForm:buttonPanel:done").click()
-                self.driver.find_element(By.ID, "mainForm:buttonPanel:done").click()
+            except InvalidElementStateException:
+                errorCount += 1
+                error_log.write(str(errorCount)+". {"+component_table.iloc[row_id].str.cat(sep=', ') + "} is NOT saved!\n")
+                error_log.write("Error type: Accounts/funding sources inconsistency. The editing area have non-editable cells\n")
+                error_log.write("\n")
+                self.driver.find_element(By.ID, "mainForm:buttonPanel:cancel").click()
+                self.driver.find_element(By.ID, "mainForm:buttonPanel:cancel").click()
+                self.driver.find_element(By.ID, "mainForm:buttonPanel:search").click()
+                continue # jump rest of codes below, and move to next row
+
+            """Save the changes"""
+            self.driver.find_element(By.ID, "mainForm:buttonPanel:done").click()
+            try:
+                """Check if AiM throws out any errors"""
+                error_text = self.driver.find_element(By.ID, "mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:messages").text
+                errorCount += 1
+                error_log.write(str(errorCount)+". {"+component_table.iloc[row_id].str.cat(sep=', ') + "} is NOT saved!\n")
+                error_log.write("Error from AiM:\n")
+                error_log.write(error_text + "\n")
+                error_log.write("\n")
+                self.driver.find_element(By.ID, "mainForm:buttonPanel:cancel").click()
+                self.driver.find_element(By.ID, "mainForm:buttonPanel:cancel").click()
+            except NoSuchElementException:
                 #TODO: change "cancel" to "save"
                 self.driver.find_element(By.ID, "mainForm:buttonPanel:cancel").click()
-            except InvalidElementStateException as e:
-                errorCount += 1
-                error_log.write(str(errorCount) +". "+ str(e))
-                error_log.write("Component of "+component_table.iloc[row_id]["component"]+" is NOT SAVED!!")
-                error_log.write("\n")
-                self.driver.find_element(By.ID, "mainForm:buttonPanel:done").click()
-                self.driver.find_element(By.ID, "mainForm:buttonPanel:done").click()
-                self.driver.find_element(By.ID, "mainForm:buttonPanel:done").click()
-                self.driver.find_element(By.ID, "mainForm:buttonPanel:cancel").click()
+            self.driver.find_element(By.ID,"mainForm:buttonPanel:search").click()
 
-        print ("Taken: " + str(time.time()-start_time) + " s")
+        print ("Taken: " + str(time.time()-start_time) + " s  (= "+str((time.time()-start_time)/60.)+" min)")
 
 if __name__ == '__main__':
     bot = TestSample()
     bot.setup_method()
     cp = "cp00309"
-    bot.test_sample(cp)
+    bot.test_sample()

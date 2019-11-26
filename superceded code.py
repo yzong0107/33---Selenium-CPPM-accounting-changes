@@ -8,5 +8,16 @@ __author__ = "Tim Zong"
 # checkbox_id = acct_check_table.index[acct_check_table["Speedcode:"].str.contains(new_SCs)].tolist()
 # print (acct_check_table["Speedcode:"].str.contains(new_SCs))
 
-a = "//a[contains(text(),{0})]".format("\'"+"GENERAL CONTRACTING"+"\'")
-print (a)
+"""Search for components by xpath"""
+# comp_grp_xpath = "//a[contains(text(),{0})]".format("\'" + component_table.iloc[row_id]["component_group"] + "\'")
+# self.driver.find_element(By.XPATH, comp_grp_xpath).click()
+#
+# comp_xpath = "//a[contains(text(),{0})]".format("\'" + component_table.iloc[row_id]["component"] + "\'")
+# # while not self.driver.find_element(By.XPATH,comp_xpath):
+# #     self.driver.find_element(By.ID,"mainForm:CP_COMPONENT_GROUP_VIEW_content:projCompBrowse:browseNext").click()
+# self.driver.find_element(By.XPATH, comp_xpath).click()
+# self.driver.find_element(By.ID, "mainForm:sideButtonPanel:moreMenu_2").click()
+
+"""Saving changes, 2 extra lines"""
+# self.driver.find_element(By.ID, "mainForm:buttonPanel:done").click()
+# self.driver.find_element(By.ID, "mainForm:buttonPanel:done").click()
