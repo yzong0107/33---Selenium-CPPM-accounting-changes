@@ -52,8 +52,8 @@ class TestSample():
         speedcode_table = pd.read_excel(template,sheet_name='speedcode')
         fundingsource_table = pd.read_excel(template,sheet_name='fundingsource')
 
-        speedcode_table.replace(np.nan, '', regex=True,inplace=True)
-        fundingsource_table.replace(np.nan, '', regex=True,inplace=True)
+        speedcode_table.replace(np.nan, '', regex=True,inplace=True)  # replace all null cells with empty string
+        fundingsource_table.replace(np.nan, '', regex=True,inplace=True)  # replace all null cells with empty string
 
         # print (component_table)
         # print (speedcode_table)
@@ -71,7 +71,7 @@ class TestSample():
         """Search for CP's components"""
         # TODO: looping through component
         for row_id in component_table.index.values:
-        # for row_id in range(5):
+        # for row_id in range(74,len(component_table.index.values)):
             try:
                 self.driver.find_element(By.ID,"mainForm:buttonPanel:advancedSearch").click()
             except:
@@ -163,7 +163,7 @@ class TestSample():
                 self.driver.find_element(By.ID, "mainForm:buttonPanel:cancel").click()
             except NoSuchElementException:
                 #TODO: change "cancel" to "save"
-                self.driver.find_element(By.ID, "mainForm:buttonPanel:cancel").click()
+                self.driver.find_element(By.ID, "mainForm:buttonPanel:save").click()
             self.driver.find_element(By.ID,"mainForm:buttonPanel:search").click()
 
         print ("Taken: " + str(time.time()-start_time) + " s  (= "+str((time.time()-start_time)/60.)+" min)")
