@@ -171,5 +171,5 @@ class TestSample():
 if __name__ == '__main__':
     bot = TestSample()
     bot.setup_method()
-    cp = "cp00309"
+    # cp = "cp00309"
     bot.test_sample()
