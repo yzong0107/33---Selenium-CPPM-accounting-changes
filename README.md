@@ -16,7 +16,7 @@
 
 1. Fill in credential.csv with valid username and password, and save
 
-![screenshot login](pictures/screenshots1.PNG)
+![screenshot login](images/screenshots1.PNG)
 
 2. Fill in template.xlsx with validated data, double check, and save.
 
