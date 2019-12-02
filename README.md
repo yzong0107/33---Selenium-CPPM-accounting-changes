@@ -16,12 +16,16 @@
 
 1. Fill in credential.csv with valid username and password, and save
 
+![screenshot login](\pictures\screenshots1.PNG)
+
 2. Fill in template.xlsx with validated data, double check, and save.
 
-    
+ 
 
 # Important Notes for Users
 
-1. Please do not change the layout of excel templates, i.e. adding columns, deleting columns, changing column names, etc.
-2. Please make sure the input value is valid
-3. Always check the error logs.txt after the program finishes. The program should continue running while logging the error.
+1. Please do not change any file names.
+2. Please do not change the layout of excel templates, i.e. adding columns, deleting columns, changing column names, etc.
+3. Please make sure the input value is valid.
+4. Always check the error logs.txt after the program finishes. The program should continue running while logging the error.
+5. If there are any questions or improvement suggestions, feel free to contact Tim.
