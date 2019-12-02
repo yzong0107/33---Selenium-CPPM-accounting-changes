@@ -47,6 +47,7 @@ class TestSample():
                 password = row["password"]
 
         """Read Excel Spreadsheet"""
+        #TODO: change template names
         template = 'template.xlsx'
         component_table = pd.read_excel(template,sheet_name='component')
         speedcode_table = pd.read_excel(template,sheet_name='speedcode')
@@ -71,7 +72,7 @@ class TestSample():
         """Search for CP's components"""
         # TODO: looping through component
         for row_id in component_table.index.values:
-        # for row_id in range(74,len(component_table.index.values)):
+        # for row_id in range(3):
             try:
                 self.driver.find_element(By.ID,"mainForm:buttonPanel:advancedSearch").click()
             except:
