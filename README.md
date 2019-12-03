@@ -10,7 +10,11 @@
 
 4. Go to the current directory, run ```pip install -r requirements.txt``` under the activated virtual environment
 
-5. Setup environment variables for Windows 10 System.
+5. Setup environment variables for Windows 10 System. Typical path is :C:\Users\user_ID\AppData\Local\Continuum\miniconda3\envs\selenium_env
+
+6. To show hidden files in Windows 10:
+
+![show hidden files](images/screenshots2.PNG)
 
 # To Run the program
 
