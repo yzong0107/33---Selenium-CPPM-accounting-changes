@@ -14,11 +14,11 @@
 
 # To Run the program
 
-1. Fill in credential.csv with valid username and password, and save
+1. Fill in template.xlsx with validated data, double check, and save.
 
-![screenshot login](images/screenshots1.PNG)
+2. Fill in the AiM login username and password in the command line window, note that the password won't be shown on the screen. Click enter and the program will continue.
 
-2. Fill in template.xlsx with validated data, double check, and save.
+   ![CMD login screenshots](images/screenshots1.PNG)
 
  
 

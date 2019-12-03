@@ -14,6 +14,7 @@ import csv
 import os
 import pandas as pd
 import numpy as np
+import getpass
 
 class TestSample():
     def setup_method(self):
@@ -37,18 +38,21 @@ class TestSample():
         error_log.truncate(0)
         errorCount = 0
 
-        """Load credentials to log in"""
-        absolute_path = os.path.dirname(os.path.abspath(__file__))
-        file_path = absolute_path + '/credential.csv'
-        with open(file_path,"r") as credential:
-            credential = csv.DictReader(credential)
-            for row in credential:
-                username = row["username"]
-                password = row["password"]
+        # """Load credentials to log in"""
+        # absolute_path = os.path.dirname(os.path.abspath(__file__))
+        # file_path = absolute_path + '/credential.csv'
+        # with open(file_path,"r") as credential:
+        #     credential = csv.DictReader(credential)
+        #     for row in credential:
+        #         username = row["username"]
+        #         password = row["password"]
+
+        username = input('Enter your username: ')
+        password = getpass.getpass('Enter your password : ')
 
         """Read Excel Spreadsheet"""
         #TODO: change template names
-        template = 'template.xlsx'
+        template = 'template_303.xlsx'
         component_table = pd.read_excel(template,sheet_name='component')
         speedcode_table = pd.read_excel(template,sheet_name='speedcode')
         fundingsource_table = pd.read_excel(template,sheet_name='fundingsource')
