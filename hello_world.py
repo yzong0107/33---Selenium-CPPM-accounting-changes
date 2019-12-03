@@ -43,6 +43,7 @@ class TestSample():
         self.driver.find_element(By.ID, "login").click()
         self.driver.find_element(By.ID, "mainForm:menuListMain:CP").click()
         self.driver.find_element(By.ID,"mainForm:menuListMain:search_CP_COMPONENT_VIEW").click()
+        time.sleep(10)
         print ('Hello World!')
 
 
