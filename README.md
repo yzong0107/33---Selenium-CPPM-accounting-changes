@@ -16,6 +16,10 @@
 
 ![show hidden files](images/screenshots2.PNG)
 
+7. Run the run.bat, it will call hello_world.py, and check if everything works.
+8. Maybe need to download chrome webdriver, check user's chrome version, and download it. Copy paste it into the env folder (same path in step 5)
+9. Change the run.bat file path.
+
 # To Run the program
 
 1. Fill in template.xlsx with validated data, double check, and save.
