@@ -52,7 +52,7 @@ class TestSample():
 
         """Read Excel Spreadsheet"""
         #TODO: change template names
-        template = 'template_303.xlsx'
+        template = 'template.xlsx'
         component_table = pd.read_excel(template,sheet_name='component')
         speedcode_table = pd.read_excel(template,sheet_name='speedcode')
         fundingsource_table = pd.read_excel(template,sheet_name='fundingsource')
