@@ -51,7 +51,6 @@ class TestSample():
         password = getpass.getpass('Enter your password : ')
 
         """Read Excel Spreadsheet"""
-        #TODO: change template names
         template = 'template.xlsx'
         component_table = pd.read_excel(template,sheet_name='component')
         speedcode_table = pd.read_excel(template,sheet_name='speedcode')
@@ -59,10 +58,6 @@ class TestSample():
 
         speedcode_table.replace(np.nan, '', regex=True,inplace=True)  # replace all null cells with empty string
         fundingsource_table.replace(np.nan, '', regex=True,inplace=True)  # replace all null cells with empty string
-
-        # print (component_table)
-        # print (speedcode_table)
-        # print (fundingsource_table)
 
         """Go to project component search page, under Capital Projects module"""
         self.driver.get("https://www.aimdemo.ualberta.ca/fmax/screen/WORKDESK")
@@ -74,7 +69,6 @@ class TestSample():
         self.driver.find_element(By.ID,"mainForm:menuListMain:search_CP_COMPONENT_VIEW").click()
 
         """Search for CP's components"""
-        # TODO: looping through component
         for row_id in component_table.index.values:
         # for row_id in range(3):
             try:
@@ -101,6 +95,7 @@ class TestSample():
                 continue # jump rest of codes below, and move to next row
 
             self.driver.find_element(By.ID, "mainForm:buttonPanel:edit").click()
+            #TODO: Possibly change the index as user has different rights
             self.driver.find_element(By.ID,"mainForm:sideButtonPanel:moreMenu_2").click()
 
             """Load new accounts"""
@@ -167,7 +162,6 @@ class TestSample():
                 self.driver.find_element(By.ID, "mainForm:buttonPanel:cancel").click()
                 self.driver.find_element(By.ID, "mainForm:buttonPanel:cancel").click()
             except NoSuchElementException:
-                #TODO: change "cancel" to "save"
                 self.driver.find_element(By.ID, "mainForm:buttonPanel:save").click()
             self.driver.find_element(By.ID,"mainForm:buttonPanel:search").click()
 
