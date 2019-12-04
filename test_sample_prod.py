@@ -60,7 +60,7 @@ class TestSample():
         fundingsource_table.replace(np.nan, '', regex=True,inplace=True)  # replace all null cells with empty string
 
         """Go to project component search page, under Capital Projects module"""
-        self.driver.get("https://www.aimdemo.ualberta.ca/fmax/screen/WORKDESK")
+        self.driver.get("https://www.aimprod.ualberta.ca/fmax/screen/WORKDESK")
         self.driver.set_window_size(1900, 1020)
         self.driver.find_element(By.ID, "username").send_keys(username)
         self.driver.find_element(By.ID, "password").send_keys(password)
@@ -96,7 +96,7 @@ class TestSample():
 
             self.driver.find_element(By.ID, "mainForm:buttonPanel:edit").click()
             #TODO: Possibly change the index as user has different rights
-            self.driver.find_element(By.ID,"mainForm:sideButtonPanel:moreMenu_2").click()
+            self.driver.find_element(By.ID,"mainForm:sideButtonPanel:moreMenu_1").click()
 
             """Load new accounts"""
             self.driver.find_element(By.ID, "mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:accountId:loadAccounts").click()
