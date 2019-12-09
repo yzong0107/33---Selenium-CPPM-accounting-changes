@@ -87,7 +87,7 @@ class TestSample():
 
             self.driver.find_element(By.ID, "mainForm:buttonPanel:edit").click()
             #TODO: Possibly change the index as user has different rights
-            self.driver.find_element(By.ID,"mainForm:sideButtonPanel:moreMenu_2").click()
+            self.driver.find_element(By.ID,"mainForm:sideButtonPanel:moreMenu_1").click()
 
             """Load new accounts"""
             self.driver.find_element(By.ID, "mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:accountId:loadAccounts").click()
