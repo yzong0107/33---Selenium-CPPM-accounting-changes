@@ -1,3 +1,7 @@
+# Improvement Logs
+
+* 2019-12-06: For some components with non-editable start date, skip inputting start date. Continue to parse in other input areas. Don't log into error logs.
+
 # Install the program
 
 1. Install [Miniconda (Python3.7)](https://docs.conda.io/en/latest/miniconda.html)  on your local machine. You can access conda via the console, to make sure it's properly installed please run `conda -V` to display the version.

@@ -38,15 +38,6 @@ class TestSample():
         error_log.truncate(0)
         errorCount = 0
 
-        # """Load credentials to log in"""
-        # absolute_path = os.path.dirname(os.path.abspath(__file__))
-        # file_path = absolute_path + '/credential.csv'
-        # with open(file_path,"r") as credential:
-        #     credential = csv.DictReader(credential)
-        #     for row in credential:
-        #         username = row["username"]
-        #         password = row["password"]
-
         username = input('Enter your username: ')
         password = getpass.getpass('Enter your password : ')
 
@@ -96,7 +87,7 @@ class TestSample():
 
             self.driver.find_element(By.ID, "mainForm:buttonPanel:edit").click()
             #TODO: Possibly change the index as user has different rights
-            self.driver.find_element(By.ID,"mainForm:sideButtonPanel:moreMenu_1").click()
+            self.driver.find_element(By.ID,"mainForm:sideButtonPanel:moreMenu_2").click()
 
             """Load new accounts"""
             self.driver.find_element(By.ID, "mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:accountId:loadAccounts").click()
@@ -106,48 +97,54 @@ class TestSample():
                 self.driver.find_element(By.ID, id_str).click()
             self.driver.find_element(By.ID, "mainForm:buttonPanel:done").click()
 
-            try:
-                """Update account info"""
-                for i in speedcode_table.index.values:
-                    start_date_id = "mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:accountId:"+str(i)+":ae_cp_prj_comp_acct_start_date"
+            # try:
+            """Update account info"""
+            for i in speedcode_table.index.values:
+                start_date_id = "mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:accountId:"+str(i)+":ae_cp_prj_comp_acct_start_date"
+                try:
                     self.driver.find_element(By.ID, start_date_id).clear()
                     self.driver.find_element(By.ID, start_date_id).send_keys(str(speedcode_table.iloc[i]["Start Date (yyyy-mm-dd)"]))
-                    end_date_id = "mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:accountId:"+str(i)+":ae_cp_prj_comp_acct_end_date"
-                    self.driver.find_element(By.ID, end_date_id).clear()
-                    self.driver.find_element(By.ID, end_date_id).send_keys(str(speedcode_table.iloc[i]["End Date (yyyy-mm-dd)"]))
-                    allocation_id = "mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:accountId:"+str(i)+":ae_cp_prj_comp_acct_budget_percent"
-                    self.driver.find_element(By.ID, allocation_id).clear()
-                    self.driver.find_element(By.ID, allocation_id).send_keys(str(speedcode_table.iloc[i]["Allocation Percent (%)"]))
+                except InvalidElementStateException:
+                    pass #move to other input areas
+                end_date_id = "mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:accountId:"+str(i)+":ae_cp_prj_comp_acct_end_date"
+                self.driver.find_element(By.ID, end_date_id).clear()
+                self.driver.find_element(By.ID, end_date_id).send_keys(str(speedcode_table.iloc[i]["End Date (yyyy-mm-dd)"]))
+                allocation_id = "mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:accountId:"+str(i)+":ae_cp_prj_comp_acct_budget_percent"
+                self.driver.find_element(By.ID, allocation_id).clear()
+                self.driver.find_element(By.ID, allocation_id).send_keys(str(speedcode_table.iloc[i]["Allocation Percent (%)"]))
 
-                """Load new funding sources"""
-                self.driver.find_element(By.ID, "mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:fundingId:loadFundings").click()
-                checkbox_id = fundingsource_table.index[fundingsource_table["New record (Y/N?)"] == "Y"]
-                for i in checkbox_id:
-                    id_str = "mainForm:CP_COMPONENT_FUNDING_SOURCE_LIST_content:fundingList:" + str(i) + ":check"
-                    self.driver.find_element(By.ID, id_str).click()
-                self.driver.find_element(By.ID, "mainForm:buttonPanel:done").click()
+            """Load new funding sources"""
+            self.driver.find_element(By.ID, "mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:fundingId:loadFundings").click()
+            checkbox_id = fundingsource_table.index[fundingsource_table["New record (Y/N?)"] == "Y"]
+            for i in checkbox_id:
+                id_str = "mainForm:CP_COMPONENT_FUNDING_SOURCE_LIST_content:fundingList:" + str(i) + ":check"
+                self.driver.find_element(By.ID, id_str).click()
+            self.driver.find_element(By.ID, "mainForm:buttonPanel:done").click()
 
-                """Update funding source info"""
-                for i in fundingsource_table.index.values:
-                    start_date_id = "mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:fundingId:"+str(i)+":ae_cp_prj_comp_fund_start_date"
+            """Update funding source info"""
+            for i in fundingsource_table.index.values:
+                start_date_id = "mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:fundingId:"+str(i)+":ae_cp_prj_comp_fund_start_date"
+                try:
                     self.driver.find_element(By.ID, start_date_id).clear()
                     self.driver.find_element(By.ID, start_date_id).send_keys(str(fundingsource_table.iloc[i]["Start Date (yyyy-mm-dd)"]))
-                    end_date_id = "mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:fundingId:" + str(i) + ":ae_cp_prj_comp_fund_end_date"
-                    self.driver.find_element(By.ID, end_date_id).clear()
-                    self.driver.find_element(By.ID, end_date_id).send_keys(str(fundingsource_table.iloc[i]["End Date (yyyy-mm-dd)"]))
-                    allocation_id = "mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:fundingId:" + str(i) + ":ae_cp_prj_comp_fund_budget_percent"
-                    self.driver.find_element(By.ID, allocation_id).clear()
-                    self.driver.find_element(By.ID, allocation_id).send_keys(str(fundingsource_table.iloc[i]["Allocation Percent (%)"]))
+                except InvalidElementStateException:
+                    pass #move to other input areas
+                end_date_id = "mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:fundingId:" + str(i) + ":ae_cp_prj_comp_fund_end_date"
+                self.driver.find_element(By.ID, end_date_id).clear()
+                self.driver.find_element(By.ID, end_date_id).send_keys(str(fundingsource_table.iloc[i]["End Date (yyyy-mm-dd)"]))
+                allocation_id = "mainForm:CP_COMPONENT_ACCOUNT_SETUP_EDIT_content:fundingId:" + str(i) + ":ae_cp_prj_comp_fund_budget_percent"
+                self.driver.find_element(By.ID, allocation_id).clear()
+                self.driver.find_element(By.ID, allocation_id).send_keys(str(fundingsource_table.iloc[i]["Allocation Percent (%)"]))
 
-            except InvalidElementStateException:
-                errorCount += 1
-                error_log.write(str(errorCount)+". {"+component_table.iloc[row_id].str.cat(sep=', ') + "} is NOT saved!\n")
-                error_log.write("Error type: Accounts/funding sources inconsistency. The editing area have non-editable cells\n")
-                error_log.write("\n")
-                self.driver.find_element(By.ID, "mainForm:buttonPanel:cancel").click()
-                self.driver.find_element(By.ID, "mainForm:buttonPanel:cancel").click()
-                self.driver.find_element(By.ID, "mainForm:buttonPanel:search").click()
-                continue # jump rest of codes below, and move to next row
+            # except InvalidElementStateException:
+            #     errorCount += 1
+            #     error_log.write(str(errorCount)+". {"+component_table.iloc[row_id].str.cat(sep=', ') + "} is NOT saved!\n")
+            #     error_log.write("Error type: Accounts/funding sources inconsistency. The editing area have non-editable cells\n")
+            #     error_log.write("\n")
+            #     self.driver.find_element(By.ID, "mainForm:buttonPanel:cancel").click()
+            #     self.driver.find_element(By.ID, "mainForm:buttonPanel:cancel").click()
+            #     self.driver.find_element(By.ID, "mainForm:buttonPanel:search").click()
+            #     continue # jump rest of codes below, and move to next row
 
             """Save the changes"""
             self.driver.find_element(By.ID, "mainForm:buttonPanel:done").click()
@@ -165,6 +162,7 @@ class TestSample():
                 self.driver.find_element(By.ID, "mainForm:buttonPanel:save").click()
             self.driver.find_element(By.ID,"mainForm:buttonPanel:search").click()
 
+        error_log.close()
         print ("Taken: " + str(time.time()-start_time) + " s  (= "+str((time.time()-start_time)/60.)+" min)")
 
 if __name__ == '__main__':
