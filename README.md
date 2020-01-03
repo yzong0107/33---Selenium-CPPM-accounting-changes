@@ -2,7 +2,7 @@
 
 * 2019-12-06: For some components with non-editable start date, skip inputting start date. Continue to parse in other input areas. Don't log into error logs.
 
-# Install the program
+# Install the program (for developers)
 
 1. Install [Miniconda (Python3.7)](https://docs.conda.io/en/latest/miniconda.html)  on your local machine. You can access conda via the console, to make sure it's properly installed please run `conda -V` to display the version.
 
@@ -21,7 +21,7 @@
 ![show hidden files](images/screenshots2.PNG)
 
 7. Run the run.bat, it will call hello_world.py, and check if everything works.
-8. Maybe need to download chrome webdriver, check user's chrome version, and download it. Copy paste it into the env folder (same path in step 5)
+8. Maybe need to download chrome webdriver, check user's **chrome version**, and download it. Copy paste it into the env folder (same path in step 5)
 9. Change the run.bat file path.
 
 # To Run the program
