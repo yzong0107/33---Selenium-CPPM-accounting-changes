@@ -1,4 +1,3 @@
-cd C:\Users\jc62\Desktop\Selenium-CPPM-accounting-changes
-C:
+cd "%~dp0/backend"
 python test_sample_demo.py
 pause
