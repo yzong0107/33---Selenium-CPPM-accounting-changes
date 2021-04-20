@@ -15,10 +15,11 @@ import os
 import pandas as pd
 import numpy as np
 import getpass
+from webdriver_manager.chrome import ChromeDriverManager
 
 class TestSample():
     def setup_method(self):
-        self.driver = webdriver.Chrome()
+        self.driver = webdriver.Chrome(executable_path=ChromeDriverManager().install())
         self.vars = {}
 
     def teardown_method(self):
