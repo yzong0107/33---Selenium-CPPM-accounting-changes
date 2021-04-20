@@ -1,5 +1,6 @@
 # Improvement Logs
 
+* 2021-04-20: added standalone Chrome browser
 * 2019-12-06: For some components with non-editable start date, skip  inputting start date. Continue to parse in other input areas. Don't log  into error logs.
 
 # Install the program
