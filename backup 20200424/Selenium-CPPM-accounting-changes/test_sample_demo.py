@@ -15,21 +15,10 @@ import os
 import pandas as pd
 import numpy as np
 import getpass
-from webdriver_manager.chrome import ChromeDriverManager
 
 class TestSample():
     def setup_method(self):
-        options = webdriver.ChromeOptions()
-        options.add_argument("--disable-dev-shm-usage")
-        options.add_argument("--disable-gpu")
-        options.add_argument("--disable-extensions")
-        # options.add_argument("--no-sandbox")
-        options.add_argument("--remote-debugging-port=9222")
-        # options.add_argument("--headless")
-
-        self.driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
-        self.driver.maximize_window()
-
+        self.driver = webdriver.Chrome()
         self.vars = {}
 
     def teardown_method(self):
@@ -63,7 +52,7 @@ class TestSample():
 
         """Go to project component search page, under Capital Projects module"""
         self.driver.get("https://www.aimdemo.ualberta.ca/fmax/screen/WORKDESK")
-        # self.driver.set_window_size(1900, 1020)
+        self.driver.set_window_size(1900, 1020)
         self.driver.find_element(By.ID, "username").send_keys(username)
         self.driver.find_element(By.ID, "password").send_keys(password)
         self.driver.find_element(By.ID, "login").click()

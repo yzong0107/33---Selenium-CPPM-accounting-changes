@@ -1,0 +1,50 @@
+1. {CP00228, GENERAL CONTRACTING, CONTRACTING} is NOT saved!
+Error from AiM:
+Error Code: 1006 Validation error
+Field [Start Date] contains an invalid value [12/17/19 12:00 AM] on record [Capital Project [CP00228] Component [1] Sequence [2]]
+
+2. {CP00228, INT UNIV PROJECT CHARGES, TRADES} is NOT saved!
+Error from AiM:
+Error Code: 1006 Validation error
+Field [Start Date] contains an invalid value [12/17/19 12:00 AM] on record [Capital Project [CP00228] Component [11] Sequence [2]]
+
+3. {CP00228, PROFESSIONAL CONSULTANTS, PRIME CONSULTANT} is NOT saved!
+Error from AiM:
+Error Code: 1006 Validation error
+Field [Start Date] contains an invalid value [12/17/19 12:00 AM] on record [Capital Project [CP00228] Component [12] Sequence [2]]
+
+4. {CP00228, PROJECT MANAGEMENT, INTERNAL PROJECT MGMT} is NOT saved!
+Error from AiM:
+Error Code: 1006 Validation error
+Field [Start Date] contains an invalid value [12/17/19 12:00 AM] on record [Capital Project [CP00228] Component [20] Sequence [2]]
+
+5. {CP00228, ADMIN REQUIREMENTS, PROJECT INSURANCE} is NOT saved!
+Error from AiM:
+Error Code: 1006 Validation error
+Field [Start Date] contains an invalid value [12/17/19 12:00 AM] on record [Capital Project [CP00228] Component [44] Sequence [2]]
+
+6. {CP00228, QUALITY CONTROL/ASSURANCE, PERMITS} is NOT saved!
+Error from AiM:
+Error Code: 1006 Validation error
+Field [Start Date] contains an invalid value [12/17/19 12:00 AM] on record [Capital Project [CP00228] Component [47] Sequence [2]]
+
+7. {CP00228, TEMPORARY UTILITIES, TEMPORARY POWER} is NOT saved!
+Error from AiM:
+Error Code: 1006 Validation error
+Field [Start Date] contains an invalid value [12/17/19 12:00 AM] on record [Capital Project [CP00228] Component [50] Sequence [2]]
+
+8. {CP00228, COMMISSIONING, COMMISSIONING MGR 3RD PTY} is NOT saved!
+Error from AiM:
+Error Code: 1006 Validation error
+Field [Start Date] contains an invalid value [12/17/19 12:00 AM] on record [Capital Project [CP00228] Component [55] Sequence [2]]
+
+9. {CP00228, PROJECT ADMIN ALLOWANCE, PROJECT ADMIN ALLOWANCE} is NOT saved!
+Error from AiM:
+Error Code: 1006 Validation error
+Field [Start Date] contains an invalid value [12/17/19 12:00 AM] on record [Capital Project [CP00228] Component [95] Sequence [2]]
+
+10. {CP00228, SPECIALTY CONSULTANTS, PEER REVIEW CONSULTANT} is NOT saved!
+Error from AiM:
+Error Code: 1006 Validation error
+Field [Start Date] contains an invalid value [12/17/19 12:00 AM] on record [Capital Project [CP00228] Component [96] Sequence [2]]
+

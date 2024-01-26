@@ -1,0 +1,10 @@
+deploy/
+.idea/
+credential.csv
+*.side
+*.log
+*.sql
+*.mp4
+*.xlsx
+practice.py
+run_demo - original.bat

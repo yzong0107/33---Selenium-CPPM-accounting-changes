@@ -1,0 +1,5 @@
+2024-01-26 15:44:56 -- Error count #1. {CP00631, GENERAL CONTRACTING, CONTRACTING} is NOT saved!
+Error from AiM:
+Error Code: 7333 Overlapping dates for Funding Source INSTITUTIONAL STRATEGIC INITIATIVE - INTERNAL
+Error Code: 7333 Overlapping dates for Account/SubCode 7R713/507001
+
